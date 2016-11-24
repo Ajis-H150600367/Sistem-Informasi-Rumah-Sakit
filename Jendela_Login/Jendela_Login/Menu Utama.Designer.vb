@@ -27,6 +27,7 @@ Partial Class Menu_Utama
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.MasterDataToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.VisualStyler1 = New SkinSoft.VisualStyler.VisualStyler(Me.components)
+        Me.PasienToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.VisualStyler1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -42,6 +43,7 @@ Partial Class Menu_Utama
         '
         'MasterDataToolStripMenuItem
         '
+        Me.MasterDataToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PasienToolStripMenuItem})
         Me.MasterDataToolStripMenuItem.ForeColor = System.Drawing.Color.Black
         Me.MasterDataToolStripMenuItem.Name = "MasterDataToolStripMenuItem"
         Me.MasterDataToolStripMenuItem.Size = New System.Drawing.Size(106, 25)
@@ -52,6 +54,12 @@ Partial Class Menu_Utama
         Me.VisualStyler1.HostForm = Me
         Me.VisualStyler1.License = CType(resources.GetObject("VisualStyler1.License"), SkinSoft.VisualStyler.Licensing.VisualStylerLicense)
         Me.VisualStyler1.LoadVisualStyle(Nothing, "OSX (Brushed).vssf")
+        '
+        'PasienToolStripMenuItem
+        '
+        Me.PasienToolStripMenuItem.Name = "PasienToolStripMenuItem"
+        Me.PasienToolStripMenuItem.Size = New System.Drawing.Size(152, 26)
+        Me.PasienToolStripMenuItem.Text = "Pasien"
         '
         'Menu_Utama
         '
@@ -72,4 +80,5 @@ Partial Class Menu_Utama
     Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
     Friend WithEvents MasterDataToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents VisualStyler1 As SkinSoft.VisualStyler.VisualStyler
+    Friend WithEvents PasienToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class

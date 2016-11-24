@@ -8,9 +8,9 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{C01FD982-2D5D-4360-AD71-2EEAEDD6C4FE}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>Jendela_Login.My.MyApplication</StartupObject>
-    <RootNamespace>Jendela_Login</RootNamespace>
-    <AssemblyName>Jendela_Login</AssemblyName>
+    <StartupObject>Sistem_Informasi_Rumah_Sakit.My.MyApplication</StartupObject>
+    <RootNamespace>Sistem_Informasi_Rumah_Sakit</RootNamespace>
+    <AssemblyName>Sistem_Informasi_Rumah_Sakit</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
@@ -23,7 +23,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>Jendela_Login.xml</DocumentationFile>
+    <DocumentationFile>Sistem_Informasi_Rumah_Sakit.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
@@ -33,7 +33,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>Jendela_Login.xml</DocumentationFile>
+    <DocumentationFile>Sistem_Informasi_Rumah_Sakit.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -73,6 +73,12 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data_Pasien.Designer.vb">
+      <DependentUpon>Data_Pasien.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Data_Pasien.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +109,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Data_Pasien.resx">
+      <DependentUpon>Data_Pasien.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
