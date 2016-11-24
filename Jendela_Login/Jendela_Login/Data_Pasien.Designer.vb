@@ -22,7 +22,10 @@ Partial Class Data_Pasien
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.SuspendLayout()
         '
         'Label1
@@ -35,11 +38,19 @@ Partial Class Data_Pasien
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Data Pasien"
         '
+        'DateTimePicker1
+        '
+        Me.DateTimePicker1.Location = New System.Drawing.Point(665, 12)
+        Me.DateTimePicker1.Name = "DateTimePicker1"
+        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 20)
+        Me.DateTimePicker1.TabIndex = 1
+        '
         'Data_Pasien
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(877, 342)
+        Me.Controls.Add(Me.DateTimePicker1)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Data_Pasien"
         Me.Text = "Data_Pasien"
@@ -48,4 +59,6 @@ Partial Class Data_Pasien
 
     End Sub
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents DateTimePicker1 As System.Windows.Forms.DateTimePicker
+    Friend WithEvents Timer1 As System.Windows.Forms.Timer
 End Class
