@@ -22,9 +22,13 @@ Partial Class Menu_Utama
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Menu_Utama))
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.MasterDataToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.VisualStyler1 = New SkinSoft.VisualStyler.VisualStyler(Me.components)
         Me.MenuStrip1.SuspendLayout()
+        CType(Me.VisualStyler1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MenuStrip1
@@ -38,9 +42,16 @@ Partial Class Menu_Utama
         '
         'MasterDataToolStripMenuItem
         '
+        Me.MasterDataToolStripMenuItem.ForeColor = System.Drawing.Color.Black
         Me.MasterDataToolStripMenuItem.Name = "MasterDataToolStripMenuItem"
         Me.MasterDataToolStripMenuItem.Size = New System.Drawing.Size(106, 25)
         Me.MasterDataToolStripMenuItem.Text = "Master Data"
+        '
+        'VisualStyler1
+        '
+        Me.VisualStyler1.HostForm = Me
+        Me.VisualStyler1.License = CType(resources.GetObject("VisualStyler1.License"), SkinSoft.VisualStyler.Licensing.VisualStylerLicense)
+        Me.VisualStyler1.LoadVisualStyle(Nothing, "OSX (Brushed).vssf")
         '
         'Menu_Utama
         '
@@ -50,13 +61,15 @@ Partial Class Menu_Utama
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Menu_Utama"
-        Me.Text = "Menu_Utama"
+        Me.Text = "Menu Utama"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
+        CType(Me.VisualStyler1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
     Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
     Friend WithEvents MasterDataToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents VisualStyler1 As SkinSoft.VisualStyler.VisualStyler
 End Class

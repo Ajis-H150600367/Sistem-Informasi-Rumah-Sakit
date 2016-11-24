@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Jendela_Login", "Jendela_Login\Jendela_Login.vbproj", "{C01FD982-2D5D-4360-AD71-2EEAEDD6C4FE}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Sistem_Informasi_Rumah_Sakit", "Jendela_Login\Sistem_Informasi_Rumah_Sakit.vbproj", "{C01FD982-2D5D-4360-AD71-2EEAEDD6C4FE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,13 +18,13 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		VSCustomBkgrdPaint = True
-		VSUseSystemFonts = False
-		VSSkinToggleButtons = True
-		VSSkinFlatStyles = True
-		VSTextShadow = True
-		VSToolStripStyle = Mixed
+		VSStyle = Vista (Teal).vssf
 		VSTargetControls = FormsAndControls
-		VSStyle = OSX (Leopard).vssf
+		VSToolStripStyle = Mixed
+		VSTextShadow = True
+		VSSkinFlatStyles = True
+		VSSkinToggleButtons = True
+		VSUseSystemFonts = False
+		VSCustomBkgrdPaint = True
 	EndGlobalSection
 EndGlobal

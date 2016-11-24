@@ -1,0 +1,8 @@
+C:\Users\pc\Documents\Sistem-Informasi-Rumah-Sakit\Jendela_Login\bin\Debug\Jendela_Login.exe
+C:\Users\pc\Documents\Sistem-Informasi-Rumah-Sakit\Jendela_Login\bin\Debug\Jendela_Login.pdb
+C:\Users\pc\Documents\Sistem-Informasi-Rumah-Sakit\Jendela_Login\bin\Debug\Jendela_Login.xml
+C:\Users\pc\Documents\Sistem-Informasi-Rumah-Sakit\Jendela_Login\obj\x86\Debug\Jendela_Login.Resources.resources
+C:\Users\pc\Documents\Sistem-Informasi-Rumah-Sakit\Jendela_Login\obj\x86\Debug\Jendela_Login.vbproj.GenerateResource.Cache
+C:\Users\pc\Documents\Sistem-Informasi-Rumah-Sakit\Jendela_Login\obj\x86\Debug\Jendela_Login.exe
+C:\Users\pc\Documents\Sistem-Informasi-Rumah-Sakit\Jendela_Login\obj\x86\Debug\Jendela_Login.xml
+C:\Users\pc\Documents\Sistem-Informasi-Rumah-Sakit\Jendela_Login\obj\x86\Debug\Jendela_Login.pdb
