@@ -32,7 +32,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.Jendela_Login.Form1
+            Me.MainForm = Global.Jendela_Login.Jendela_login
         End Sub
     End Class
 End Namespace
