@@ -25,6 +25,7 @@ Partial Class Jendela_login
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Jendela_login))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.ButtonLogin = New System.Windows.Forms.Button()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
@@ -32,7 +33,6 @@ Partial Class Jendela_login
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.VisualStyler1 = New SkinSoft.VisualStyler.VisualStyler(Me.components)
-        Me.Label4 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         CType(Me.VisualStyler1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -52,6 +52,15 @@ Partial Class Jendela_login
         Me.GroupBox1.Size = New System.Drawing.Size(271, 181)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(25, 43)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(227, 13)
+        Me.Label4.TabIndex = 6
+        Me.Label4.Text = "input the user name and password before login"
         '
         'ButtonLogin
         '
@@ -113,16 +122,7 @@ Partial Class Jendela_login
         '
         Me.VisualStyler1.HostForm = Me
         Me.VisualStyler1.License = CType(resources.GetObject("VisualStyler1.License"), SkinSoft.VisualStyler.Licensing.VisualStylerLicense)
-        Me.VisualStyler1.LoadVisualStyle(Nothing, "Vista (Teal).vssf")
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(25, 43)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(227, 13)
-        Me.Label4.TabIndex = 6
-        Me.Label4.Text = "input the user name and password before login"
+        Me.VisualStyler1.LoadVisualStyle(Nothing, "XP Royale (Zune).vssf")
         '
         'Jendela_login
         '

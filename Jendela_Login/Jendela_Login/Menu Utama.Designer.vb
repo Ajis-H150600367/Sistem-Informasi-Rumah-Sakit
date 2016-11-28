@@ -26,8 +26,8 @@ Partial Class Menu_Utama
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Menu_Utama))
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.MasterDataToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.VisualStyler1 = New SkinSoft.VisualStyler.VisualStyler(Me.components)
         Me.PasienToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.VisualStyler1 = New SkinSoft.VisualStyler.VisualStyler(Me.components)
         Me.MenuStrip1.SuspendLayout()
         CType(Me.VisualStyler1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -49,17 +49,17 @@ Partial Class Menu_Utama
         Me.MasterDataToolStripMenuItem.Size = New System.Drawing.Size(106, 25)
         Me.MasterDataToolStripMenuItem.Text = "Master Data"
         '
-        'VisualStyler1
-        '
-        Me.VisualStyler1.HostForm = Me
-        Me.VisualStyler1.License = CType(resources.GetObject("VisualStyler1.License"), SkinSoft.VisualStyler.Licensing.VisualStylerLicense)
-        Me.VisualStyler1.LoadVisualStyle(Nothing, "OSX (Brushed).vssf")
-        '
         'PasienToolStripMenuItem
         '
         Me.PasienToolStripMenuItem.Name = "PasienToolStripMenuItem"
         Me.PasienToolStripMenuItem.Size = New System.Drawing.Size(152, 26)
         Me.PasienToolStripMenuItem.Text = "Pasien"
+        '
+        'VisualStyler1
+        '
+        Me.VisualStyler1.HostForm = Me
+        Me.VisualStyler1.License = CType(resources.GetObject("VisualStyler1.License"), SkinSoft.VisualStyler.Licensing.VisualStylerLicense)
+        Me.VisualStyler1.LoadVisualStyle(Nothing, "XP (Silver).vssf")
         '
         'Menu_Utama
         '

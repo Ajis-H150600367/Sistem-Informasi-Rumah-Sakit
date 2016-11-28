@@ -23,42 +23,458 @@ Partial Class Data_Pasien
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Dim ID_PASIENLabel As System.Windows.Forms.Label
+        Dim NAMA_PASIENLabel As System.Windows.Forms.Label
+        Dim J_KLabel As System.Windows.Forms.Label
+        Dim KOTA_PASIENLabel As System.Windows.Forms.Label
+        Dim ALAMATLabel As System.Windows.Forms.Label
+        Dim KELUHANLabel As System.Windows.Forms.Label
+        Dim UMURLabel As System.Windows.Forms.Label
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.GroupBox_WaktudanTanggal = New System.Windows.Forms.GroupBox()
+        Me.Tanggal = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.LblDetik = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.LblMenit = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.LblJam = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Sistem_informasi_rumahsakitDataSet = New Sistem_Informasi_Rumah_Sakit.sistem_informasi_rumahsakitDataSet()
+        Me.PasienBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.PasienTableAdapter = New Sistem_Informasi_Rumah_Sakit.sistem_informasi_rumahsakitDataSetTableAdapters.pasienTableAdapter()
+        Me.TableAdapterManager = New Sistem_Informasi_Rumah_Sakit.sistem_informasi_rumahsakitDataSetTableAdapters.TableAdapterManager()
+        Me.ID_PASIENTextBox = New System.Windows.Forms.TextBox()
+        Me.NAMA_PASIENTextBox = New System.Windows.Forms.TextBox()
+        Me.J_KComboBox = New System.Windows.Forms.ComboBox()
+        Me.KOTA_PASIENTextBox = New System.Windows.Forms.TextBox()
+        Me.ALAMATTextBox = New System.Windows.Forms.TextBox()
+        Me.KELUHANTextBox = New System.Windows.Forms.TextBox()
+        Me.UMURComboBox = New System.Windows.Forms.ComboBox()
+        Me.GroupBox_Data_Pasien = New System.Windows.Forms.GroupBox()
+        Me.PasienDataGridView = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.PrintDialog1 = New System.Windows.Forms.PrintDialog()
+        Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
+        Me.Button2 = New System.Windows.Forms.Button()
+        ID_PASIENLabel = New System.Windows.Forms.Label()
+        NAMA_PASIENLabel = New System.Windows.Forms.Label()
+        J_KLabel = New System.Windows.Forms.Label()
+        KOTA_PASIENLabel = New System.Windows.Forms.Label()
+        ALAMATLabel = New System.Windows.Forms.Label()
+        KELUHANLabel = New System.Windows.Forms.Label()
+        UMURLabel = New System.Windows.Forms.Label()
+        Me.GroupBox_WaktudanTanggal.SuspendLayout()
+        CType(Me.Sistem_informasi_rumahsakitDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PasienBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox_Data_Pasien.SuspendLayout()
+        CType(Me.PasienDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Label1
+        'ID_PASIENLabel
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Georgia", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(346, 9)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(98, 18)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Data Pasien"
+        ID_PASIENLabel.AutoSize = True
+        ID_PASIENLabel.Location = New System.Drawing.Point(10, 22)
+        ID_PASIENLabel.Name = "ID_PASIENLabel"
+        ID_PASIENLabel.Size = New System.Drawing.Size(63, 13)
+        ID_PASIENLabel.TabIndex = 17
+        ID_PASIENLabel.Text = "ID PASIEN:"
         '
-        'DateTimePicker1
+        'NAMA_PASIENLabel
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(665, 12)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 20)
-        Me.DateTimePicker1.TabIndex = 1
+        NAMA_PASIENLabel.AutoSize = True
+        NAMA_PASIENLabel.Location = New System.Drawing.Point(10, 48)
+        NAMA_PASIENLabel.Name = "NAMA_PASIENLabel"
+        NAMA_PASIENLabel.Size = New System.Drawing.Size(83, 13)
+        NAMA_PASIENLabel.TabIndex = 19
+        NAMA_PASIENLabel.Text = "NAMA PASIEN:"
+        '
+        'J_KLabel
+        '
+        J_KLabel.AutoSize = True
+        J_KLabel.Location = New System.Drawing.Point(10, 74)
+        J_KLabel.Name = "J_KLabel"
+        J_KLabel.Size = New System.Drawing.Size(25, 13)
+        J_KLabel.TabIndex = 21
+        J_KLabel.Text = "J K:"
+        '
+        'KOTA_PASIENLabel
+        '
+        KOTA_PASIENLabel.AutoSize = True
+        KOTA_PASIENLabel.Location = New System.Drawing.Point(10, 101)
+        KOTA_PASIENLabel.Name = "KOTA_PASIENLabel"
+        KOTA_PASIENLabel.Size = New System.Drawing.Size(81, 13)
+        KOTA_PASIENLabel.TabIndex = 23
+        KOTA_PASIENLabel.Text = "KOTA PASIEN:"
+        '
+        'ALAMATLabel
+        '
+        ALAMATLabel.AutoSize = True
+        ALAMATLabel.Location = New System.Drawing.Point(10, 127)
+        ALAMATLabel.Name = "ALAMATLabel"
+        ALAMATLabel.Size = New System.Drawing.Size(53, 13)
+        ALAMATLabel.TabIndex = 25
+        ALAMATLabel.Text = "ALAMAT:"
+        '
+        'KELUHANLabel
+        '
+        KELUHANLabel.AutoSize = True
+        KELUHANLabel.Location = New System.Drawing.Point(10, 153)
+        KELUHANLabel.Name = "KELUHANLabel"
+        KELUHANLabel.Size = New System.Drawing.Size(61, 13)
+        KELUHANLabel.TabIndex = 27
+        KELUHANLabel.Text = "KELUHAN:"
+        '
+        'UMURLabel
+        '
+        UMURLabel.AutoSize = True
+        UMURLabel.Location = New System.Drawing.Point(10, 179)
+        UMURLabel.Name = "UMURLabel"
+        UMURLabel.Size = New System.Drawing.Size(43, 13)
+        UMURLabel.TabIndex = 29
+        UMURLabel.Text = "UMUR:"
+        '
+        'Timer1
+        '
+        '
+        'GroupBox_WaktudanTanggal
+        '
+        Me.GroupBox_WaktudanTanggal.Controls.Add(Me.Tanggal)
+        Me.GroupBox_WaktudanTanggal.Controls.Add(Me.Label2)
+        Me.GroupBox_WaktudanTanggal.Controls.Add(Me.LblDetik)
+        Me.GroupBox_WaktudanTanggal.Controls.Add(Me.Label5)
+        Me.GroupBox_WaktudanTanggal.Controls.Add(Me.LblMenit)
+        Me.GroupBox_WaktudanTanggal.Controls.Add(Me.Label3)
+        Me.GroupBox_WaktudanTanggal.Controls.Add(Me.LblJam)
+        Me.GroupBox_WaktudanTanggal.Controls.Add(Me.Label4)
+        Me.GroupBox_WaktudanTanggal.Location = New System.Drawing.Point(857, 5)
+        Me.GroupBox_WaktudanTanggal.Name = "GroupBox_WaktudanTanggal"
+        Me.GroupBox_WaktudanTanggal.Size = New System.Drawing.Size(234, 53)
+        Me.GroupBox_WaktudanTanggal.TabIndex = 16
+        Me.GroupBox_WaktudanTanggal.TabStop = False
+        '
+        'Tanggal
+        '
+        Me.Tanggal.AutoSize = True
+        Me.Tanggal.Location = New System.Drawing.Point(133, 28)
+        Me.Tanggal.Name = "Tanggal"
+        Me.Tanggal.Size = New System.Drawing.Size(95, 13)
+        Me.Tanggal.TabIndex = 23
+        Me.Tanggal.Text = "Tanggal Sekarang"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(135, 10)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(46, 13)
+        Me.Label2.TabIndex = 22
+        Me.Label2.Text = "Tanggal"
+        '
+        'LblDetik
+        '
+        Me.LblDetik.AutoSize = True
+        Me.LblDetik.Location = New System.Drawing.Point(75, 28)
+        Me.LblDetik.Name = "LblDetik"
+        Me.LblDetik.Size = New System.Drawing.Size(32, 13)
+        Me.LblDetik.TabIndex = 21
+        Me.LblDetik.Text = "Detik"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(67, 28)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(10, 13)
+        Me.Label5.TabIndex = 20
+        Me.Label5.Text = ":"
+        '
+        'LblMenit
+        '
+        Me.LblMenit.AutoSize = True
+        Me.LblMenit.Location = New System.Drawing.Point(35, 28)
+        Me.LblMenit.Name = "LblMenit"
+        Me.LblMenit.Size = New System.Drawing.Size(33, 13)
+        Me.LblMenit.TabIndex = 19
+        Me.LblMenit.Text = "Menit"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(27, 28)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(10, 13)
+        Me.Label3.TabIndex = 18
+        Me.Label3.Text = ":"
+        '
+        'LblJam
+        '
+        Me.LblJam.AutoSize = True
+        Me.LblJam.Location = New System.Drawing.Point(4, 28)
+        Me.LblJam.Name = "LblJam"
+        Me.LblJam.Size = New System.Drawing.Size(26, 13)
+        Me.LblJam.TabIndex = 17
+        Me.LblJam.Text = "Jam"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(4, 10)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(88, 13)
+        Me.Label4.TabIndex = 16
+        Me.Label4.Text = "Waktu Sekarang"
+        '
+        'Sistem_informasi_rumahsakitDataSet
+        '
+        Me.Sistem_informasi_rumahsakitDataSet.DataSetName = "sistem_informasi_rumahsakitDataSet"
+        Me.Sistem_informasi_rumahsakitDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'PasienBindingSource
+        '
+        Me.PasienBindingSource.DataMember = "pasien"
+        Me.PasienBindingSource.DataSource = Me.Sistem_informasi_rumahsakitDataSet
+        '
+        'PasienTableAdapter
+        '
+        Me.PasienTableAdapter.ClearBeforeFill = True
+        '
+        'TableAdapterManager
+        '
+        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.dokter_has_obatTableAdapter = Nothing
+        Me.TableAdapterManager.dokterTableAdapter = Nothing
+        Me.TableAdapterManager.kasirTableAdapter = Nothing
+        Me.TableAdapterManager.lobiTableAdapter = Nothing
+        Me.TableAdapterManager.obatTableAdapter = Nothing
+        Me.TableAdapterManager.pasien_has_obatTableAdapter = Nothing
+        Me.TableAdapterManager.pasienTableAdapter = Me.PasienTableAdapter
+        Me.TableAdapterManager.ruangan_has_dokterTableAdapter = Nothing
+        Me.TableAdapterManager.ruanganTableAdapter = Nothing
+        Me.TableAdapterManager.UpdateOrder = Sistem_Informasi_Rumah_Sakit.sistem_informasi_rumahsakitDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        '
+        'ID_PASIENTextBox
+        '
+        Me.ID_PASIENTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PasienBindingSource, "ID_PASIEN", True))
+        Me.ID_PASIENTextBox.Location = New System.Drawing.Point(99, 19)
+        Me.ID_PASIENTextBox.Name = "ID_PASIENTextBox"
+        Me.ID_PASIENTextBox.Size = New System.Drawing.Size(121, 20)
+        Me.ID_PASIENTextBox.TabIndex = 18
+        '
+        'NAMA_PASIENTextBox
+        '
+        Me.NAMA_PASIENTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PasienBindingSource, "NAMA_PASIEN", True))
+        Me.NAMA_PASIENTextBox.Location = New System.Drawing.Point(99, 45)
+        Me.NAMA_PASIENTextBox.Name = "NAMA_PASIENTextBox"
+        Me.NAMA_PASIENTextBox.Size = New System.Drawing.Size(188, 20)
+        Me.NAMA_PASIENTextBox.TabIndex = 20
+        '
+        'J_KComboBox
+        '
+        Me.J_KComboBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PasienBindingSource, "J_K", True))
+        Me.J_KComboBox.FormattingEnabled = True
+        Me.J_KComboBox.Items.AddRange(New Object() {"L", "P"})
+        Me.J_KComboBox.Location = New System.Drawing.Point(99, 71)
+        Me.J_KComboBox.Name = "J_KComboBox"
+        Me.J_KComboBox.Size = New System.Drawing.Size(44, 21)
+        Me.J_KComboBox.TabIndex = 22
+        '
+        'KOTA_PASIENTextBox
+        '
+        Me.KOTA_PASIENTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PasienBindingSource, "KOTA_PASIEN", True))
+        Me.KOTA_PASIENTextBox.Location = New System.Drawing.Point(99, 98)
+        Me.KOTA_PASIENTextBox.Name = "KOTA_PASIENTextBox"
+        Me.KOTA_PASIENTextBox.Size = New System.Drawing.Size(188, 20)
+        Me.KOTA_PASIENTextBox.TabIndex = 24
+        '
+        'ALAMATTextBox
+        '
+        Me.ALAMATTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PasienBindingSource, "ALAMAT", True))
+        Me.ALAMATTextBox.Location = New System.Drawing.Point(99, 150)
+        Me.ALAMATTextBox.Name = "ALAMATTextBox"
+        Me.ALAMATTextBox.Size = New System.Drawing.Size(158, 20)
+        Me.ALAMATTextBox.TabIndex = 26
+        '
+        'KELUHANTextBox
+        '
+        Me.KELUHANTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PasienBindingSource, "KELUHAN", True))
+        Me.KELUHANTextBox.Location = New System.Drawing.Point(99, 127)
+        Me.KELUHANTextBox.Name = "KELUHANTextBox"
+        Me.KELUHANTextBox.Size = New System.Drawing.Size(188, 20)
+        Me.KELUHANTextBox.TabIndex = 28
+        '
+        'UMURComboBox
+        '
+        Me.UMURComboBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PasienBindingSource, "UMUR", True))
+        Me.UMURComboBox.FormattingEnabled = True
+        Me.UMURComboBox.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100"})
+        Me.UMURComboBox.Location = New System.Drawing.Point(99, 176)
+        Me.UMURComboBox.Name = "UMURComboBox"
+        Me.UMURComboBox.Size = New System.Drawing.Size(44, 21)
+        Me.UMURComboBox.TabIndex = 30
+        '
+        'GroupBox_Data_Pasien
+        '
+        Me.GroupBox_Data_Pasien.Controls.Add(Me.J_KComboBox)
+        Me.GroupBox_Data_Pasien.Controls.Add(ID_PASIENLabel)
+        Me.GroupBox_Data_Pasien.Controls.Add(Me.UMURComboBox)
+        Me.GroupBox_Data_Pasien.Controls.Add(Me.ID_PASIENTextBox)
+        Me.GroupBox_Data_Pasien.Controls.Add(UMURLabel)
+        Me.GroupBox_Data_Pasien.Controls.Add(NAMA_PASIENLabel)
+        Me.GroupBox_Data_Pasien.Controls.Add(Me.KELUHANTextBox)
+        Me.GroupBox_Data_Pasien.Controls.Add(Me.NAMA_PASIENTextBox)
+        Me.GroupBox_Data_Pasien.Controls.Add(KELUHANLabel)
+        Me.GroupBox_Data_Pasien.Controls.Add(J_KLabel)
+        Me.GroupBox_Data_Pasien.Controls.Add(Me.ALAMATTextBox)
+        Me.GroupBox_Data_Pasien.Controls.Add(ALAMATLabel)
+        Me.GroupBox_Data_Pasien.Controls.Add(KOTA_PASIENLabel)
+        Me.GroupBox_Data_Pasien.Controls.Add(Me.KOTA_PASIENTextBox)
+        Me.GroupBox_Data_Pasien.Location = New System.Drawing.Point(751, 64)
+        Me.GroupBox_Data_Pasien.Name = "GroupBox_Data_Pasien"
+        Me.GroupBox_Data_Pasien.Size = New System.Drawing.Size(340, 282)
+        Me.GroupBox_Data_Pasien.TabIndex = 31
+        Me.GroupBox_Data_Pasien.TabStop = False
+        Me.GroupBox_Data_Pasien.Text = "Data Pasien"
+        '
+        'PasienDataGridView
+        '
+        Me.PasienDataGridView.AutoGenerateColumns = False
+        Me.PasienDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.PasienDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7})
+        Me.PasienDataGridView.DataSource = Me.PasienBindingSource
+        Me.PasienDataGridView.Location = New System.Drawing.Point(12, 64)
+        Me.PasienDataGridView.Name = "PasienDataGridView"
+        Me.PasienDataGridView.Size = New System.Drawing.Size(733, 282)
+        Me.PasienDataGridView.TabIndex = 31
+        '
+        'DataGridViewTextBoxColumn1
+        '
+        Me.DataGridViewTextBoxColumn1.DataPropertyName = "ID_PASIEN"
+        Me.DataGridViewTextBoxColumn1.HeaderText = "ID_PASIEN"
+        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
+        '
+        'DataGridViewTextBoxColumn2
+        '
+        Me.DataGridViewTextBoxColumn2.DataPropertyName = "NAMA_PASIEN"
+        Me.DataGridViewTextBoxColumn2.HeaderText = "NAMA_PASIEN"
+        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        '
+        'DataGridViewTextBoxColumn3
+        '
+        Me.DataGridViewTextBoxColumn3.DataPropertyName = "J_K"
+        Me.DataGridViewTextBoxColumn3.HeaderText = "J_K"
+        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        '
+        'DataGridViewTextBoxColumn4
+        '
+        Me.DataGridViewTextBoxColumn4.DataPropertyName = "KOTA_PASIEN"
+        Me.DataGridViewTextBoxColumn4.HeaderText = "KOTA_PASIEN"
+        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
+        '
+        'DataGridViewTextBoxColumn5
+        '
+        Me.DataGridViewTextBoxColumn5.DataPropertyName = "ALAMAT"
+        Me.DataGridViewTextBoxColumn5.HeaderText = "ALAMAT"
+        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
+        '
+        'DataGridViewTextBoxColumn6
+        '
+        Me.DataGridViewTextBoxColumn6.DataPropertyName = "KELUHAN"
+        Me.DataGridViewTextBoxColumn6.HeaderText = "KELUHAN"
+        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
+        '
+        'DataGridViewTextBoxColumn7
+        '
+        Me.DataGridViewTextBoxColumn7.DataPropertyName = "UMUR"
+        Me.DataGridViewTextBoxColumn7.HeaderText = "UMUR"
+        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Button1.Font = New System.Drawing.Font("Georgia", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.Color.MediumBlue
+        Me.Button1.Location = New System.Drawing.Point(12, 10)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(88, 36)
+        Me.Button1.TabIndex = 32
+        Me.Button1.Text = "Data Pasien"
+        Me.Button1.UseVisualStyleBackColor = False
+        '
+        'PrintDialog1
+        '
+        Me.PrintDialog1.UseEXDialog = True
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(720, 10)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(131, 23)
+        Me.Button2.TabIndex = 33
+        Me.Button2.Text = "Print Data Pasien"
+        Me.Button2.UseVisualStyleBackColor = True
         '
         'Data_Pasien
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(877, 342)
-        Me.Controls.Add(Me.DateTimePicker1)
-        Me.Controls.Add(Me.Label1)
+        Me.ClientSize = New System.Drawing.Size(1123, 358)
+        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.PasienDataGridView)
+        Me.Controls.Add(Me.GroupBox_Data_Pasien)
+        Me.Controls.Add(Me.GroupBox_WaktudanTanggal)
         Me.Name = "Data_Pasien"
         Me.Text = "Data_Pasien"
+        Me.GroupBox_WaktudanTanggal.ResumeLayout(False)
+        Me.GroupBox_WaktudanTanggal.PerformLayout()
+        CType(Me.Sistem_informasi_rumahsakitDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PasienBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox_Data_Pasien.ResumeLayout(False)
+        Me.GroupBox_Data_Pasien.PerformLayout()
+        CType(Me.PasienDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents DateTimePicker1 As System.Windows.Forms.DateTimePicker
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
+    Friend WithEvents GroupBox_WaktudanTanggal As System.Windows.Forms.GroupBox
+    Friend WithEvents Tanggal As System.Windows.Forms.Label
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents LblDetik As System.Windows.Forms.Label
+    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents LblMenit As System.Windows.Forms.Label
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents LblJam As System.Windows.Forms.Label
+    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents Sistem_informasi_rumahsakitDataSet As Sistem_Informasi_Rumah_Sakit.sistem_informasi_rumahsakitDataSet
+    Friend WithEvents PasienBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents PasienTableAdapter As Sistem_Informasi_Rumah_Sakit.sistem_informasi_rumahsakitDataSetTableAdapters.pasienTableAdapter
+    Friend WithEvents TableAdapterManager As Sistem_Informasi_Rumah_Sakit.sistem_informasi_rumahsakitDataSetTableAdapters.TableAdapterManager
+    Friend WithEvents ID_PASIENTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents NAMA_PASIENTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents J_KComboBox As System.Windows.Forms.ComboBox
+    Friend WithEvents KOTA_PASIENTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents ALAMATTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents KELUHANTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents UMURComboBox As System.Windows.Forms.ComboBox
+    Friend WithEvents GroupBox_Data_Pasien As System.Windows.Forms.GroupBox
+    Friend WithEvents PasienDataGridView As System.Windows.Forms.DataGridView
+    Friend WithEvents DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn5 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn6 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn7 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents PrintDialog1 As System.Windows.Forms.PrintDialog
+    Friend WithEvents PrintDocument1 As System.Drawing.Printing.PrintDocument
+    Friend WithEvents Button2 As System.Windows.Forms.Button
 End Class

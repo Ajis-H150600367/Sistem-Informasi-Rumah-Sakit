@@ -9,3 +9,4 @@ C:\Users\pc\Documents\Sistem-Informasi-Rumah-Sakit\Jendela_Login\Jendela_Login\o
 C:\Users\pc\Documents\Sistem-Informasi-Rumah-Sakit\Jendela_Login\Jendela_Login\obj\x86\Debug\Sistem_Informasi_Rumah_Sakit.exe
 C:\Users\pc\Documents\Sistem-Informasi-Rumah-Sakit\Jendela_Login\Jendela_Login\obj\x86\Debug\Sistem_Informasi_Rumah_Sakit.xml
 C:\Users\pc\Documents\Sistem-Informasi-Rumah-Sakit\Jendela_Login\Jendela_Login\obj\x86\Debug\Sistem_Informasi_Rumah_Sakit.pdb
+C:\Users\pc\Documents\Sistem-Informasi-Rumah-Sakit\Jendela_Login\Jendela_Login\bin\Debug\Sistem_Informasi_Rumah_Sakit.exe.config
