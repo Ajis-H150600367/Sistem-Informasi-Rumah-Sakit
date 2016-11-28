@@ -14,7 +14,7 @@
     End Sub
 
     Private Sub Jendela_login_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        TextBox1.Text = "AJIS" 'bantuan kode username jendela login terlihat ditampilkan setelah dirunning'
-        TextBox2.Text = "AGIL2897" 'bantuan kode password jendela login terlihat ditampilkan setelah dirunning'
+        TextBox1.Text = "" 'bantuan kode username jendela login terlihat ditampilkan setelah dirunning'
+        TextBox2.Text = "" 'bantuan kode password jendela login terlihat ditampilkan setelah dirunning'
     End Sub
 End Class

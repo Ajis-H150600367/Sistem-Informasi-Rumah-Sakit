@@ -30,6 +30,7 @@ Partial Class Data_Pasien
         Dim ALAMATLabel As System.Windows.Forms.Label
         Dim KELUHANLabel As System.Windows.Forms.Label
         Dim UMURLabel As System.Windows.Forms.Label
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Data_Pasien))
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.GroupBox_WaktudanTanggal = New System.Windows.Forms.GroupBox()
         Me.Tanggal = New System.Windows.Forms.Label()
@@ -52,6 +53,13 @@ Partial Class Data_Pasien
         Me.KELUHANTextBox = New System.Windows.Forms.TextBox()
         Me.UMURComboBox = New System.Windows.Forms.ComboBox()
         Me.GroupBox_Data_Pasien = New System.Windows.Forms.GroupBox()
+        Me.Batal = New System.Windows.Forms.PictureBox()
+        Me.Keluar = New System.Windows.Forms.PictureBox()
+        Me.Edit = New System.Windows.Forms.PictureBox()
+        Me.Refresh = New System.Windows.Forms.PictureBox()
+        Me.Hapus = New System.Windows.Forms.PictureBox()
+        Me.Simpan = New System.Windows.Forms.PictureBox()
+        Me.Tambah = New System.Windows.Forms.PictureBox()
         Me.PasienDataGridView = New System.Windows.Forms.DataGridView()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -75,6 +83,13 @@ Partial Class Data_Pasien
         CType(Me.Sistem_informasi_rumahsakitDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PasienBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox_Data_Pasien.SuspendLayout()
+        CType(Me.Batal, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Keluar, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Edit, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Refresh, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Hapus, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Simpan, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Tambah, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PasienDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -263,6 +278,7 @@ Partial Class Data_Pasien
         'ID_PASIENTextBox
         '
         Me.ID_PASIENTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PasienBindingSource, "ID_PASIEN", True))
+        Me.ID_PASIENTextBox.Enabled = False
         Me.ID_PASIENTextBox.Location = New System.Drawing.Point(99, 19)
         Me.ID_PASIENTextBox.Name = "ID_PASIENTextBox"
         Me.ID_PASIENTextBox.Size = New System.Drawing.Size(121, 20)
@@ -271,6 +287,7 @@ Partial Class Data_Pasien
         'NAMA_PASIENTextBox
         '
         Me.NAMA_PASIENTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PasienBindingSource, "NAMA_PASIEN", True))
+        Me.NAMA_PASIENTextBox.Enabled = False
         Me.NAMA_PASIENTextBox.Location = New System.Drawing.Point(99, 45)
         Me.NAMA_PASIENTextBox.Name = "NAMA_PASIENTextBox"
         Me.NAMA_PASIENTextBox.Size = New System.Drawing.Size(188, 20)
@@ -279,6 +296,7 @@ Partial Class Data_Pasien
         'J_KComboBox
         '
         Me.J_KComboBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PasienBindingSource, "J_K", True))
+        Me.J_KComboBox.Enabled = False
         Me.J_KComboBox.FormattingEnabled = True
         Me.J_KComboBox.Items.AddRange(New Object() {"L", "P"})
         Me.J_KComboBox.Location = New System.Drawing.Point(99, 71)
@@ -289,6 +307,7 @@ Partial Class Data_Pasien
         'KOTA_PASIENTextBox
         '
         Me.KOTA_PASIENTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PasienBindingSource, "KOTA_PASIEN", True))
+        Me.KOTA_PASIENTextBox.Enabled = False
         Me.KOTA_PASIENTextBox.Location = New System.Drawing.Point(99, 98)
         Me.KOTA_PASIENTextBox.Name = "KOTA_PASIENTextBox"
         Me.KOTA_PASIENTextBox.Size = New System.Drawing.Size(188, 20)
@@ -297,6 +316,7 @@ Partial Class Data_Pasien
         'ALAMATTextBox
         '
         Me.ALAMATTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PasienBindingSource, "ALAMAT", True))
+        Me.ALAMATTextBox.Enabled = False
         Me.ALAMATTextBox.Location = New System.Drawing.Point(99, 150)
         Me.ALAMATTextBox.Name = "ALAMATTextBox"
         Me.ALAMATTextBox.Size = New System.Drawing.Size(158, 20)
@@ -305,6 +325,7 @@ Partial Class Data_Pasien
         'KELUHANTextBox
         '
         Me.KELUHANTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PasienBindingSource, "KELUHAN", True))
+        Me.KELUHANTextBox.Enabled = False
         Me.KELUHANTextBox.Location = New System.Drawing.Point(99, 127)
         Me.KELUHANTextBox.Name = "KELUHANTextBox"
         Me.KELUHANTextBox.Size = New System.Drawing.Size(188, 20)
@@ -313,6 +334,7 @@ Partial Class Data_Pasien
         'UMURComboBox
         '
         Me.UMURComboBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PasienBindingSource, "UMUR", True))
+        Me.UMURComboBox.Enabled = False
         Me.UMURComboBox.FormattingEnabled = True
         Me.UMURComboBox.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100"})
         Me.UMURComboBox.Location = New System.Drawing.Point(99, 176)
@@ -322,6 +344,13 @@ Partial Class Data_Pasien
         '
         'GroupBox_Data_Pasien
         '
+        Me.GroupBox_Data_Pasien.Controls.Add(Me.Batal)
+        Me.GroupBox_Data_Pasien.Controls.Add(Me.Keluar)
+        Me.GroupBox_Data_Pasien.Controls.Add(Me.Edit)
+        Me.GroupBox_Data_Pasien.Controls.Add(Me.Refresh)
+        Me.GroupBox_Data_Pasien.Controls.Add(Me.Hapus)
+        Me.GroupBox_Data_Pasien.Controls.Add(Me.Simpan)
+        Me.GroupBox_Data_Pasien.Controls.Add(Me.Tambah)
         Me.GroupBox_Data_Pasien.Controls.Add(Me.J_KComboBox)
         Me.GroupBox_Data_Pasien.Controls.Add(ID_PASIENLabel)
         Me.GroupBox_Data_Pasien.Controls.Add(Me.UMURComboBox)
@@ -336,12 +365,82 @@ Partial Class Data_Pasien
         Me.GroupBox_Data_Pasien.Controls.Add(ALAMATLabel)
         Me.GroupBox_Data_Pasien.Controls.Add(KOTA_PASIENLabel)
         Me.GroupBox_Data_Pasien.Controls.Add(Me.KOTA_PASIENTextBox)
-        Me.GroupBox_Data_Pasien.Location = New System.Drawing.Point(751, 64)
+        Me.GroupBox_Data_Pasien.Location = New System.Drawing.Point(714, 64)
         Me.GroupBox_Data_Pasien.Name = "GroupBox_Data_Pasien"
-        Me.GroupBox_Data_Pasien.Size = New System.Drawing.Size(340, 282)
+        Me.GroupBox_Data_Pasien.Size = New System.Drawing.Size(377, 353)
         Me.GroupBox_Data_Pasien.TabIndex = 31
         Me.GroupBox_Data_Pasien.TabStop = False
         Me.GroupBox_Data_Pasien.Text = "Data Pasien"
+        '
+        'Batal
+        '
+        Me.Batal.Image = CType(resources.GetObject("Batal.Image"), System.Drawing.Image)
+        Me.Batal.Location = New System.Drawing.Point(179, 278)
+        Me.Batal.Name = "Batal"
+        Me.Batal.Size = New System.Drawing.Size(77, 65)
+        Me.Batal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.Batal.TabIndex = 45
+        Me.Batal.TabStop = False
+        '
+        'Keluar
+        '
+        Me.Keluar.Image = CType(resources.GetObject("Keluar.Image"), System.Drawing.Image)
+        Me.Keluar.Location = New System.Drawing.Point(99, 281)
+        Me.Keluar.Name = "Keluar"
+        Me.Keluar.Size = New System.Drawing.Size(74, 62)
+        Me.Keluar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.Keluar.TabIndex = 43
+        Me.Keluar.TabStop = False
+        '
+        'Edit
+        '
+        Me.Edit.Image = CType(resources.GetObject("Edit.Image"), System.Drawing.Image)
+        Me.Edit.Location = New System.Drawing.Point(13, 281)
+        Me.Edit.Name = "Edit"
+        Me.Edit.Size = New System.Drawing.Size(74, 62)
+        Me.Edit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.Edit.TabIndex = 42
+        Me.Edit.TabStop = False
+        '
+        'Refresh
+        '
+        Me.Refresh.Image = CType(resources.GetObject("Refresh.Image"), System.Drawing.Image)
+        Me.Refresh.Location = New System.Drawing.Point(265, 281)
+        Me.Refresh.Name = "Refresh"
+        Me.Refresh.Size = New System.Drawing.Size(77, 62)
+        Me.Refresh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.Refresh.TabIndex = 41
+        Me.Refresh.TabStop = False
+        '
+        'Hapus
+        '
+        Me.Hapus.Image = CType(resources.GetObject("Hapus.Image"), System.Drawing.Image)
+        Me.Hapus.Location = New System.Drawing.Point(183, 203)
+        Me.Hapus.Name = "Hapus"
+        Me.Hapus.Size = New System.Drawing.Size(74, 65)
+        Me.Hapus.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.Hapus.TabIndex = 40
+        Me.Hapus.TabStop = False
+        '
+        'Simpan
+        '
+        Me.Simpan.Image = CType(resources.GetObject("Simpan.Image"), System.Drawing.Image)
+        Me.Simpan.Location = New System.Drawing.Point(99, 203)
+        Me.Simpan.Name = "Simpan"
+        Me.Simpan.Size = New System.Drawing.Size(74, 65)
+        Me.Simpan.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.Simpan.TabIndex = 39
+        Me.Simpan.TabStop = False
+        '
+        'Tambah
+        '
+        Me.Tambah.Image = CType(resources.GetObject("Tambah.Image"), System.Drawing.Image)
+        Me.Tambah.Location = New System.Drawing.Point(10, 203)
+        Me.Tambah.Name = "Tambah"
+        Me.Tambah.Size = New System.Drawing.Size(77, 65)
+        Me.Tambah.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.Tambah.TabIndex = 38
+        Me.Tambah.TabStop = False
         '
         'PasienDataGridView
         '
@@ -351,7 +450,7 @@ Partial Class Data_Pasien
         Me.PasienDataGridView.DataSource = Me.PasienBindingSource
         Me.PasienDataGridView.Location = New System.Drawing.Point(12, 64)
         Me.PasienDataGridView.Name = "PasienDataGridView"
-        Me.PasienDataGridView.Size = New System.Drawing.Size(733, 282)
+        Me.PasienDataGridView.Size = New System.Drawing.Size(696, 353)
         Me.PasienDataGridView.TabIndex = 31
         '
         'DataGridViewTextBoxColumn1
@@ -403,7 +502,7 @@ Partial Class Data_Pasien
         Me.Button1.ForeColor = System.Drawing.Color.MediumBlue
         Me.Button1.Location = New System.Drawing.Point(12, 10)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(88, 36)
+        Me.Button1.Size = New System.Drawing.Size(134, 36)
         Me.Button1.TabIndex = 32
         Me.Button1.Text = "Data Pasien"
         Me.Button1.UseVisualStyleBackColor = False
@@ -425,7 +524,7 @@ Partial Class Data_Pasien
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1123, 358)
+        Me.ClientSize = New System.Drawing.Size(1104, 449)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.PasienDataGridView)
@@ -439,6 +538,13 @@ Partial Class Data_Pasien
         CType(Me.PasienBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox_Data_Pasien.ResumeLayout(False)
         Me.GroupBox_Data_Pasien.PerformLayout()
+        CType(Me.Batal, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Keluar, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Edit, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Refresh, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Hapus, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Simpan, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Tambah, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PasienDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
@@ -477,4 +583,11 @@ Partial Class Data_Pasien
     Friend WithEvents PrintDialog1 As System.Windows.Forms.PrintDialog
     Friend WithEvents PrintDocument1 As System.Drawing.Printing.PrintDocument
     Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents Hapus As System.Windows.Forms.PictureBox
+    Friend WithEvents Simpan As System.Windows.Forms.PictureBox
+    Friend WithEvents Tambah As System.Windows.Forms.PictureBox
+    Friend WithEvents Refresh As System.Windows.Forms.PictureBox
+    Friend WithEvents Edit As System.Windows.Forms.PictureBox
+    Friend WithEvents Keluar As System.Windows.Forms.PictureBox
+    Friend WithEvents Batal As System.Windows.Forms.PictureBox
 End Class
