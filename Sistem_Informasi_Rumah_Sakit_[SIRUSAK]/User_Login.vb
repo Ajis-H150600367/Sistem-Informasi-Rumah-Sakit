@@ -10,7 +10,7 @@
 
     Private Sub OK_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OK.Click
         Dim formlogin As New Menu_Utama 'setelah login menu utama akan tampil dan merupakan menu utama dari seluruh form tabel'
-        If (UsernameTextBox.Text = "ajispoltanesa.mi2015@gmail.com ") And (PasswordTextBox.Text = "AGIL2897") Then 'jika username yang dimasukan adalah AJIS dan password dimasukan adalah AGIL2897'
+        If (UsernameTextBox.Text = "ajis") And (PasswordTextBox.Text = "agil2897") Then 'jika username yang dimasukan adalah AJIS dan password dimasukan adalah AGIL2897'
             MessageBox.Show("Selamat Anda Berhasil Login", "Konfirmasi") ' maka notife berhasil'
 
             Menu_Utama.Show() 'maka menu utama di tampilkan'

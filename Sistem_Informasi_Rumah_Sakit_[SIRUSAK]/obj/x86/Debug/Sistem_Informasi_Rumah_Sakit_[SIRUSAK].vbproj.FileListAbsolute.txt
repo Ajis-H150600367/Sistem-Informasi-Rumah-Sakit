@@ -10,3 +10,15 @@ C:\Users\pc\Documents\Sistem-Informasi-Rumah-Sakit\Sistem_Informasi_Rumah_Sakit_
 C:\Users\pc\Documents\Sistem-Informasi-Rumah-Sakit\Sistem_Informasi_Rumah_Sakit_[SIRUSAK]\Sistem_Informasi_Rumah_Sakit_[SIRUSAK]\obj\x86\Debug\Sistem_Informasi_Rumah_Sakit_[SIRUSAK].xml
 C:\Users\pc\Documents\Sistem-Informasi-Rumah-Sakit\Sistem_Informasi_Rumah_Sakit_[SIRUSAK]\Sistem_Informasi_Rumah_Sakit_[SIRUSAK]\obj\x86\Debug\Sistem_Informasi_Rumah_Sakit_[SIRUSAK].pdb
 C:\Users\pc\Documents\Sistem-Informasi-Rumah-Sakit\Sistem_Informasi_Rumah_Sakit_[SIRUSAK]\Sistem_Informasi_Rumah_Sakit_[SIRUSAK]\obj\x86\Debug\Sistem_Informasi_Rumah_Sakit__SIRUSAK_.User_Login.resources
+C:\Users\pc\Documents\Sistem-Informasi-Rumah-Sakit\Sistem_Informasi_Rumah_Sakit_[SIRUSAK]\obj\x86\Debug\Sistem_Informasi_Rumah_Sakit_[SIRUSAK].exe
+C:\Users\pc\Documents\Sistem-Informasi-Rumah-Sakit\Sistem_Informasi_Rumah_Sakit_[SIRUSAK]\obj\x86\Debug\Sistem_Informasi_Rumah_Sakit_[SIRUSAK].xml
+C:\Users\pc\Documents\Sistem-Informasi-Rumah-Sakit\Sistem_Informasi_Rumah_Sakit_[SIRUSAK]\obj\x86\Debug\Sistem_Informasi_Rumah_Sakit_[SIRUSAK].pdb
+C:\Users\pc\Documents\Sistem-Informasi-Rumah-Sakit\Sistem_Informasi_Rumah_Sakit_[SIRUSAK]\bin\Debug\Sistem_Informasi_Rumah_Sakit_[SIRUSAK].exe
+C:\Users\pc\Documents\Sistem-Informasi-Rumah-Sakit\Sistem_Informasi_Rumah_Sakit_[SIRUSAK]\bin\Debug\Sistem_Informasi_Rumah_Sakit_[SIRUSAK].pdb
+C:\Users\pc\Documents\Sistem-Informasi-Rumah-Sakit\Sistem_Informasi_Rumah_Sakit_[SIRUSAK]\bin\Debug\Sistem_Informasi_Rumah_Sakit_[SIRUSAK].xml
+C:\Users\pc\Documents\Sistem-Informasi-Rumah-Sakit\Sistem_Informasi_Rumah_Sakit_[SIRUSAK]\obj\x86\Debug\Sistem_Informasi_Rumah_Sakit__SIRUSAK_.Login_Master.resources
+C:\Users\pc\Documents\Sistem-Informasi-Rumah-Sakit\Sistem_Informasi_Rumah_Sakit_[SIRUSAK]\obj\x86\Debug\Sistem_Informasi_Rumah_Sakit__SIRUSAK_.Menu_Utama.resources
+C:\Users\pc\Documents\Sistem-Informasi-Rumah-Sakit\Sistem_Informasi_Rumah_Sakit_[SIRUSAK]\obj\x86\Debug\Sistem_Informasi_Rumah_Sakit__SIRUSAK_.Resources.resources
+C:\Users\pc\Documents\Sistem-Informasi-Rumah-Sakit\Sistem_Informasi_Rumah_Sakit_[SIRUSAK]\obj\x86\Debug\Sistem_Informasi_Rumah_Sakit__SIRUSAK_.User_Login.resources
+C:\Users\pc\Documents\Sistem-Informasi-Rumah-Sakit\Sistem_Informasi_Rumah_Sakit_[SIRUSAK]\obj\x86\Debug\Sistem_Informasi_Rumah_Sakit_[SIRUSAK].vbproj.GenerateResource.Cache
+C:\Users\pc\Documents\Sistem-Informasi-Rumah-Sakit\Sistem_Informasi_Rumah_Sakit_[SIRUSAK]\obj\x86\Debug\Sistem_Informasi_Rumah_Sakit__SIRUSAK_.Halaman_Login.resources
