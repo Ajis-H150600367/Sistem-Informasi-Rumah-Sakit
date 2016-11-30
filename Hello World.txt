@@ -1,7 +1,0 @@
-Hello World
- 		Login master 
-
----> Master Create Form Login
----> create menu utama [ master data]
----> create form pasien
----> create form lobi
