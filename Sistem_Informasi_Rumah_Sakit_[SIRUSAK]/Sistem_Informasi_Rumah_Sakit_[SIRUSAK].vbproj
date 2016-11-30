@@ -77,6 +77,12 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="dokter.Designer.vb">
+      <DependentUpon>dokter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dokter.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Halaman_Login.Designer.vb">
       <DependentUpon>Halaman_Login.vb</DependentUpon>
     </Compile>
@@ -130,6 +136,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="dokter.resx">
+      <DependentUpon>dokter.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Halaman_Login.resx">
       <DependentUpon>Halaman_Login.vb</DependentUpon>
     </EmbeddedResource>
@@ -158,6 +167,8 @@
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
     </None>
+    <None Include="My Project\DataSources\Sistem_Informasi_Rumah_Sakit__SIRUSAK_.My.MyApplication.datasource" />
+    <None Include="My Project\DataSources\Sistem_Informasi_Rumah_Sakit__SIRUSAK_.My.MySettings.datasource" />
     <None Include="My Project\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <CustomToolNamespace>My</CustomToolNamespace>
