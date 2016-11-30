@@ -10,7 +10,7 @@
 
     Private Sub OK_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OK.Click
         Dim JendelaLogin As New Beranda 'setelah login menu utama akan tampil dan merupakan menu utama dari seluruh form tabel'
-        If (UsernameTextBox.Text = "jumiaty") And (PasswordTextBox.Text = "H150600383") Then 'jika username yang dimasukan adalah AJIS dan password dimasukan adalah AGIL2897'
+        If (UsernameTextBox.Text = "rumahsakit") And (PasswordTextBox.Text = "mi3a") Then 'jika username yang dimasukan adalah AJIS dan password dimasukan adalah AGIL2897'
             MessageBox.Show("Selamat Anda Berhasil Login", "Konfirmasi") ' maka notife berhasil'
 
             Beranda.Show() 'maka menu beranda di tampilkan'
