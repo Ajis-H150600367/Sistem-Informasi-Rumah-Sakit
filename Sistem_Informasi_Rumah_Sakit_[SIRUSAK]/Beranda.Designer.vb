@@ -24,11 +24,11 @@ Partial Class Beranda
     Private Sub InitializeComponent()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.BerandaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.MenuPilihanToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PasienToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.LobiToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RuanganToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.DokterToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MenuPilihanToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -50,13 +50,6 @@ Partial Class Beranda
         Me.BerandaToolStripMenuItem.Name = "BerandaToolStripMenuItem"
         Me.BerandaToolStripMenuItem.Size = New System.Drawing.Size(90, 25)
         Me.BerandaToolStripMenuItem.Text = "&Beranda"
-        '
-        'MenuPilihanToolStripMenuItem
-        '
-        Me.MenuPilihanToolStripMenuItem.Font = New System.Drawing.Font("Elephant", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MenuPilihanToolStripMenuItem.Name = "MenuPilihanToolStripMenuItem"
-        Me.MenuPilihanToolStripMenuItem.Size = New System.Drawing.Size(128, 25)
-        Me.MenuPilihanToolStripMenuItem.Text = "Menu Pilihan"
         '
         'PasienToolStripMenuItem
         '
@@ -81,6 +74,13 @@ Partial Class Beranda
         Me.DokterToolStripMenuItem.Name = "DokterToolStripMenuItem"
         Me.DokterToolStripMenuItem.Size = New System.Drawing.Size(152, 26)
         Me.DokterToolStripMenuItem.Text = "&Dokter"
+        '
+        'MenuPilihanToolStripMenuItem
+        '
+        Me.MenuPilihanToolStripMenuItem.Font = New System.Drawing.Font("Elephant", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MenuPilihanToolStripMenuItem.Name = "MenuPilihanToolStripMenuItem"
+        Me.MenuPilihanToolStripMenuItem.Size = New System.Drawing.Size(128, 25)
+        Me.MenuPilihanToolStripMenuItem.Text = "Menu Pilihan"
         '
         'Beranda
         '

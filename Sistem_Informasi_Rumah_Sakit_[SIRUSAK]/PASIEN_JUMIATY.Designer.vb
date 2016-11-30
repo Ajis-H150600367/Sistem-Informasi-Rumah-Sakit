@@ -60,7 +60,7 @@ Partial Class PASIEN_JUMIATY
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(31, 25)
+        Me.Label1.Location = New System.Drawing.Point(12, 51)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(49, 13)
         Me.Label1.TabIndex = 0
@@ -211,7 +211,7 @@ Partial Class PASIEN_JUMIATY
         Me.PasienDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.PasienDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7})
         Me.PasienDataGridView.DataSource = Me.PasienBindingSource
-        Me.PasienDataGridView.Location = New System.Drawing.Point(23, 50)
+        Me.PasienDataGridView.Location = New System.Drawing.Point(12, 79)
         Me.PasienDataGridView.Name = "PasienDataGridView"
         Me.PasienDataGridView.Size = New System.Drawing.Size(744, 206)
         Me.PasienDataGridView.TabIndex = 2
