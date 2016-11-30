@@ -50,6 +50,9 @@ Partial Class PASIEN_JUMIATY
         Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
         CType(Me.Sistem_informasi_rumah_sakitDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PasienBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PasienBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -213,7 +216,7 @@ Partial Class PASIEN_JUMIATY
         Me.PasienDataGridView.DataSource = Me.PasienBindingSource
         Me.PasienDataGridView.Location = New System.Drawing.Point(12, 79)
         Me.PasienDataGridView.Name = "PasienDataGridView"
-        Me.PasienDataGridView.Size = New System.Drawing.Size(744, 206)
+        Me.PasienDataGridView.Size = New System.Drawing.Size(734, 118)
         Me.PasienDataGridView.TabIndex = 2
         '
         'DataGridViewTextBoxColumn1
@@ -258,11 +261,41 @@ Partial Class PASIEN_JUMIATY
         Me.DataGridViewTextBoxColumn7.HeaderText = "UMUR"
         Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(12, 222)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(80, 33)
+        Me.Button1.TabIndex = 3
+        Me.Button1.Text = "TAMBAH"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(122, 222)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(87, 33)
+        Me.Button2.TabIndex = 4
+        Me.Button2.Text = "HAPUS"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(237, 222)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(83, 33)
+        Me.Button3.TabIndex = 5
+        Me.Button3.Text = "SIMPAN"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
         'PASIEN_JUMIATY
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(875, 353)
+        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.PasienDataGridView)
         Me.Controls.Add(Me.PasienBindingNavigator)
         Me.Controls.Add(Me.Label1)
@@ -304,4 +337,7 @@ Partial Class PASIEN_JUMIATY
     Friend WithEvents DataGridViewTextBoxColumn5 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn6 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn7 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents Button3 As System.Windows.Forms.Button
 End Class
