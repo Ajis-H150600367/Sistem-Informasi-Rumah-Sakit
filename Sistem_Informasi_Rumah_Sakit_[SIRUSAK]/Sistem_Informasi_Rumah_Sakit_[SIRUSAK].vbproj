@@ -49,10 +49,15 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Transactions" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -112,6 +117,11 @@
     <Compile Include="PASIEN_JUMIATY.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="sistem_informasi_rumah_sakitDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sistem_informasi_rumah_sakitDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="User_Login.Designer.vb">
       <DependentUpon>User_Login.vb</DependentUpon>
     </Compile>
@@ -143,6 +153,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -151,6 +162,17 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="sistem_informasi_rumah_sakitDataSet.xsc">
+      <DependentUpon>sistem_informasi_rumah_sakitDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="sistem_informasi_rumah_sakitDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sistem_informasi_rumah_sakitDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sistem_informasi_rumah_sakitDataSet.xss">
+      <DependentUpon>sistem_informasi_rumah_sakitDataSet.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
