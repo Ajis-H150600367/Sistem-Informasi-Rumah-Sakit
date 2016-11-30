@@ -89,6 +89,12 @@
     <Compile Include="Halaman_Login.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Lobi.Designer.vb">
+      <DependentUpon>Lobi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lobi.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Login_Master.Designer.vb">
       <DependentUpon>Login_Master.vb</DependentUpon>
     </Compile>
@@ -141,6 +147,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Halaman_Login.resx">
       <DependentUpon>Halaman_Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lobi.resx">
+      <DependentUpon>Lobi.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login_Master.resx">
       <DependentUpon>Login_Master.vb</DependentUpon>
