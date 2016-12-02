@@ -29,12 +29,13 @@ Partial Class Beranda
         Me.RuanganToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.DokterToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuPilihanToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CloseAllToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BerandaToolStripMenuItem, Me.MenuPilihanToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BerandaToolStripMenuItem, Me.MenuPilihanToolStripMenuItem, Me.CloseAllToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(1015, 29)
@@ -82,6 +83,13 @@ Partial Class Beranda
         Me.MenuPilihanToolStripMenuItem.Size = New System.Drawing.Size(128, 25)
         Me.MenuPilihanToolStripMenuItem.Text = "Menu Pilihan"
         '
+        'CloseAllToolStripMenuItem
+        '
+        Me.CloseAllToolStripMenuItem.Font = New System.Drawing.Font("Elephant", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CloseAllToolStripMenuItem.Name = "CloseAllToolStripMenuItem"
+        Me.CloseAllToolStripMenuItem.Size = New System.Drawing.Size(91, 25)
+        Me.CloseAllToolStripMenuItem.Text = "Close All"
+        '
         'Beranda
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -104,5 +112,6 @@ Partial Class Beranda
     Friend WithEvents RuanganToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents DokterToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents MenuPilihanToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents CloseAllToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class

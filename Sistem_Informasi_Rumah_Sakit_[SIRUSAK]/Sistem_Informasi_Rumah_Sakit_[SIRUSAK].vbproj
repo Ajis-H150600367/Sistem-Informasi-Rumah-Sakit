@@ -123,16 +123,16 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="PASIEN_JUMIATY.Designer.vb">
-      <DependentUpon>PASIEN_JUMIATY.vb</DependentUpon>
+    <Compile Include="Pasien.Designer.vb">
+      <DependentUpon>Pasien.vb</DependentUpon>
     </Compile>
-    <Compile Include="PASIEN_JUMIATY.vb">
+    <Compile Include="Pasien.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="sistem_informasi_rumah_sakitDataSet.Designer.vb">
+    <Compile Include="sistem_informasi_rumahsakitDataSet.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>sistem_informasi_rumah_sakitDataSet.xsd</DependentUpon>
+      <DependentUpon>sistem_informasi_rumahsakitDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="User_Login.Designer.vb">
       <DependentUpon>User_Login.vb</DependentUpon>
@@ -163,8 +163,8 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="PASIEN_JUMIATY.resx">
-      <DependentUpon>PASIEN_JUMIATY.vb</DependentUpon>
+    <EmbeddedResource Include="Pasien.resx">
+      <DependentUpon>Pasien.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User_Login.resx">
       <DependentUpon>User_Login.vb</DependentUpon>
@@ -183,16 +183,16 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
-    <None Include="sistem_informasi_rumah_sakitDataSet.xsc">
-      <DependentUpon>sistem_informasi_rumah_sakitDataSet.xsd</DependentUpon>
+    <None Include="sistem_informasi_rumahsakitDataSet.xsc">
+      <DependentUpon>sistem_informasi_rumahsakitDataSet.xsd</DependentUpon>
     </None>
-    <None Include="sistem_informasi_rumah_sakitDataSet.xsd">
+    <None Include="sistem_informasi_rumahsakitDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>sistem_informasi_rumah_sakitDataSet.Designer.vb</LastGenOutput>
+      <LastGenOutput>sistem_informasi_rumahsakitDataSet.Designer.vb</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="sistem_informasi_rumah_sakitDataSet.xss">
-      <DependentUpon>sistem_informasi_rumah_sakitDataSet.xsd</DependentUpon>
+    <None Include="sistem_informasi_rumahsakitDataSet.xss">
+      <DependentUpon>sistem_informasi_rumahsakitDataSet.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
