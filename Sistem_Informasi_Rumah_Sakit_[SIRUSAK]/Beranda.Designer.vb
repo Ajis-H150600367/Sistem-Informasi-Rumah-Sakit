@@ -30,6 +30,9 @@ Partial Class Beranda
         Me.DokterToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuPilihanToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CloseAllToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PASIEN01ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.DOKTERToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.OBAT01ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -45,7 +48,7 @@ Partial Class Beranda
         'BerandaToolStripMenuItem
         '
         Me.BerandaToolStripMenuItem.BackColor = System.Drawing.Color.Lime
-        Me.BerandaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PasienToolStripMenuItem, Me.LobiToolStripMenuItem, Me.RuanganToolStripMenuItem, Me.DokterToolStripMenuItem})
+        Me.BerandaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PasienToolStripMenuItem, Me.LobiToolStripMenuItem, Me.RuanganToolStripMenuItem, Me.DokterToolStripMenuItem, Me.PASIEN01ToolStripMenuItem, Me.DOKTERToolStripMenuItem1, Me.OBAT01ToolStripMenuItem})
         Me.BerandaToolStripMenuItem.Font = New System.Drawing.Font("Elephant", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BerandaToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.BerandaToolStripMenuItem.Name = "BerandaToolStripMenuItem"
@@ -55,25 +58,25 @@ Partial Class Beranda
         'PasienToolStripMenuItem
         '
         Me.PasienToolStripMenuItem.Name = "PasienToolStripMenuItem"
-        Me.PasienToolStripMenuItem.Size = New System.Drawing.Size(152, 26)
+        Me.PasienToolStripMenuItem.Size = New System.Drawing.Size(173, 26)
         Me.PasienToolStripMenuItem.Text = "&Pasien"
         '
         'LobiToolStripMenuItem
         '
         Me.LobiToolStripMenuItem.Name = "LobiToolStripMenuItem"
-        Me.LobiToolStripMenuItem.Size = New System.Drawing.Size(152, 26)
+        Me.LobiToolStripMenuItem.Size = New System.Drawing.Size(173, 26)
         Me.LobiToolStripMenuItem.Text = "&Lobi"
         '
         'RuanganToolStripMenuItem
         '
         Me.RuanganToolStripMenuItem.Name = "RuanganToolStripMenuItem"
-        Me.RuanganToolStripMenuItem.Size = New System.Drawing.Size(152, 26)
+        Me.RuanganToolStripMenuItem.Size = New System.Drawing.Size(173, 26)
         Me.RuanganToolStripMenuItem.Text = "&Ruangan"
         '
         'DokterToolStripMenuItem
         '
         Me.DokterToolStripMenuItem.Name = "DokterToolStripMenuItem"
-        Me.DokterToolStripMenuItem.Size = New System.Drawing.Size(152, 26)
+        Me.DokterToolStripMenuItem.Size = New System.Drawing.Size(173, 26)
         Me.DokterToolStripMenuItem.Text = "&Dokter"
         '
         'MenuPilihanToolStripMenuItem
@@ -89,6 +92,24 @@ Partial Class Beranda
         Me.CloseAllToolStripMenuItem.Name = "CloseAllToolStripMenuItem"
         Me.CloseAllToolStripMenuItem.Size = New System.Drawing.Size(91, 25)
         Me.CloseAllToolStripMenuItem.Text = "Close All"
+        '
+        'PASIEN01ToolStripMenuItem
+        '
+        Me.PASIEN01ToolStripMenuItem.Name = "PASIEN01ToolStripMenuItem"
+        Me.PASIEN01ToolStripMenuItem.Size = New System.Drawing.Size(173, 26)
+        Me.PASIEN01ToolStripMenuItem.Text = "PASIEN01"
+        '
+        'DOKTERToolStripMenuItem1
+        '
+        Me.DOKTERToolStripMenuItem1.Name = "DOKTERToolStripMenuItem1"
+        Me.DOKTERToolStripMenuItem1.Size = New System.Drawing.Size(173, 26)
+        Me.DOKTERToolStripMenuItem1.Text = "DOKTER"
+        '
+        'OBAT01ToolStripMenuItem
+        '
+        Me.OBAT01ToolStripMenuItem.Name = "OBAT01ToolStripMenuItem"
+        Me.OBAT01ToolStripMenuItem.Size = New System.Drawing.Size(173, 26)
+        Me.OBAT01ToolStripMenuItem.Text = "OBAT01"
         '
         'Beranda
         '
@@ -113,5 +134,8 @@ Partial Class Beranda
     Friend WithEvents DokterToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents MenuPilihanToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents CloseAllToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents PASIEN01ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents DOKTERToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents OBAT01ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class

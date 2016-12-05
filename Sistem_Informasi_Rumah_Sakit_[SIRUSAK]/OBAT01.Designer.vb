@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class dokter
+Partial Class OBAT01
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -23,12 +23,12 @@ Partial Class dokter
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(dokter))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(OBAT01))
         Me.Sistem_informasi_rumahsakitDataSet = New Sistem_Informasi_Rumah_Sakit__SIRUSAK_.sistem_informasi_rumahsakitDataSet()
-        Me.DokterBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.DokterTableAdapter = New Sistem_Informasi_Rumah_Sakit__SIRUSAK_.sistem_informasi_rumahsakitDataSetTableAdapters.dokterTableAdapter()
+        Me.ObatBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.ObatTableAdapter = New Sistem_Informasi_Rumah_Sakit__SIRUSAK_.sistem_informasi_rumahsakitDataSetTableAdapters.obatTableAdapter()
         Me.TableAdapterManager = New Sistem_Informasi_Rumah_Sakit__SIRUSAK_.sistem_informasi_rumahsakitDataSetTableAdapters.TableAdapterManager()
-        Me.DokterBindingNavigator = New System.Windows.Forms.BindingNavigator(Me.components)
+        Me.ObatBindingNavigator = New System.Windows.Forms.BindingNavigator(Me.components)
         Me.BindingNavigatorMoveFirstItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorMovePreviousItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorSeparator = New System.Windows.Forms.ToolStripSeparator()
@@ -40,19 +40,17 @@ Partial Class dokter
         Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
-        Me.DokterBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
-        Me.DokterDataGridView = New System.Windows.Forms.DataGridView()
+        Me.ObatBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
+        Me.ObatDataGridView = New System.Windows.Forms.DataGridView()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.Sistem_informasi_rumahsakitDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DokterBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DokterBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.DokterBindingNavigator.SuspendLayout()
-        CType(Me.DokterDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ObatBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ObatBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.ObatBindingNavigator.SuspendLayout()
+        CType(Me.ObatDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Sistem_informasi_rumahsakitDataSet
@@ -60,46 +58,46 @@ Partial Class dokter
         Me.Sistem_informasi_rumahsakitDataSet.DataSetName = "sistem_informasi_rumahsakitDataSet"
         Me.Sistem_informasi_rumahsakitDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
-        'DokterBindingSource
+        'ObatBindingSource
         '
-        Me.DokterBindingSource.DataMember = "dokter"
-        Me.DokterBindingSource.DataSource = Me.Sistem_informasi_rumahsakitDataSet
+        Me.ObatBindingSource.DataMember = "obat"
+        Me.ObatBindingSource.DataSource = Me.Sistem_informasi_rumahsakitDataSet
         '
-        'DokterTableAdapter
+        'ObatTableAdapter
         '
-        Me.DokterTableAdapter.ClearBeforeFill = True
+        Me.ObatTableAdapter.ClearBeforeFill = True
         '
         'TableAdapterManager
         '
         Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
         Me.TableAdapterManager.dokter_has_obatTableAdapter = Nothing
-        Me.TableAdapterManager.dokterTableAdapter = Me.DokterTableAdapter
+        Me.TableAdapterManager.dokterTableAdapter = Nothing
         Me.TableAdapterManager.kasirTableAdapter = Nothing
         Me.TableAdapterManager.lobiTableAdapter = Nothing
-        Me.TableAdapterManager.obatTableAdapter = Nothing
+        Me.TableAdapterManager.obatTableAdapter = Me.ObatTableAdapter
         Me.TableAdapterManager.pasien_has_obatTableAdapter = Nothing
         Me.TableAdapterManager.pasienTableAdapter = Nothing
         Me.TableAdapterManager.ruangan_has_dokterTableAdapter = Nothing
         Me.TableAdapterManager.ruanganTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = Sistem_Informasi_Rumah_Sakit__SIRUSAK_.sistem_informasi_rumahsakitDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         '
-        'DokterBindingNavigator
+        'ObatBindingNavigator
         '
-        Me.DokterBindingNavigator.AddNewItem = Me.BindingNavigatorAddNewItem
-        Me.DokterBindingNavigator.BindingSource = Me.DokterBindingSource
-        Me.DokterBindingNavigator.CountItem = Me.BindingNavigatorCountItem
-        Me.DokterBindingNavigator.DeleteItem = Me.BindingNavigatorDeleteItem
-        Me.DokterBindingNavigator.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BindingNavigatorMoveFirstItem, Me.BindingNavigatorMovePreviousItem, Me.BindingNavigatorSeparator, Me.BindingNavigatorPositionItem, Me.BindingNavigatorCountItem, Me.BindingNavigatorSeparator1, Me.BindingNavigatorMoveNextItem, Me.BindingNavigatorMoveLastItem, Me.BindingNavigatorSeparator2, Me.BindingNavigatorAddNewItem, Me.BindingNavigatorDeleteItem, Me.DokterBindingNavigatorSaveItem})
-        Me.DokterBindingNavigator.Location = New System.Drawing.Point(0, 0)
-        Me.DokterBindingNavigator.MoveFirstItem = Me.BindingNavigatorMoveFirstItem
-        Me.DokterBindingNavigator.MoveLastItem = Me.BindingNavigatorMoveLastItem
-        Me.DokterBindingNavigator.MoveNextItem = Me.BindingNavigatorMoveNextItem
-        Me.DokterBindingNavigator.MovePreviousItem = Me.BindingNavigatorMovePreviousItem
-        Me.DokterBindingNavigator.Name = "DokterBindingNavigator"
-        Me.DokterBindingNavigator.PositionItem = Me.BindingNavigatorPositionItem
-        Me.DokterBindingNavigator.Size = New System.Drawing.Size(715, 25)
-        Me.DokterBindingNavigator.TabIndex = 0
-        Me.DokterBindingNavigator.Text = "BindingNavigator1"
+        Me.ObatBindingNavigator.AddNewItem = Me.BindingNavigatorAddNewItem
+        Me.ObatBindingNavigator.BindingSource = Me.ObatBindingSource
+        Me.ObatBindingNavigator.CountItem = Me.BindingNavigatorCountItem
+        Me.ObatBindingNavigator.DeleteItem = Me.BindingNavigatorDeleteItem
+        Me.ObatBindingNavigator.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BindingNavigatorMoveFirstItem, Me.BindingNavigatorMovePreviousItem, Me.BindingNavigatorSeparator, Me.BindingNavigatorPositionItem, Me.BindingNavigatorCountItem, Me.BindingNavigatorSeparator1, Me.BindingNavigatorMoveNextItem, Me.BindingNavigatorMoveLastItem, Me.BindingNavigatorSeparator2, Me.BindingNavigatorAddNewItem, Me.BindingNavigatorDeleteItem, Me.ObatBindingNavigatorSaveItem})
+        Me.ObatBindingNavigator.Location = New System.Drawing.Point(0, 0)
+        Me.ObatBindingNavigator.MoveFirstItem = Me.BindingNavigatorMoveFirstItem
+        Me.ObatBindingNavigator.MoveLastItem = Me.BindingNavigatorMoveLastItem
+        Me.ObatBindingNavigator.MoveNextItem = Me.BindingNavigatorMoveNextItem
+        Me.ObatBindingNavigator.MovePreviousItem = Me.BindingNavigatorMovePreviousItem
+        Me.ObatBindingNavigator.Name = "ObatBindingNavigator"
+        Me.ObatBindingNavigator.PositionItem = Me.BindingNavigatorPositionItem
+        Me.ObatBindingNavigator.Size = New System.Drawing.Size(628, 25)
+        Me.ObatBindingNavigator.TabIndex = 0
+        Me.ObatBindingNavigator.Text = "BindingNavigator1"
         '
         'BindingNavigatorMoveFirstItem
         '
@@ -186,85 +184,73 @@ Partial Class dokter
         Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(23, 20)
         Me.BindingNavigatorDeleteItem.Text = "Delete"
         '
-        'DokterBindingNavigatorSaveItem
+        'ObatBindingNavigatorSaveItem
         '
-        Me.DokterBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.DokterBindingNavigatorSaveItem.Image = CType(resources.GetObject("DokterBindingNavigatorSaveItem.Image"), System.Drawing.Image)
-        Me.DokterBindingNavigatorSaveItem.Name = "DokterBindingNavigatorSaveItem"
-        Me.DokterBindingNavigatorSaveItem.Size = New System.Drawing.Size(23, 23)
-        Me.DokterBindingNavigatorSaveItem.Text = "Save Data"
+        Me.ObatBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.ObatBindingNavigatorSaveItem.Image = CType(resources.GetObject("ObatBindingNavigatorSaveItem.Image"), System.Drawing.Image)
+        Me.ObatBindingNavigatorSaveItem.Name = "ObatBindingNavigatorSaveItem"
+        Me.ObatBindingNavigatorSaveItem.Size = New System.Drawing.Size(23, 23)
+        Me.ObatBindingNavigatorSaveItem.Text = "Save Data"
         '
-        'DokterDataGridView
+        'ObatDataGridView
         '
-        Me.DokterDataGridView.AutoGenerateColumns = False
-        Me.DokterDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DokterDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6})
-        Me.DokterDataGridView.DataSource = Me.DokterBindingSource
-        Me.DokterDataGridView.Location = New System.Drawing.Point(12, 30)
-        Me.DokterDataGridView.Name = "DokterDataGridView"
-        Me.DokterDataGridView.Size = New System.Drawing.Size(644, 186)
-        Me.DokterDataGridView.TabIndex = 1
+        Me.ObatDataGridView.AutoGenerateColumns = False
+        Me.ObatDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.ObatDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4})
+        Me.ObatDataGridView.DataSource = Me.ObatBindingSource
+        Me.ObatDataGridView.Location = New System.Drawing.Point(12, 37)
+        Me.ObatDataGridView.Name = "ObatDataGridView"
+        Me.ObatDataGridView.Size = New System.Drawing.Size(444, 176)
+        Me.ObatDataGridView.TabIndex = 1
         '
         'DataGridViewTextBoxColumn1
         '
-        Me.DataGridViewTextBoxColumn1.DataPropertyName = "ID_DOKTER"
-        Me.DataGridViewTextBoxColumn1.HeaderText = "ID_DOKTER"
+        Me.DataGridViewTextBoxColumn1.DataPropertyName = "ID_OBAT"
+        Me.DataGridViewTextBoxColumn1.HeaderText = "ID_OBAT"
         Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
         '
         'DataGridViewTextBoxColumn2
         '
-        Me.DataGridViewTextBoxColumn2.DataPropertyName = "NAMA_DOKTER"
-        Me.DataGridViewTextBoxColumn2.HeaderText = "NAMA_DOKTER"
+        Me.DataGridViewTextBoxColumn2.DataPropertyName = "NAMA_OBAT"
+        Me.DataGridViewTextBoxColumn2.HeaderText = "NAMA_OBAT"
         Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
         '
         'DataGridViewTextBoxColumn3
         '
-        Me.DataGridViewTextBoxColumn3.DataPropertyName = "SPESIALIS"
-        Me.DataGridViewTextBoxColumn3.HeaderText = "SPESIALIS"
+        Me.DataGridViewTextBoxColumn3.DataPropertyName = "MASA_BERLAKU"
+        Me.DataGridViewTextBoxColumn3.HeaderText = "MASA_BERLAKU"
         Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
         '
         'DataGridViewTextBoxColumn4
         '
-        Me.DataGridViewTextBoxColumn4.DataPropertyName = "ALAMAT"
-        Me.DataGridViewTextBoxColumn4.HeaderText = "ALAMAT"
+        Me.DataGridViewTextBoxColumn4.DataPropertyName = "HARGA"
+        Me.DataGridViewTextBoxColumn4.HeaderText = "HARGA"
         Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
         '
-        'DataGridViewTextBoxColumn5
-        '
-        Me.DataGridViewTextBoxColumn5.DataPropertyName = "NO_TELPON"
-        Me.DataGridViewTextBoxColumn5.HeaderText = "NO_TELPON"
-        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
-        '
-        'DataGridViewTextBoxColumn6
-        '
-        Me.DataGridViewTextBoxColumn6.DataPropertyName = "Pasien_ID_PASIEN"
-        Me.DataGridViewTextBoxColumn6.HeaderText = "Pasien_ID_PASIEN"
-        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
-        '
-        'dokter
+        'OBAT01
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(715, 262)
-        Me.Controls.Add(Me.DokterDataGridView)
-        Me.Controls.Add(Me.DokterBindingNavigator)
-        Me.Name = "dokter"
-        Me.Text = "dokter"
+        Me.ClientSize = New System.Drawing.Size(628, 309)
+        Me.Controls.Add(Me.ObatDataGridView)
+        Me.Controls.Add(Me.ObatBindingNavigator)
+        Me.Name = "OBAT01"
+        Me.Text = "OBAT01"
         CType(Me.Sistem_informasi_rumahsakitDataSet, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DokterBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DokterBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.DokterBindingNavigator.ResumeLayout(False)
-        Me.DokterBindingNavigator.PerformLayout()
-        CType(Me.DokterDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ObatBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ObatBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ObatBindingNavigator.ResumeLayout(False)
+        Me.ObatBindingNavigator.PerformLayout()
+        CType(Me.ObatDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
     Friend WithEvents Sistem_informasi_rumahsakitDataSet As Sistem_Informasi_Rumah_Sakit__SIRUSAK_.sistem_informasi_rumahsakitDataSet
-    Friend WithEvents DokterBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents DokterTableAdapter As Sistem_Informasi_Rumah_Sakit__SIRUSAK_.sistem_informasi_rumahsakitDataSetTableAdapters.dokterTableAdapter
+    Friend WithEvents ObatBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents ObatTableAdapter As Sistem_Informasi_Rumah_Sakit__SIRUSAK_.sistem_informasi_rumahsakitDataSetTableAdapters.obatTableAdapter
     Friend WithEvents TableAdapterManager As Sistem_Informasi_Rumah_Sakit__SIRUSAK_.sistem_informasi_rumahsakitDataSetTableAdapters.TableAdapterManager
-    Friend WithEvents DokterBindingNavigator As System.Windows.Forms.BindingNavigator
+    Friend WithEvents ObatBindingNavigator As System.Windows.Forms.BindingNavigator
     Friend WithEvents BindingNavigatorAddNewItem As System.Windows.Forms.ToolStripButton
     Friend WithEvents BindingNavigatorCountItem As System.Windows.Forms.ToolStripLabel
     Friend WithEvents BindingNavigatorDeleteItem As System.Windows.Forms.ToolStripButton
@@ -276,12 +262,10 @@ Partial Class dokter
     Friend WithEvents BindingNavigatorMoveNextItem As System.Windows.Forms.ToolStripButton
     Friend WithEvents BindingNavigatorMoveLastItem As System.Windows.Forms.ToolStripButton
     Friend WithEvents BindingNavigatorSeparator2 As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents DokterBindingNavigatorSaveItem As System.Windows.Forms.ToolStripButton
-    Friend WithEvents DokterDataGridView As System.Windows.Forms.DataGridView
+    Friend WithEvents ObatBindingNavigatorSaveItem As System.Windows.Forms.ToolStripButton
+    Friend WithEvents ObatDataGridView As System.Windows.Forms.DataGridView
     Friend WithEvents DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn5 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn6 As System.Windows.Forms.DataGridViewTextBoxColumn
 End Class

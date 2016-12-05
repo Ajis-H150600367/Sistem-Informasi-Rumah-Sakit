@@ -123,10 +123,22 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="OBAT01.Designer.vb">
+      <DependentUpon>OBAT01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OBAT01.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Pasien.Designer.vb">
       <DependentUpon>Pasien.vb</DependentUpon>
     </Compile>
     <Compile Include="Pasien.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PASIEN01.Designer.vb">
+      <DependentUpon>PASIEN01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PASIEN01.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="sistem_informasi_rumahsakitDataSet.Designer.vb">
@@ -163,8 +175,14 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="OBAT01.resx">
+      <DependentUpon>OBAT01.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pasien.resx">
       <DependentUpon>Pasien.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PASIEN01.resx">
+      <DependentUpon>PASIEN01.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User_Login.resx">
       <DependentUpon>User_Login.vb</DependentUpon>
