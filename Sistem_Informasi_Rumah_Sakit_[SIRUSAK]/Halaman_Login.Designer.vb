@@ -42,7 +42,7 @@ Partial Class Halaman_Login
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Elephant", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(191, 9)
+        Me.Label1.Location = New System.Drawing.Point(191, 23)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(601, 21)
         Me.Label1.TabIndex = 0
@@ -117,7 +117,7 @@ Partial Class Halaman_Login
         Me.Label2.TabIndex = 7
         Me.Label2.Text = "Silahkan Pilih Menu Login di bawah sesuai Identitas Diri :"
         '
-        'Jendela_Login
+        'Halaman_Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -130,7 +130,7 @@ Partial Class Halaman_Login
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label1)
-        Me.Name = "Jendela_Login"
+        Me.Name = "Halaman_Login"
         Me.Text = "Halaman Login"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()

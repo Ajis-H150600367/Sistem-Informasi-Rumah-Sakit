@@ -49,6 +49,9 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
@@ -77,6 +80,12 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Beranda.Designer.vb">
+      <DependentUpon>Beranda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Beranda.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="dokter.Designer.vb">
       <DependentUpon>dokter.vb</DependentUpon>
     </Compile>
@@ -87,6 +96,12 @@
       <DependentUpon>Halaman_Login.vb</DependentUpon>
     </Compile>
     <Compile Include="Halaman_Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KASIR.Designer.vb">
+      <DependentUpon>KASIR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="KASIR.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Lobi.Designer.vb">
@@ -101,13 +116,7 @@
     <Compile Include="Login_Master.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Beranda.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Beranda.Designer.vb">
-      <DependentUpon>Beranda.vb</DependentUpon>
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="Musik.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -146,6 +155,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>sistem_informasi_rumahsakitDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Tentang_Aplikasi.Designer.vb">
+      <DependentUpon>Tentang_Aplikasi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tentang_Aplikasi.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="User_Login.Designer.vb">
       <DependentUpon>User_Login.vb</DependentUpon>
     </Compile>
@@ -154,20 +169,23 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Beranda.resx">
+      <DependentUpon>Beranda.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="dokter.resx">
       <DependentUpon>dokter.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Halaman_Login.resx">
       <DependentUpon>Halaman_Login.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="KASIR.resx">
+      <DependentUpon>KASIR.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Lobi.resx">
       <DependentUpon>Lobi.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login_Master.resx">
       <DependentUpon>Login_Master.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Beranda.resx">
-      <DependentUpon>Beranda.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -183,6 +201,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PASIEN01.resx">
       <DependentUpon>PASIEN01.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tentang_Aplikasi.resx">
+      <DependentUpon>Tentang_Aplikasi.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User_Login.resx">
       <DependentUpon>User_Login.vb</DependentUpon>
@@ -212,6 +233,37 @@
     <None Include="sistem_informasi_rumahsakitDataSet.xss">
       <DependentUpon>sistem_informasi_rumahsakitDataSet.xsd</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\India - Sunn Raha Hai.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ajis02.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sistem_Informasi_RumahSakit.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

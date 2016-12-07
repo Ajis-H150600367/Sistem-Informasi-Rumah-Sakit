@@ -23,7 +23,6 @@ Partial Class Pasien
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Pasien))
         Dim ID_PASIENLabel As System.Windows.Forms.Label
         Dim NAMA_PASIENLabel As System.Windows.Forms.Label
         Dim J_KLabel As System.Windows.Forms.Label
@@ -31,23 +30,9 @@ Partial Class Pasien
         Dim ALAMATLabel As System.Windows.Forms.Label
         Dim KELUHANLabel As System.Windows.Forms.Label
         Dim UMURLabel As System.Windows.Forms.Label
-        Me.Sistem_informasi_rumahsakitDataSet = New Sistem_Informasi_Rumah_Sakit__SIRUSAK_.sistem_informasi_rumahsakitDataSet()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Pasien))
         Me.PasienBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.PasienTableAdapter = New Sistem_Informasi_Rumah_Sakit__SIRUSAK_.sistem_informasi_rumahsakitDataSetTableAdapters.pasienTableAdapter()
-        Me.TableAdapterManager = New Sistem_Informasi_Rumah_Sakit__SIRUSAK_.sistem_informasi_rumahsakitDataSetTableAdapters.TableAdapterManager()
-        Me.PasienBindingNavigator = New System.Windows.Forms.BindingNavigator(Me.components)
-        Me.BindingNavigatorMoveFirstItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorMovePreviousItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorSeparator = New System.Windows.Forms.ToolStripSeparator()
-        Me.BindingNavigatorPositionItem = New System.Windows.Forms.ToolStripTextBox()
-        Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
-        Me.BindingNavigatorSeparator1 = New System.Windows.Forms.ToolStripSeparator()
-        Me.BindingNavigatorMoveNextItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorMoveLastItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
-        Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
-        Me.PasienBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
+        Me.Sistem_informasi_rumahsakitDataSet = New Sistem_Informasi_Rumah_Sakit__SIRUSAK_.sistem_informasi_rumahsakitDataSet()
         Me.PasienDataGridView = New System.Windows.Forms.DataGridView()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -58,7 +43,17 @@ Partial Class Pasien
         Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.CariTextbox = New System.Windows.Forms.TextBox()
+        Me.CariButton = New System.Windows.Forms.Button()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.ButtonRefresh = New System.Windows.Forms.Button()
+        Me.ButtonBatal = New System.Windows.Forms.Button()
+        Me.ButtonEdit = New System.Windows.Forms.Button()
+        Me.ButtonHapus = New System.Windows.Forms.Button()
+        Me.ButtonSimpan = New System.Windows.Forms.Button()
+        Me.ButtonTambah = New System.Windows.Forms.Button()
         Me.ID_PASIENTextBox = New System.Windows.Forms.TextBox()
         Me.NAMA_PASIENTextBox = New System.Windows.Forms.TextBox()
         Me.J_KComboBox = New System.Windows.Forms.ComboBox()
@@ -66,9 +61,25 @@ Partial Class Pasien
         Me.ALAMATTextBox = New System.Windows.Forms.TextBox()
         Me.KELUHANTextBox = New System.Windows.Forms.TextBox()
         Me.UMURComboBox = New System.Windows.Forms.ComboBox()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.PasienTableAdapter = New Sistem_Informasi_Rumah_Sakit__SIRUSAK_.sistem_informasi_rumahsakitDataSetTableAdapters.pasienTableAdapter()
+        Me.TableAdapterManager = New Sistem_Informasi_Rumah_Sakit__SIRUSAK_.sistem_informasi_rumahsakitDataSetTableAdapters.TableAdapterManager()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Tanggal = New System.Windows.Forms.Label()
+        Me.LblDetik = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.LblMenit = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.LblJam = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.DengarMusik = New AxWMPLib.AxWindowsMediaPlayer()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
         ID_PASIENLabel = New System.Windows.Forms.Label()
         NAMA_PASIENLabel = New System.Windows.Forms.Label()
         J_KLabel = New System.Windows.Forms.Label()
@@ -76,163 +87,113 @@ Partial Class Pasien
         ALAMATLabel = New System.Windows.Forms.Label()
         KELUHANLabel = New System.Windows.Forms.Label()
         UMURLabel = New System.Windows.Forms.Label()
-        CType(Me.Sistem_informasi_rumahsakitDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PasienBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PasienBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.PasienBindingNavigator.SuspendLayout()
+        CType(Me.Sistem_informasi_rumahsakitDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PasienDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
+        Me.TabPage2.SuspendLayout()
+        Me.GroupBox1.SuspendLayout()
+        CType(Me.DengarMusik, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Sistem_informasi_rumahsakitDataSet
+        'ID_PASIENLabel
         '
-        Me.Sistem_informasi_rumahsakitDataSet.DataSetName = "sistem_informasi_rumahsakitDataSet"
-        Me.Sistem_informasi_rumahsakitDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        ID_PASIENLabel.AutoSize = True
+        ID_PASIENLabel.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        ID_PASIENLabel.Font = New System.Drawing.Font("Elephant", 8.999999!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ID_PASIENLabel.Location = New System.Drawing.Point(35, 8)
+        ID_PASIENLabel.Name = "ID_PASIENLabel"
+        ID_PASIENLabel.Size = New System.Drawing.Size(92, 16)
+        ID_PASIENLabel.TabIndex = 17
+        ID_PASIENLabel.Text = "ID PASIEN:"
+        '
+        'NAMA_PASIENLabel
+        '
+        NAMA_PASIENLabel.AutoSize = True
+        NAMA_PASIENLabel.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        NAMA_PASIENLabel.Font = New System.Drawing.Font("Elephant", 8.999999!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        NAMA_PASIENLabel.Location = New System.Drawing.Point(1, 34)
+        NAMA_PASIENLabel.Name = "NAMA_PASIENLabel"
+        NAMA_PASIENLabel.Size = New System.Drawing.Size(126, 16)
+        NAMA_PASIENLabel.TabIndex = 19
+        NAMA_PASIENLabel.Text = "NAMA PASIEN:"
+        '
+        'J_KLabel
+        '
+        J_KLabel.AutoSize = True
+        J_KLabel.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        J_KLabel.Font = New System.Drawing.Font("Elephant", 8.999999!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        J_KLabel.Location = New System.Drawing.Point(93, 59)
+        J_KLabel.Name = "J_KLabel"
+        J_KLabel.Size = New System.Drawing.Size(34, 16)
+        J_KLabel.TabIndex = 21
+        J_KLabel.Text = "J K:"
+        '
+        'KOTA_PASIENLabel
+        '
+        KOTA_PASIENLabel.AutoSize = True
+        KOTA_PASIENLabel.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        KOTA_PASIENLabel.Font = New System.Drawing.Font("Elephant", 8.999999!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        KOTA_PASIENLabel.Location = New System.Drawing.Point(9, 86)
+        KOTA_PASIENLabel.Name = "KOTA_PASIENLabel"
+        KOTA_PASIENLabel.Size = New System.Drawing.Size(118, 16)
+        KOTA_PASIENLabel.TabIndex = 23
+        KOTA_PASIENLabel.Text = "KOTA PASIEN:"
+        '
+        'ALAMATLabel
+        '
+        ALAMATLabel.AutoSize = True
+        ALAMATLabel.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        ALAMATLabel.Font = New System.Drawing.Font("Elephant", 8.999999!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ALAMATLabel.Location = New System.Drawing.Point(44, 113)
+        ALAMATLabel.Name = "ALAMATLabel"
+        ALAMATLabel.Size = New System.Drawing.Size(83, 16)
+        ALAMATLabel.TabIndex = 25
+        ALAMATLabel.Text = "ALAMAT:"
+        '
+        'KELUHANLabel
+        '
+        KELUHANLabel.AutoSize = True
+        KELUHANLabel.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        KELUHANLabel.Font = New System.Drawing.Font("Elephant", 8.999999!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        KELUHANLabel.Location = New System.Drawing.Point(37, 138)
+        KELUHANLabel.Name = "KELUHANLabel"
+        KELUHANLabel.Size = New System.Drawing.Size(90, 16)
+        KELUHANLabel.TabIndex = 27
+        KELUHANLabel.Text = "KELUHAN:"
+        '
+        'UMURLabel
+        '
+        UMURLabel.AutoSize = True
+        UMURLabel.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        UMURLabel.Font = New System.Drawing.Font("Elephant", 8.999999!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        UMURLabel.Location = New System.Drawing.Point(69, 165)
+        UMURLabel.Name = "UMURLabel"
+        UMURLabel.Size = New System.Drawing.Size(58, 16)
+        UMURLabel.TabIndex = 29
+        UMURLabel.Text = "UMUR:"
         '
         'PasienBindingSource
         '
         Me.PasienBindingSource.DataMember = "pasien"
         Me.PasienBindingSource.DataSource = Me.Sistem_informasi_rumahsakitDataSet
         '
-        'PasienTableAdapter
+        'Sistem_informasi_rumahsakitDataSet
         '
-        Me.PasienTableAdapter.ClearBeforeFill = True
-        '
-        'TableAdapterManager
-        '
-        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
-        Me.TableAdapterManager.dokter_has_obatTableAdapter = Nothing
-        Me.TableAdapterManager.dokterTableAdapter = Nothing
-        Me.TableAdapterManager.kasirTableAdapter = Nothing
-        Me.TableAdapterManager.lobiTableAdapter = Nothing
-        Me.TableAdapterManager.obatTableAdapter = Nothing
-        Me.TableAdapterManager.pasien_has_obatTableAdapter = Nothing
-        Me.TableAdapterManager.pasienTableAdapter = Me.PasienTableAdapter
-        Me.TableAdapterManager.ruangan_has_dokterTableAdapter = Nothing
-        Me.TableAdapterManager.ruanganTableAdapter = Nothing
-        Me.TableAdapterManager.UpdateOrder = Sistem_Informasi_Rumah_Sakit__SIRUSAK_.sistem_informasi_rumahsakitDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
-        '
-        'PasienBindingNavigator
-        '
-        Me.PasienBindingNavigator.AddNewItem = Me.BindingNavigatorAddNewItem
-        Me.PasienBindingNavigator.BindingSource = Me.PasienBindingSource
-        Me.PasienBindingNavigator.CountItem = Me.BindingNavigatorCountItem
-        Me.PasienBindingNavigator.DeleteItem = Me.BindingNavigatorDeleteItem
-        Me.PasienBindingNavigator.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BindingNavigatorMoveFirstItem, Me.BindingNavigatorMovePreviousItem, Me.BindingNavigatorSeparator, Me.BindingNavigatorPositionItem, Me.BindingNavigatorCountItem, Me.BindingNavigatorSeparator1, Me.BindingNavigatorMoveNextItem, Me.BindingNavigatorMoveLastItem, Me.BindingNavigatorSeparator2, Me.BindingNavigatorAddNewItem, Me.BindingNavigatorDeleteItem, Me.PasienBindingNavigatorSaveItem})
-        Me.PasienBindingNavigator.Location = New System.Drawing.Point(0, 0)
-        Me.PasienBindingNavigator.MoveFirstItem = Me.BindingNavigatorMoveFirstItem
-        Me.PasienBindingNavigator.MoveLastItem = Me.BindingNavigatorMoveLastItem
-        Me.PasienBindingNavigator.MoveNextItem = Me.BindingNavigatorMoveNextItem
-        Me.PasienBindingNavigator.MovePreviousItem = Me.BindingNavigatorMovePreviousItem
-        Me.PasienBindingNavigator.Name = "PasienBindingNavigator"
-        Me.PasienBindingNavigator.PositionItem = Me.BindingNavigatorPositionItem
-        Me.PasienBindingNavigator.Size = New System.Drawing.Size(1058, 29)
-        Me.PasienBindingNavigator.TabIndex = 0
-        Me.PasienBindingNavigator.Text = "BindingNavigator1"
-        '
-        'BindingNavigatorMoveFirstItem
-        '
-        Me.BindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorMoveFirstItem.Image = CType(resources.GetObject("BindingNavigatorMoveFirstItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorMoveFirstItem.Name = "BindingNavigatorMoveFirstItem"
-        Me.BindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(23, 26)
-        Me.BindingNavigatorMoveFirstItem.Text = "Move first"
-        '
-        'BindingNavigatorMovePreviousItem
-        '
-        Me.BindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorMovePreviousItem.Image = CType(resources.GetObject("BindingNavigatorMovePreviousItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorMovePreviousItem.Name = "BindingNavigatorMovePreviousItem"
-        Me.BindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(23, 26)
-        Me.BindingNavigatorMovePreviousItem.Text = "Move previous"
-        '
-        'BindingNavigatorSeparator
-        '
-        Me.BindingNavigatorSeparator.Name = "BindingNavigatorSeparator"
-        Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 29)
-        '
-        'BindingNavigatorPositionItem
-        '
-        Me.BindingNavigatorPositionItem.AccessibleName = "Position"
-        Me.BindingNavigatorPositionItem.AutoSize = False
-        Me.BindingNavigatorPositionItem.Name = "BindingNavigatorPositionItem"
-        Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(50, 29)
-        Me.BindingNavigatorPositionItem.Text = "0"
-        Me.BindingNavigatorPositionItem.ToolTipText = "Current position"
-        '
-        'BindingNavigatorCountItem
-        '
-        Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
-        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(47, 26)
-        Me.BindingNavigatorCountItem.Text = "of {0}"
-        Me.BindingNavigatorCountItem.ToolTipText = "Total number of items"
-        '
-        'BindingNavigatorSeparator1
-        '
-        Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator"
-        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 29)
-        '
-        'BindingNavigatorMoveNextItem
-        '
-        Me.BindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorMoveNextItem.Image = CType(resources.GetObject("BindingNavigatorMoveNextItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorMoveNextItem.Name = "BindingNavigatorMoveNextItem"
-        Me.BindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(23, 26)
-        Me.BindingNavigatorMoveNextItem.Text = "Move next"
-        '
-        'BindingNavigatorMoveLastItem
-        '
-        Me.BindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorMoveLastItem.Image = CType(resources.GetObject("BindingNavigatorMoveLastItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorMoveLastItem.Name = "BindingNavigatorMoveLastItem"
-        Me.BindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(23, 26)
-        Me.BindingNavigatorMoveLastItem.Text = "Move last"
-        '
-        'BindingNavigatorSeparator2
-        '
-        Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator"
-        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 29)
-        '
-        'BindingNavigatorAddNewItem
-        '
-        Me.BindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
-        Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(23, 26)
-        Me.BindingNavigatorAddNewItem.Text = "Add new"
-        '
-        'BindingNavigatorDeleteItem
-        '
-        Me.BindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
-        Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(23, 26)
-        Me.BindingNavigatorDeleteItem.Text = "Delete"
-        '
-        'PasienBindingNavigatorSaveItem
-        '
-        Me.PasienBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.PasienBindingNavigatorSaveItem.Image = CType(resources.GetObject("PasienBindingNavigatorSaveItem.Image"), System.Drawing.Image)
-        Me.PasienBindingNavigatorSaveItem.Name = "PasienBindingNavigatorSaveItem"
-        Me.PasienBindingNavigatorSaveItem.Size = New System.Drawing.Size(23, 26)
-        Me.PasienBindingNavigatorSaveItem.Text = "Save Data"
+        Me.Sistem_informasi_rumahsakitDataSet.DataSetName = "sistem_informasi_rumahsakitDataSet"
+        Me.Sistem_informasi_rumahsakitDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'PasienDataGridView
         '
         Me.PasienDataGridView.AutoGenerateColumns = False
+        Me.PasienDataGridView.BackgroundColor = System.Drawing.Color.Black
         Me.PasienDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.PasienDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7})
         Me.PasienDataGridView.DataSource = Me.PasienBindingSource
-        Me.PasienDataGridView.Location = New System.Drawing.Point(0, 34)
+        Me.PasienDataGridView.Location = New System.Drawing.Point(0, 98)
         Me.PasienDataGridView.Name = "PasienDataGridView"
-        Me.PasienDataGridView.Size = New System.Drawing.Size(698, 322)
+        Me.PasienDataGridView.Size = New System.Drawing.Size(698, 308)
         Me.PasienDataGridView.TabIndex = 1
         '
         'DataGridViewTextBoxColumn1
@@ -281,224 +242,483 @@ Partial Class Pasien
         '
         Me.TabControl1.Controls.Add(Me.TabPage1)
         Me.TabControl1.Controls.Add(Me.TabPage2)
-        Me.TabControl1.Location = New System.Drawing.Point(704, 34)
+        Me.TabControl1.Location = New System.Drawing.Point(704, 94)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(342, 322)
+        Me.TabControl1.Size = New System.Drawing.Size(364, 312)
         Me.TabControl1.TabIndex = 2
         '
         'TabPage1
         '
-        Me.TabPage1.Controls.Add(Me.Button3)
-        Me.TabPage1.Controls.Add(Me.Button2)
+        Me.TabPage1.BackColor = System.Drawing.Color.Black
+        Me.TabPage1.Controls.Add(Me.Label7)
         Me.TabPage1.Controls.Add(Me.Button1)
-        Me.TabPage1.Controls.Add(ID_PASIENLabel)
-        Me.TabPage1.Controls.Add(Me.ID_PASIENTextBox)
-        Me.TabPage1.Controls.Add(NAMA_PASIENLabel)
-        Me.TabPage1.Controls.Add(Me.NAMA_PASIENTextBox)
-        Me.TabPage1.Controls.Add(J_KLabel)
-        Me.TabPage1.Controls.Add(Me.J_KComboBox)
-        Me.TabPage1.Controls.Add(KOTA_PASIENLabel)
-        Me.TabPage1.Controls.Add(Me.KOTA_PASIENTextBox)
-        Me.TabPage1.Controls.Add(ALAMATLabel)
-        Me.TabPage1.Controls.Add(Me.ALAMATTextBox)
-        Me.TabPage1.Controls.Add(KELUHANLabel)
-        Me.TabPage1.Controls.Add(Me.KELUHANTextBox)
-        Me.TabPage1.Controls.Add(UMURLabel)
-        Me.TabPage1.Controls.Add(Me.UMURComboBox)
+        Me.TabPage1.Controls.Add(Me.Button7)
+        Me.TabPage1.Controls.Add(Me.CariTextbox)
+        Me.TabPage1.Controls.Add(Me.CariButton)
         Me.TabPage1.Location = New System.Drawing.Point(4, 22)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(334, 296)
+        Me.TabPage1.Size = New System.Drawing.Size(356, 286)
         Me.TabPage1.TabIndex = 0
-        Me.TabPage1.Text = "Data Pasien"
-        Me.TabPage1.UseVisualStyleBackColor = True
-        '
-        'TabPage2
-        '
-        Me.TabPage2.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(192, 74)
-        Me.TabPage2.TabIndex = 1
-        Me.TabPage2.Text = "TabPage2"
-        Me.TabPage2.UseVisualStyleBackColor = True
-        '
-        'ID_PASIENLabel
-        '
-        ID_PASIENLabel.AutoSize = True
-        ID_PASIENLabel.Location = New System.Drawing.Point(8, 9)
-        ID_PASIENLabel.Name = "ID_PASIENLabel"
-        ID_PASIENLabel.Size = New System.Drawing.Size(63, 13)
-        ID_PASIENLabel.TabIndex = 0
-        ID_PASIENLabel.Text = "ID PASIEN:"
-        '
-        'ID_PASIENTextBox
-        '
-        Me.ID_PASIENTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PasienBindingSource, "ID_PASIEN", True))
-        Me.ID_PASIENTextBox.Enabled = False
-        Me.ID_PASIENTextBox.Location = New System.Drawing.Point(97, 6)
-        Me.ID_PASIENTextBox.Name = "ID_PASIENTextBox"
-        Me.ID_PASIENTextBox.Size = New System.Drawing.Size(121, 20)
-        Me.ID_PASIENTextBox.TabIndex = 1
-        '
-        'NAMA_PASIENLabel
-        '
-        NAMA_PASIENLabel.AutoSize = True
-        NAMA_PASIENLabel.Location = New System.Drawing.Point(8, 35)
-        NAMA_PASIENLabel.Name = "NAMA_PASIENLabel"
-        NAMA_PASIENLabel.Size = New System.Drawing.Size(83, 13)
-        NAMA_PASIENLabel.TabIndex = 2
-        NAMA_PASIENLabel.Text = "NAMA PASIEN:"
-        '
-        'NAMA_PASIENTextBox
-        '
-        Me.NAMA_PASIENTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PasienBindingSource, "NAMA_PASIEN", True))
-        Me.NAMA_PASIENTextBox.Enabled = False
-        Me.NAMA_PASIENTextBox.Location = New System.Drawing.Point(97, 32)
-        Me.NAMA_PASIENTextBox.Name = "NAMA_PASIENTextBox"
-        Me.NAMA_PASIENTextBox.Size = New System.Drawing.Size(121, 20)
-        Me.NAMA_PASIENTextBox.TabIndex = 3
-        '
-        'J_KLabel
-        '
-        J_KLabel.AutoSize = True
-        J_KLabel.Location = New System.Drawing.Point(8, 61)
-        J_KLabel.Name = "J_KLabel"
-        J_KLabel.Size = New System.Drawing.Size(25, 13)
-        J_KLabel.TabIndex = 4
-        J_KLabel.Text = "J K:"
-        '
-        'J_KComboBox
-        '
-        Me.J_KComboBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PasienBindingSource, "J_K", True))
-        Me.J_KComboBox.Enabled = False
-        Me.J_KComboBox.FormattingEnabled = True
-        Me.J_KComboBox.Items.AddRange(New Object() {"L", "P"})
-        Me.J_KComboBox.Location = New System.Drawing.Point(97, 58)
-        Me.J_KComboBox.Name = "J_KComboBox"
-        Me.J_KComboBox.Size = New System.Drawing.Size(121, 21)
-        Me.J_KComboBox.TabIndex = 5
-        '
-        'KOTA_PASIENLabel
-        '
-        KOTA_PASIENLabel.AutoSize = True
-        KOTA_PASIENLabel.Location = New System.Drawing.Point(8, 88)
-        KOTA_PASIENLabel.Name = "KOTA_PASIENLabel"
-        KOTA_PASIENLabel.Size = New System.Drawing.Size(81, 13)
-        KOTA_PASIENLabel.TabIndex = 6
-        KOTA_PASIENLabel.Text = "KOTA PASIEN:"
-        '
-        'KOTA_PASIENTextBox
-        '
-        Me.KOTA_PASIENTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PasienBindingSource, "KOTA_PASIEN", True))
-        Me.KOTA_PASIENTextBox.Enabled = False
-        Me.KOTA_PASIENTextBox.Location = New System.Drawing.Point(97, 85)
-        Me.KOTA_PASIENTextBox.Name = "KOTA_PASIENTextBox"
-        Me.KOTA_PASIENTextBox.Size = New System.Drawing.Size(121, 20)
-        Me.KOTA_PASIENTextBox.TabIndex = 7
-        '
-        'ALAMATLabel
-        '
-        ALAMATLabel.AutoSize = True
-        ALAMATLabel.Location = New System.Drawing.Point(8, 114)
-        ALAMATLabel.Name = "ALAMATLabel"
-        ALAMATLabel.Size = New System.Drawing.Size(53, 13)
-        ALAMATLabel.TabIndex = 8
-        ALAMATLabel.Text = "ALAMAT:"
-        '
-        'ALAMATTextBox
-        '
-        Me.ALAMATTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PasienBindingSource, "ALAMAT", True))
-        Me.ALAMATTextBox.Enabled = False
-        Me.ALAMATTextBox.Location = New System.Drawing.Point(97, 111)
-        Me.ALAMATTextBox.Name = "ALAMATTextBox"
-        Me.ALAMATTextBox.Size = New System.Drawing.Size(121, 20)
-        Me.ALAMATTextBox.TabIndex = 9
-        '
-        'KELUHANLabel
-        '
-        KELUHANLabel.AutoSize = True
-        KELUHANLabel.Location = New System.Drawing.Point(8, 140)
-        KELUHANLabel.Name = "KELUHANLabel"
-        KELUHANLabel.Size = New System.Drawing.Size(61, 13)
-        KELUHANLabel.TabIndex = 10
-        KELUHANLabel.Text = "KELUHAN:"
-        '
-        'KELUHANTextBox
-        '
-        Me.KELUHANTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PasienBindingSource, "KELUHAN", True))
-        Me.KELUHANTextBox.Enabled = False
-        Me.KELUHANTextBox.Location = New System.Drawing.Point(97, 137)
-        Me.KELUHANTextBox.Name = "KELUHANTextBox"
-        Me.KELUHANTextBox.Size = New System.Drawing.Size(121, 20)
-        Me.KELUHANTextBox.TabIndex = 11
-        '
-        'UMURLabel
-        '
-        UMURLabel.AutoSize = True
-        UMURLabel.Location = New System.Drawing.Point(8, 166)
-        UMURLabel.Name = "UMURLabel"
-        UMURLabel.Size = New System.Drawing.Size(43, 13)
-        UMURLabel.TabIndex = 12
-        UMURLabel.Text = "UMUR:"
-        '
-        'UMURComboBox
-        '
-        Me.UMURComboBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PasienBindingSource, "UMUR", True))
-        Me.UMURComboBox.Enabled = False
-        Me.UMURComboBox.FormattingEnabled = True
-        Me.UMURComboBox.Location = New System.Drawing.Point(97, 163)
-        Me.UMURComboBox.Name = "UMURComboBox"
-        Me.UMURComboBox.Size = New System.Drawing.Size(121, 21)
-        Me.UMURComboBox.TabIndex = 13
+        Me.TabPage1.Text = "Cari,Keluar"
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(11, 206)
+        Me.Button1.BackColor = System.Drawing.Color.Red
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(8, 148)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 14
-        Me.Button1.Text = "Tambah"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.Size = New System.Drawing.Size(67, 34)
+        Me.Button1.TabIndex = 5
+        Me.Button1.Text = "Keluar"
+        Me.Button1.UseVisualStyleBackColor = False
+        '
+        'Button7
+        '
+        Me.Button7.BackColor = System.Drawing.Color.Red
+        Me.Button7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button7.Location = New System.Drawing.Point(200, 148)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(151, 34)
+        Me.Button7.TabIndex = 4
+        Me.Button7.Text = "Keluar Semua Form"
+        Me.Button7.UseVisualStyleBackColor = False
+        '
+        'CariTextbox
+        '
+        Me.CariTextbox.BackColor = System.Drawing.Color.White
+        Me.CariTextbox.Location = New System.Drawing.Point(17, 38)
+        Me.CariTextbox.Multiline = True
+        Me.CariTextbox.Name = "CariTextbox"
+        Me.CariTextbox.Size = New System.Drawing.Size(219, 28)
+        Me.CariTextbox.TabIndex = 3
+        '
+        'CariButton
+        '
+        Me.CariButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.CariButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CariButton.Location = New System.Drawing.Point(242, 38)
+        Me.CariButton.Name = "CariButton"
+        Me.CariButton.Size = New System.Drawing.Size(75, 28)
+        Me.CariButton.TabIndex = 2
+        Me.CariButton.Text = "Cari"
+        Me.CariButton.UseVisualStyleBackColor = False
+        '
+        'TabPage2
+        '
+        Me.TabPage2.BackColor = System.Drawing.Color.Black
+        Me.TabPage2.Controls.Add(Me.ButtonRefresh)
+        Me.TabPage2.Controls.Add(Me.ButtonBatal)
+        Me.TabPage2.Controls.Add(Me.ButtonEdit)
+        Me.TabPage2.Controls.Add(Me.ButtonHapus)
+        Me.TabPage2.Controls.Add(Me.ButtonSimpan)
+        Me.TabPage2.Controls.Add(Me.ButtonTambah)
+        Me.TabPage2.Controls.Add(ID_PASIENLabel)
+        Me.TabPage2.Controls.Add(Me.ID_PASIENTextBox)
+        Me.TabPage2.Controls.Add(NAMA_PASIENLabel)
+        Me.TabPage2.Controls.Add(Me.NAMA_PASIENTextBox)
+        Me.TabPage2.Controls.Add(J_KLabel)
+        Me.TabPage2.Controls.Add(Me.J_KComboBox)
+        Me.TabPage2.Controls.Add(KOTA_PASIENLabel)
+        Me.TabPage2.Controls.Add(Me.KOTA_PASIENTextBox)
+        Me.TabPage2.Controls.Add(ALAMATLabel)
+        Me.TabPage2.Controls.Add(Me.ALAMATTextBox)
+        Me.TabPage2.Controls.Add(KELUHANLabel)
+        Me.TabPage2.Controls.Add(Me.KELUHANTextBox)
+        Me.TabPage2.Controls.Add(UMURLabel)
+        Me.TabPage2.Controls.Add(Me.UMURComboBox)
+        Me.TabPage2.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage2.Name = "TabPage2"
+        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage2.Size = New System.Drawing.Size(356, 286)
+        Me.TabPage2.TabIndex = 1
+        Me.TabPage2.Text = "Tambah,Simpan,Edit,Batal,Hapus,Refresh"
+        '
+        'ButtonRefresh
+        '
+        Me.ButtonRefresh.BackColor = System.Drawing.Color.White
+        Me.ButtonRefresh.Font = New System.Drawing.Font("Elephant", 8.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonRefresh.ForeColor = System.Drawing.Color.Red
+        Me.ButtonRefresh.Location = New System.Drawing.Point(215, 241)
+        Me.ButtonRefresh.Name = "ButtonRefresh"
+        Me.ButtonRefresh.Size = New System.Drawing.Size(75, 23)
+        Me.ButtonRefresh.TabIndex = 36
+        Me.ButtonRefresh.Text = "Refresh"
+        Me.ButtonRefresh.UseVisualStyleBackColor = False
+        '
+        'ButtonBatal
+        '
+        Me.ButtonBatal.BackColor = System.Drawing.Color.White
+        Me.ButtonBatal.Enabled = False
+        Me.ButtonBatal.Font = New System.Drawing.Font("Elephant", 8.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonBatal.ForeColor = System.Drawing.Color.Red
+        Me.ButtonBatal.Location = New System.Drawing.Point(49, 241)
+        Me.ButtonBatal.Name = "ButtonBatal"
+        Me.ButtonBatal.Size = New System.Drawing.Size(75, 23)
+        Me.ButtonBatal.TabIndex = 35
+        Me.ButtonBatal.Text = "Batal"
+        Me.ButtonBatal.UseVisualStyleBackColor = False
+        '
+        'ButtonEdit
+        '
+        Me.ButtonEdit.BackColor = System.Drawing.Color.White
+        Me.ButtonEdit.Font = New System.Drawing.Font("Elephant", 8.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonEdit.ForeColor = System.Drawing.Color.Red
+        Me.ButtonEdit.Location = New System.Drawing.Point(215, 208)
+        Me.ButtonEdit.Name = "ButtonEdit"
+        Me.ButtonEdit.Size = New System.Drawing.Size(75, 23)
+        Me.ButtonEdit.TabIndex = 34
+        Me.ButtonEdit.Text = "Edit"
+        Me.ButtonEdit.UseVisualStyleBackColor = False
+        '
+        'ButtonHapus
+        '
+        Me.ButtonHapus.BackColor = System.Drawing.Color.White
+        Me.ButtonHapus.Font = New System.Drawing.Font("Elephant", 8.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonHapus.ForeColor = System.Drawing.Color.Red
+        Me.ButtonHapus.Location = New System.Drawing.Point(130, 241)
+        Me.ButtonHapus.Name = "ButtonHapus"
+        Me.ButtonHapus.Size = New System.Drawing.Size(75, 23)
+        Me.ButtonHapus.TabIndex = 33
+        Me.ButtonHapus.Text = "Hapus"
+        Me.ButtonHapus.UseVisualStyleBackColor = False
+        '
+        'ButtonSimpan
+        '
+        Me.ButtonSimpan.BackColor = System.Drawing.Color.White
+        Me.ButtonSimpan.Enabled = False
+        Me.ButtonSimpan.Font = New System.Drawing.Font("Elephant", 8.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonSimpan.ForeColor = System.Drawing.Color.Red
+        Me.ButtonSimpan.Location = New System.Drawing.Point(130, 208)
+        Me.ButtonSimpan.Name = "ButtonSimpan"
+        Me.ButtonSimpan.Size = New System.Drawing.Size(75, 23)
+        Me.ButtonSimpan.TabIndex = 32
+        Me.ButtonSimpan.Text = "Simpan"
+        Me.ButtonSimpan.UseVisualStyleBackColor = False
+        '
+        'ButtonTambah
+        '
+        Me.ButtonTambah.BackColor = System.Drawing.Color.White
+        Me.ButtonTambah.Font = New System.Drawing.Font("Elephant", 8.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonTambah.ForeColor = System.Drawing.Color.Red
+        Me.ButtonTambah.Location = New System.Drawing.Point(49, 208)
+        Me.ButtonTambah.Name = "ButtonTambah"
+        Me.ButtonTambah.Size = New System.Drawing.Size(75, 23)
+        Me.ButtonTambah.TabIndex = 31
+        Me.ButtonTambah.Text = "Tambah"
+        Me.ButtonTambah.UseVisualStyleBackColor = False
+        '
+        'ID_PASIENTextBox
+        '
+        Me.ID_PASIENTextBox.BackColor = System.Drawing.Color.White
+        Me.ID_PASIENTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PasienBindingSource, "ID_PASIEN", True))
+        Me.ID_PASIENTextBox.Enabled = False
+        Me.ID_PASIENTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ID_PASIENTextBox.Location = New System.Drawing.Point(130, 5)
+        Me.ID_PASIENTextBox.Name = "ID_PASIENTextBox"
+        Me.ID_PASIENTextBox.Size = New System.Drawing.Size(121, 22)
+        Me.ID_PASIENTextBox.TabIndex = 18
+        '
+        'NAMA_PASIENTextBox
+        '
+        Me.NAMA_PASIENTextBox.BackColor = System.Drawing.Color.White
+        Me.NAMA_PASIENTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PasienBindingSource, "NAMA_PASIEN", True))
+        Me.NAMA_PASIENTextBox.Enabled = False
+        Me.NAMA_PASIENTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.NAMA_PASIENTextBox.Location = New System.Drawing.Point(130, 31)
+        Me.NAMA_PASIENTextBox.Name = "NAMA_PASIENTextBox"
+        Me.NAMA_PASIENTextBox.Size = New System.Drawing.Size(218, 22)
+        Me.NAMA_PASIENTextBox.TabIndex = 20
+        '
+        'J_KComboBox
+        '
+        Me.J_KComboBox.BackColor = System.Drawing.Color.White
+        Me.J_KComboBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PasienBindingSource, "J_K", True))
+        Me.J_KComboBox.Enabled = False
+        Me.J_KComboBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.J_KComboBox.FormattingEnabled = True
+        Me.J_KComboBox.Items.AddRange(New Object() {"L", "P"})
+        Me.J_KComboBox.Location = New System.Drawing.Point(130, 57)
+        Me.J_KComboBox.Name = "J_KComboBox"
+        Me.J_KComboBox.Size = New System.Drawing.Size(69, 24)
+        Me.J_KComboBox.TabIndex = 22
+        '
+        'KOTA_PASIENTextBox
+        '
+        Me.KOTA_PASIENTextBox.BackColor = System.Drawing.Color.White
+        Me.KOTA_PASIENTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PasienBindingSource, "KOTA_PASIEN", True))
+        Me.KOTA_PASIENTextBox.Enabled = False
+        Me.KOTA_PASIENTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.KOTA_PASIENTextBox.Location = New System.Drawing.Point(130, 84)
+        Me.KOTA_PASIENTextBox.Name = "KOTA_PASIENTextBox"
+        Me.KOTA_PASIENTextBox.Size = New System.Drawing.Size(188, 22)
+        Me.KOTA_PASIENTextBox.TabIndex = 24
+        '
+        'ALAMATTextBox
+        '
+        Me.ALAMATTextBox.BackColor = System.Drawing.Color.White
+        Me.ALAMATTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PasienBindingSource, "ALAMAT", True))
+        Me.ALAMATTextBox.Enabled = False
+        Me.ALAMATTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ALAMATTextBox.Location = New System.Drawing.Point(130, 110)
+        Me.ALAMATTextBox.Name = "ALAMATTextBox"
+        Me.ALAMATTextBox.Size = New System.Drawing.Size(218, 22)
+        Me.ALAMATTextBox.TabIndex = 26
+        '
+        'KELUHANTextBox
+        '
+        Me.KELUHANTextBox.BackColor = System.Drawing.Color.White
+        Me.KELUHANTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PasienBindingSource, "KELUHAN", True))
+        Me.KELUHANTextBox.Enabled = False
+        Me.KELUHANTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.KELUHANTextBox.Location = New System.Drawing.Point(130, 136)
+        Me.KELUHANTextBox.Name = "KELUHANTextBox"
+        Me.KELUHANTextBox.Size = New System.Drawing.Size(188, 22)
+        Me.KELUHANTextBox.TabIndex = 28
+        '
+        'UMURComboBox
+        '
+        Me.UMURComboBox.BackColor = System.Drawing.Color.White
+        Me.UMURComboBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PasienBindingSource, "UMUR", True))
+        Me.UMURComboBox.Enabled = False
+        Me.UMURComboBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.UMURComboBox.FormattingEnabled = True
+        Me.UMURComboBox.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100"})
+        Me.UMURComboBox.Location = New System.Drawing.Point(130, 162)
+        Me.UMURComboBox.Name = "UMURComboBox"
+        Me.UMURComboBox.Size = New System.Drawing.Size(69, 24)
+        Me.UMURComboBox.TabIndex = 30
+        '
+        'PasienTableAdapter
+        '
+        Me.PasienTableAdapter.ClearBeforeFill = True
+        '
+        'TableAdapterManager
+        '
+        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.dokter_has_obatTableAdapter = Nothing
+        Me.TableAdapterManager.dokterTableAdapter = Nothing
+        Me.TableAdapterManager.kasirTableAdapter = Nothing
+        Me.TableAdapterManager.lobiTableAdapter = Nothing
+        Me.TableAdapterManager.obatTableAdapter = Nothing
+        Me.TableAdapterManager.pasien_has_obatTableAdapter = Nothing
+        Me.TableAdapterManager.pasienTableAdapter = Me.PasienTableAdapter
+        Me.TableAdapterManager.ruangan_has_dokterTableAdapter = Nothing
+        Me.TableAdapterManager.ruanganTableAdapter = Nothing
+        Me.TableAdapterManager.UpdateOrder = Sistem_Informasi_Rumah_Sakit__SIRUSAK_.sistem_informasi_rumahsakitDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label1.Font = New System.Drawing.Font("Elephant", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(293, 33)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(147, 27)
+        Me.Label1.TabIndex = 3
+        Me.Label1.Text = "Data Pasien"
+        '
+        'Tanggal
+        '
+        Me.Tanggal.AutoSize = True
+        Me.Tanggal.BackColor = System.Drawing.Color.White
+        Me.Tanggal.Font = New System.Drawing.Font("Elephant", 8.999999!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Tanggal.Location = New System.Drawing.Point(6, 51)
+        Me.Tanggal.Name = "Tanggal"
+        Me.Tanggal.Size = New System.Drawing.Size(121, 16)
+        Me.Tanggal.TabIndex = 15
+        Me.Tanggal.Text = "Tanggal_Hari_ini"
+        '
+        'LblDetik
+        '
+        Me.LblDetik.AutoSize = True
+        Me.LblDetik.BackColor = System.Drawing.Color.White
+        Me.LblDetik.Font = New System.Drawing.Font("Elephant", 8.999999!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblDetik.Location = New System.Drawing.Point(238, 51)
+        Me.LblDetik.Name = "LblDetik"
+        Me.LblDetik.Size = New System.Drawing.Size(40, 16)
+        Me.LblDetik.TabIndex = 13
+        Me.LblDetik.Text = "Detik"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.White
+        Me.Label5.Font = New System.Drawing.Font("Elephant", 8.999999!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(228, 51)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(12, 16)
+        Me.Label5.TabIndex = 12
+        Me.Label5.Text = ":"
+        '
+        'LblMenit
+        '
+        Me.LblMenit.AutoSize = True
+        Me.LblMenit.BackColor = System.Drawing.Color.White
+        Me.LblMenit.Font = New System.Drawing.Font("Elephant", 8.999999!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblMenit.Location = New System.Drawing.Point(211, 51)
+        Me.LblMenit.Name = "LblMenit"
+        Me.LblMenit.Size = New System.Drawing.Size(45, 16)
+        Me.LblMenit.TabIndex = 11
+        Me.LblMenit.Text = "Menit"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.White
+        Me.Label3.Font = New System.Drawing.Font("Elephant", 8.999999!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(203, 51)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(12, 16)
+        Me.Label3.TabIndex = 10
+        Me.Label3.Text = ":"
+        '
+        'LblJam
+        '
+        Me.LblJam.AutoSize = True
+        Me.LblJam.BackColor = System.Drawing.Color.White
+        Me.LblJam.Font = New System.Drawing.Font("Elephant", 8.999999!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LblJam.Location = New System.Drawing.Point(184, 51)
+        Me.LblJam.Name = "LblJam"
+        Me.LblJam.Size = New System.Drawing.Size(36, 16)
+        Me.LblJam.TabIndex = 9
+        Me.LblJam.Text = "Jam"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.White
+        Me.Label4.Font = New System.Drawing.Font("Elephant", 8.999999!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(174, 16)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(118, 16)
+        Me.Label4.TabIndex = 8
+        Me.Label4.Text = "Waktu_Sekarang"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.White
+        Me.Label2.Font = New System.Drawing.Font("Elephant", 8.999999!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(31, 16)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(62, 16)
+        Me.Label2.TabIndex = 14
+        Me.Label2.Text = "Tanggal"
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.BackColor = System.Drawing.Color.Black
+        Me.GroupBox1.Controls.Add(Me.Label6)
+        Me.GroupBox1.Controls.Add(Me.LblJam)
+        Me.GroupBox1.Controls.Add(Me.Label3)
+        Me.GroupBox1.Controls.Add(Me.Label5)
+        Me.GroupBox1.Controls.Add(Me.LblDetik)
+        Me.GroupBox1.Controls.Add(Me.Tanggal)
+        Me.GroupBox1.Controls.Add(Me.Label2)
+        Me.GroupBox1.Controls.Add(Me.LblMenit)
+        Me.GroupBox1.Controls.Add(Me.Label4)
+        Me.GroupBox1.Location = New System.Drawing.Point(768, 3)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(330, 85)
+        Me.GroupBox1.TabIndex = 16
+        Me.GroupBox1.TabStop = False
+        '
+        'Timer1
+        '
+        '
+        'DengarMusik
+        '
+        Me.DengarMusik.Enabled = True
+        Me.DengarMusik.Location = New System.Drawing.Point(611, 3)
+        Me.DengarMusik.Name = "DengarMusik"
+        Me.DengarMusik.OcxState = CType(resources.GetObject("DengarMusik.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.DengarMusik.Size = New System.Drawing.Size(10, 12)
+        Me.DengarMusik.TabIndex = 17
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(107, 206)
+        Me.Button2.BackColor = System.Drawing.Color.Red
+        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.Location = New System.Drawing.Point(627, 3)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 15
-        Me.Button2.Text = "Simpan"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Button2.Size = New System.Drawing.Size(135, 32)
+        Me.Button2.TabIndex = 6
+        Me.Button2.Text = "Dengar Musik 1"
+        Me.Button2.UseVisualStyleBackColor = False
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.BackColor = System.Drawing.Color.White
+        Me.Label6.Font = New System.Drawing.Font("Elephant", 8.999999!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(272, 51)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(52, 16)
+        Me.Label6.TabIndex = 16
+        Me.Label6.Text = "WITA"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label7.Font = New System.Drawing.Font("Elephant", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(6, 9)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(344, 20)
+        Me.Label7.TabIndex = 18
+        Me.Label7.Text = "Masukan ID PASIEN untuk mencari data"
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(203, 206)
+        Me.Button3.BackColor = System.Drawing.Color.Red
+        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.Location = New System.Drawing.Point(627, 38)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 23)
-        Me.Button3.TabIndex = 16
-        Me.Button3.Text = "Hapus"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.Button3.Size = New System.Drawing.Size(135, 32)
+        Me.Button3.TabIndex = 18
+        Me.Button3.Text = "Dengar Musik 2"
+        Me.Button3.UseVisualStyleBackColor = False
+        '
+        'Button4
+        '
+        Me.Button4.BackColor = System.Drawing.Color.Red
+        Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button4.Location = New System.Drawing.Point(557, 3)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(48, 32)
+        Me.Button4.TabIndex = 19
+        Me.Button4.Text = "Stop"
+        Me.Button4.UseVisualStyleBackColor = False
         '
         'Pasien
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1058, 382)
+        Me.AutoSize = True
+        Me.ClientSize = New System.Drawing.Size(1362, 740)
+        Me.Controls.Add(Me.Button4)
+        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.DengarMusik)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.PasienDataGridView)
-        Me.Controls.Add(Me.PasienBindingNavigator)
+        Me.Controls.Add(Me.GroupBox1)
         Me.Name = "Pasien"
         Me.Text = "Pasien"
-        CType(Me.Sistem_informasi_rumahsakitDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PasienBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PasienBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.PasienBindingNavigator.ResumeLayout(False)
-        Me.PasienBindingNavigator.PerformLayout()
+        CType(Me.Sistem_informasi_rumahsakitDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PasienDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabControl1.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
         Me.TabPage1.PerformLayout()
+        Me.TabPage2.ResumeLayout(False)
+        Me.TabPage2.PerformLayout()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
+        CType(Me.DengarMusik, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -507,19 +727,6 @@ Partial Class Pasien
     Friend WithEvents PasienBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents PasienTableAdapter As Sistem_Informasi_Rumah_Sakit__SIRUSAK_.sistem_informasi_rumahsakitDataSetTableAdapters.pasienTableAdapter
     Friend WithEvents TableAdapterManager As Sistem_Informasi_Rumah_Sakit__SIRUSAK_.sistem_informasi_rumahsakitDataSetTableAdapters.TableAdapterManager
-    Friend WithEvents PasienBindingNavigator As System.Windows.Forms.BindingNavigator
-    Friend WithEvents BindingNavigatorAddNewItem As System.Windows.Forms.ToolStripButton
-    Friend WithEvents BindingNavigatorCountItem As System.Windows.Forms.ToolStripLabel
-    Friend WithEvents BindingNavigatorDeleteItem As System.Windows.Forms.ToolStripButton
-    Friend WithEvents BindingNavigatorMoveFirstItem As System.Windows.Forms.ToolStripButton
-    Friend WithEvents BindingNavigatorMovePreviousItem As System.Windows.Forms.ToolStripButton
-    Friend WithEvents BindingNavigatorSeparator As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents BindingNavigatorPositionItem As System.Windows.Forms.ToolStripTextBox
-    Friend WithEvents BindingNavigatorSeparator1 As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents BindingNavigatorMoveNextItem As System.Windows.Forms.ToolStripButton
-    Friend WithEvents BindingNavigatorMoveLastItem As System.Windows.Forms.ToolStripButton
-    Friend WithEvents BindingNavigatorSeparator2 As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents PasienBindingNavigatorSaveItem As System.Windows.Forms.ToolStripButton
     Friend WithEvents PasienDataGridView As System.Windows.Forms.DataGridView
     Friend WithEvents DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
@@ -530,8 +737,10 @@ Partial Class Pasien
     Friend WithEvents DataGridViewTextBoxColumn7 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents TabControl1 As System.Windows.Forms.TabControl
     Friend WithEvents TabPage1 As System.Windows.Forms.TabPage
-    Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents TabPage2 As System.Windows.Forms.TabPage
+    Friend WithEvents ButtonHapus As System.Windows.Forms.Button
+    Friend WithEvents ButtonSimpan As System.Windows.Forms.Button
+    Friend WithEvents ButtonTambah As System.Windows.Forms.Button
     Friend WithEvents ID_PASIENTextBox As System.Windows.Forms.TextBox
     Friend WithEvents NAMA_PASIENTextBox As System.Windows.Forms.TextBox
     Friend WithEvents J_KComboBox As System.Windows.Forms.ComboBox
@@ -539,6 +748,28 @@ Partial Class Pasien
     Friend WithEvents ALAMATTextBox As System.Windows.Forms.TextBox
     Friend WithEvents KELUHANTextBox As System.Windows.Forms.TextBox
     Friend WithEvents UMURComboBox As System.Windows.Forms.ComboBox
-    Friend WithEvents TabPage2 As System.Windows.Forms.TabPage
+    Friend WithEvents CariTextbox As System.Windows.Forms.TextBox
+    Friend WithEvents CariButton As System.Windows.Forms.Button
+    Friend WithEvents ButtonRefresh As System.Windows.Forms.Button
+    Friend WithEvents ButtonBatal As System.Windows.Forms.Button
+    Friend WithEvents ButtonEdit As System.Windows.Forms.Button
+    Friend WithEvents Button7 As System.Windows.Forms.Button
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents Tanggal As System.Windows.Forms.Label
+    Friend WithEvents LblDetik As System.Windows.Forms.Label
+    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents LblMenit As System.Windows.Forms.Label
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents LblJam As System.Windows.Forms.Label
+    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
+    Friend WithEvents Timer1 As System.Windows.Forms.Timer
+    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents DengarMusik As AxWMPLib.AxWindowsMediaPlayer
+    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents Button4 As System.Windows.Forms.Button
 End Class
