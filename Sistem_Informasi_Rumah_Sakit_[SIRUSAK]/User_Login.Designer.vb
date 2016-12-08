@@ -54,6 +54,7 @@ Partial Class User_Login
         '
         'UsernameLabel
         '
+        Me.UsernameLabel.Font = New System.Drawing.Font("Elephant", 14.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.UsernameLabel.Location = New System.Drawing.Point(358, 75)
         Me.UsernameLabel.Name = "UsernameLabel"
         Me.UsernameLabel.Size = New System.Drawing.Size(467, 84)
@@ -63,6 +64,7 @@ Partial Class User_Login
         '
         'PasswordLabel
         '
+        Me.PasswordLabel.Font = New System.Drawing.Font("Elephant", 14.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.PasswordLabel.Location = New System.Drawing.Point(358, 132)
         Me.PasswordLabel.Name = "PasswordLabel"
         Me.PasswordLabel.Size = New System.Drawing.Size(369, 78)
@@ -72,7 +74,8 @@ Partial Class User_Login
         '
         'UsernameTextBox
         '
-        Me.UsernameTextBox.Location = New System.Drawing.Point(433, 89)
+        Me.UsernameTextBox.Font = New System.Drawing.Font("Elephant", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.UsernameTextBox.Location = New System.Drawing.Point(473, 89)
         Me.UsernameTextBox.Multiline = True
         Me.UsernameTextBox.Name = "UsernameTextBox"
         Me.UsernameTextBox.Size = New System.Drawing.Size(369, 53)
@@ -80,7 +83,8 @@ Partial Class User_Login
         '
         'PasswordTextBox
         '
-        Me.PasswordTextBox.Location = New System.Drawing.Point(433, 153)
+        Me.PasswordTextBox.Font = New System.Drawing.Font("Elephant", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PasswordTextBox.Location = New System.Drawing.Point(473, 148)
         Me.PasswordTextBox.Multiline = True
         Me.PasswordTextBox.Name = "PasswordTextBox"
         Me.PasswordTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
@@ -89,28 +93,28 @@ Partial Class User_Login
         '
         'OK
         '
-        Me.OK.Location = New System.Drawing.Point(383, 212)
+        Me.OK.Location = New System.Drawing.Point(473, 222)
         Me.OK.Name = "OK"
-        Me.OK.Size = New System.Drawing.Size(243, 78)
+        Me.OK.Size = New System.Drawing.Size(153, 53)
         Me.OK.TabIndex = 4
         Me.OK.Text = "&OK"
         '
         'Cancel
         '
         Me.Cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.Cancel.Location = New System.Drawing.Point(670, 213)
+        Me.Cancel.Location = New System.Drawing.Point(689, 222)
         Me.Cancel.Name = "Cancel"
-        Me.Cancel.Size = New System.Drawing.Size(243, 78)
+        Me.Cancel.Size = New System.Drawing.Size(153, 53)
         Me.Cancel.TabIndex = 5
         Me.Cancel.Text = "&Cancel"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(418, 57)
+        Me.Label1.Font = New System.Drawing.Font("Elephant", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(384, 32)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(325, 15)
+        Me.Label1.Size = New System.Drawing.Size(571, 27)
         Me.Label1.TabIndex = 7
         Me.Label1.Text = "Silahkan Masukan Username dan Password anda"
         '

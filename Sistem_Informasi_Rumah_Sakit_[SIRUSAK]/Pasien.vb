@@ -168,21 +168,25 @@
     '    DengarMusik.URL = fileDialog.FileName
     'End Sub
 
-    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
-        If MessageBox.Show("Ingin mendengar musik", "Konfirmasi", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = Windows.Forms.DialogResult.Yes Then
-            DengarMusik.URL = Application.StartupPath & "/MUSIK/Wiz Khalifa - See You Again ft. Charlie Puth [Official Video] Furious 7 Soundtrack.mp3"
-            MessageBox.Show("Anda Telah Mendengarkan Musik agar tidak bosan", "Dengar Musik")
-        End If
+    'Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    '    If MessageBox.Show("Ingin mendengar musik", "Konfirmasi", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = Windows.Forms.DialogResult.Yes Then
+    '        DengarMusik.URL = Application.StartupPath & "/MUSIK/Wiz Khalifa - See You Again ft. Charlie Puth [Official Video] Furious 7 Soundtrack.mp3"
+    '        MessageBox.Show("Anda Telah Mendengarkan Musik agar tidak bosan", "Dengar Musik")
+    '    End If
+    'End Sub
+
+    'Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    '    If MessageBox.Show("Ingin mendengar musik", "Konfirmasi", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = Windows.Forms.DialogResult.Yes Then
+    '        DengarMusik.URL = Application.StartupPath & "/MUSIK/---Maher Zain - Number One For Me - Official Music Video - YouTube.mp4"
+    '        MessageBox.Show("Anda Telah Mendengarkan Musik agar tidak bosan", "Dengar Musik")
+    '    End If
+    'End Sub
+
+    Private Sub Button4_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs)
+
     End Sub
 
-    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
-        If MessageBox.Show("Ingin mendengar musik", "Konfirmasi", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = Windows.Forms.DialogResult.Yes Then
-            DengarMusik.URL = Application.StartupPath & "/MUSIK/---Maher Zain - Number One For Me - Official Music Video - YouTube.mp4"
-            MessageBox.Show("Anda Telah Mendengarkan Musik agar tidak bosan", "Dengar Musik")
-        End If
-    End Sub
-
-    Private Sub Button4_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
+    Private Sub TabPage2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TabPage2.Click
 
     End Sub
 End Class

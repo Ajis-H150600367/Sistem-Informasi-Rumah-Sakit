@@ -30,7 +30,6 @@ Partial Class Pasien
         Dim ALAMATLabel As System.Windows.Forms.Label
         Dim KELUHANLabel As System.Windows.Forms.Label
         Dim UMURLabel As System.Windows.Forms.Label
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Pasien))
         Me.PasienBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Sistem_informasi_rumahsakitDataSet = New Sistem_Informasi_Rumah_Sakit__SIRUSAK_.sistem_informasi_rumahsakitDataSet()
         Me.PasienDataGridView = New System.Windows.Forms.DataGridView()
@@ -43,6 +42,7 @@ Partial Class Pasien
         Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button7 = New System.Windows.Forms.Button()
         Me.CariTextbox = New System.Windows.Forms.TextBox()
@@ -63,7 +63,6 @@ Partial Class Pasien
         Me.UMURComboBox = New System.Windows.Forms.ComboBox()
         Me.PasienTableAdapter = New Sistem_Informasi_Rumah_Sakit__SIRUSAK_.sistem_informasi_rumahsakitDataSetTableAdapters.pasienTableAdapter()
         Me.TableAdapterManager = New Sistem_Informasi_Rumah_Sakit__SIRUSAK_.sistem_informasi_rumahsakitDataSetTableAdapters.TableAdapterManager()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.Tanggal = New System.Windows.Forms.Label()
         Me.LblDetik = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
@@ -73,13 +72,9 @@ Partial Class Pasien
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.DengarMusik = New AxWMPLib.AxWindowsMediaPlayer()
-        Me.Button2 = New System.Windows.Forms.Button()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.Label1 = New System.Windows.Forms.Label()
         ID_PASIENLabel = New System.Windows.Forms.Label()
         NAMA_PASIENLabel = New System.Windows.Forms.Label()
         J_KLabel = New System.Windows.Forms.Label()
@@ -94,7 +89,6 @@ Partial Class Pasien
         Me.TabPage1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
-        CType(Me.DengarMusik, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ID_PASIENLabel
@@ -193,7 +187,7 @@ Partial Class Pasien
         Me.PasienDataGridView.DataSource = Me.PasienBindingSource
         Me.PasienDataGridView.Location = New System.Drawing.Point(0, 98)
         Me.PasienDataGridView.Name = "PasienDataGridView"
-        Me.PasienDataGridView.Size = New System.Drawing.Size(698, 308)
+        Me.PasienDataGridView.Size = New System.Drawing.Size(864, 322)
         Me.PasienDataGridView.TabIndex = 1
         '
         'DataGridViewTextBoxColumn1
@@ -242,10 +236,10 @@ Partial Class Pasien
         '
         Me.TabControl1.Controls.Add(Me.TabPage1)
         Me.TabControl1.Controls.Add(Me.TabPage2)
-        Me.TabControl1.Location = New System.Drawing.Point(704, 94)
+        Me.TabControl1.Location = New System.Drawing.Point(870, 94)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(364, 312)
+        Me.TabControl1.Size = New System.Drawing.Size(464, 326)
         Me.TabControl1.TabIndex = 2
         '
         'TabPage1
@@ -259,15 +253,26 @@ Partial Class Pasien
         Me.TabPage1.Location = New System.Drawing.Point(4, 22)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(356, 286)
+        Me.TabPage1.Size = New System.Drawing.Size(456, 300)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Cari,Keluar"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label7.Font = New System.Drawing.Font("Elephant", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(6, 9)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(344, 20)
+        Me.Label7.TabIndex = 18
+        Me.Label7.Text = "Masukan ID PASIEN untuk mencari data"
         '
         'Button1
         '
         Me.Button1.BackColor = System.Drawing.Color.Red
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(8, 148)
+        Me.Button1.Location = New System.Drawing.Point(17, 148)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(67, 34)
         Me.Button1.TabIndex = 5
@@ -278,7 +283,7 @@ Partial Class Pasien
         '
         Me.Button7.BackColor = System.Drawing.Color.Red
         Me.Button7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button7.Location = New System.Drawing.Point(200, 148)
+        Me.Button7.Location = New System.Drawing.Point(275, 148)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(151, 34)
         Me.Button7.TabIndex = 4
@@ -291,14 +296,14 @@ Partial Class Pasien
         Me.CariTextbox.Location = New System.Drawing.Point(17, 38)
         Me.CariTextbox.Multiline = True
         Me.CariTextbox.Name = "CariTextbox"
-        Me.CariTextbox.Size = New System.Drawing.Size(219, 28)
+        Me.CariTextbox.Size = New System.Drawing.Size(328, 28)
         Me.CariTextbox.TabIndex = 3
         '
         'CariButton
         '
         Me.CariButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.CariButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CariButton.Location = New System.Drawing.Point(242, 38)
+        Me.CariButton.Location = New System.Drawing.Point(351, 38)
         Me.CariButton.Name = "CariButton"
         Me.CariButton.Size = New System.Drawing.Size(75, 28)
         Me.CariButton.TabIndex = 2
@@ -331,7 +336,7 @@ Partial Class Pasien
         Me.TabPage2.Location = New System.Drawing.Point(4, 22)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(356, 286)
+        Me.TabPage2.Size = New System.Drawing.Size(456, 300)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Tambah,Simpan,Edit,Batal,Hapus,Refresh"
         '
@@ -340,9 +345,9 @@ Partial Class Pasien
         Me.ButtonRefresh.BackColor = System.Drawing.Color.White
         Me.ButtonRefresh.Font = New System.Drawing.Font("Elephant", 8.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonRefresh.ForeColor = System.Drawing.Color.Red
-        Me.ButtonRefresh.Location = New System.Drawing.Point(215, 241)
+        Me.ButtonRefresh.Location = New System.Drawing.Point(289, 247)
         Me.ButtonRefresh.Name = "ButtonRefresh"
-        Me.ButtonRefresh.Size = New System.Drawing.Size(75, 23)
+        Me.ButtonRefresh.Size = New System.Drawing.Size(79, 28)
         Me.ButtonRefresh.TabIndex = 36
         Me.ButtonRefresh.Text = "Refresh"
         Me.ButtonRefresh.UseVisualStyleBackColor = False
@@ -353,9 +358,9 @@ Partial Class Pasien
         Me.ButtonBatal.Enabled = False
         Me.ButtonBatal.Font = New System.Drawing.Font("Elephant", 8.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonBatal.ForeColor = System.Drawing.Color.Red
-        Me.ButtonBatal.Location = New System.Drawing.Point(49, 241)
+        Me.ButtonBatal.Location = New System.Drawing.Point(86, 247)
         Me.ButtonBatal.Name = "ButtonBatal"
-        Me.ButtonBatal.Size = New System.Drawing.Size(75, 23)
+        Me.ButtonBatal.Size = New System.Drawing.Size(79, 28)
         Me.ButtonBatal.TabIndex = 35
         Me.ButtonBatal.Text = "Batal"
         Me.ButtonBatal.UseVisualStyleBackColor = False
@@ -365,9 +370,9 @@ Partial Class Pasien
         Me.ButtonEdit.BackColor = System.Drawing.Color.White
         Me.ButtonEdit.Font = New System.Drawing.Font("Elephant", 8.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonEdit.ForeColor = System.Drawing.Color.Red
-        Me.ButtonEdit.Location = New System.Drawing.Point(215, 208)
+        Me.ButtonEdit.Location = New System.Drawing.Point(289, 208)
         Me.ButtonEdit.Name = "ButtonEdit"
-        Me.ButtonEdit.Size = New System.Drawing.Size(75, 23)
+        Me.ButtonEdit.Size = New System.Drawing.Size(79, 28)
         Me.ButtonEdit.TabIndex = 34
         Me.ButtonEdit.Text = "Edit"
         Me.ButtonEdit.UseVisualStyleBackColor = False
@@ -377,9 +382,9 @@ Partial Class Pasien
         Me.ButtonHapus.BackColor = System.Drawing.Color.White
         Me.ButtonHapus.Font = New System.Drawing.Font("Elephant", 8.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonHapus.ForeColor = System.Drawing.Color.Red
-        Me.ButtonHapus.Location = New System.Drawing.Point(130, 241)
+        Me.ButtonHapus.Location = New System.Drawing.Point(185, 247)
         Me.ButtonHapus.Name = "ButtonHapus"
-        Me.ButtonHapus.Size = New System.Drawing.Size(75, 23)
+        Me.ButtonHapus.Size = New System.Drawing.Size(79, 28)
         Me.ButtonHapus.TabIndex = 33
         Me.ButtonHapus.Text = "Hapus"
         Me.ButtonHapus.UseVisualStyleBackColor = False
@@ -390,9 +395,9 @@ Partial Class Pasien
         Me.ButtonSimpan.Enabled = False
         Me.ButtonSimpan.Font = New System.Drawing.Font("Elephant", 8.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonSimpan.ForeColor = System.Drawing.Color.Red
-        Me.ButtonSimpan.Location = New System.Drawing.Point(130, 208)
+        Me.ButtonSimpan.Location = New System.Drawing.Point(185, 208)
         Me.ButtonSimpan.Name = "ButtonSimpan"
-        Me.ButtonSimpan.Size = New System.Drawing.Size(75, 23)
+        Me.ButtonSimpan.Size = New System.Drawing.Size(79, 28)
         Me.ButtonSimpan.TabIndex = 32
         Me.ButtonSimpan.Text = "Simpan"
         Me.ButtonSimpan.UseVisualStyleBackColor = False
@@ -402,9 +407,9 @@ Partial Class Pasien
         Me.ButtonTambah.BackColor = System.Drawing.Color.White
         Me.ButtonTambah.Font = New System.Drawing.Font("Elephant", 8.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonTambah.ForeColor = System.Drawing.Color.Red
-        Me.ButtonTambah.Location = New System.Drawing.Point(49, 208)
+        Me.ButtonTambah.Location = New System.Drawing.Point(86, 208)
         Me.ButtonTambah.Name = "ButtonTambah"
-        Me.ButtonTambah.Size = New System.Drawing.Size(75, 23)
+        Me.ButtonTambah.Size = New System.Drawing.Size(79, 28)
         Me.ButtonTambah.TabIndex = 31
         Me.ButtonTambah.Text = "Tambah"
         Me.ButtonTambah.UseVisualStyleBackColor = False
@@ -508,17 +513,6 @@ Partial Class Pasien
         Me.TableAdapterManager.ruanganTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = Sistem_Informasi_Rumah_Sakit__SIRUSAK_.sistem_informasi_rumahsakitDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label1.Font = New System.Drawing.Font("Elephant", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(293, 33)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(147, 27)
-        Me.Label1.TabIndex = 3
-        Me.Label1.Text = "Data Pasien"
-        '
         'Tanggal
         '
         Me.Tanggal.AutoSize = True
@@ -557,7 +551,7 @@ Partial Class Pasien
         Me.LblMenit.AutoSize = True
         Me.LblMenit.BackColor = System.Drawing.Color.White
         Me.LblMenit.Font = New System.Drawing.Font("Elephant", 8.999999!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblMenit.Location = New System.Drawing.Point(211, 51)
+        Me.LblMenit.Location = New System.Drawing.Point(206, 51)
         Me.LblMenit.Name = "LblMenit"
         Me.LblMenit.Size = New System.Drawing.Size(45, 16)
         Me.LblMenit.TabIndex = 11
@@ -568,7 +562,7 @@ Partial Class Pasien
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.White
         Me.Label3.Font = New System.Drawing.Font("Elephant", 8.999999!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(203, 51)
+        Me.Label3.Location = New System.Drawing.Point(198, 51)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(12, 16)
         Me.Label3.TabIndex = 10
@@ -579,7 +573,7 @@ Partial Class Pasien
         Me.LblJam.AutoSize = True
         Me.LblJam.BackColor = System.Drawing.Color.White
         Me.LblJam.Font = New System.Drawing.Font("Elephant", 8.999999!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblJam.Location = New System.Drawing.Point(184, 51)
+        Me.LblJam.Location = New System.Drawing.Point(178, 51)
         Me.LblJam.Name = "LblJam"
         Me.LblJam.Size = New System.Drawing.Size(36, 16)
         Me.LblJam.TabIndex = 9
@@ -619,34 +613,11 @@ Partial Class Pasien
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.LblMenit)
         Me.GroupBox1.Controls.Add(Me.Label4)
-        Me.GroupBox1.Location = New System.Drawing.Point(768, 3)
+        Me.GroupBox1.Location = New System.Drawing.Point(1004, 3)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(330, 85)
         Me.GroupBox1.TabIndex = 16
         Me.GroupBox1.TabStop = False
-        '
-        'Timer1
-        '
-        '
-        'DengarMusik
-        '
-        Me.DengarMusik.Enabled = True
-        Me.DengarMusik.Location = New System.Drawing.Point(611, 3)
-        Me.DengarMusik.Name = "DengarMusik"
-        Me.DengarMusik.OcxState = CType(resources.GetObject("DengarMusik.OcxState"), System.Windows.Forms.AxHost.State)
-        Me.DengarMusik.Size = New System.Drawing.Size(10, 12)
-        Me.DengarMusik.TabIndex = 17
-        '
-        'Button2
-        '
-        Me.Button2.BackColor = System.Drawing.Color.Red
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(627, 3)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(135, 32)
-        Me.Button2.TabIndex = 6
-        Me.Button2.Text = "Dengar Musik 1"
-        Me.Button2.UseVisualStyleBackColor = False
         '
         'Label6
         '
@@ -659,38 +630,19 @@ Partial Class Pasien
         Me.Label6.TabIndex = 16
         Me.Label6.Text = "WITA"
         '
-        'Label7
+        'Timer1
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label7.Font = New System.Drawing.Font("Elephant", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(6, 9)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(344, 20)
-        Me.Label7.TabIndex = 18
-        Me.Label7.Text = "Masukan ID PASIEN untuk mencari data"
         '
-        'Button3
+        'Label1
         '
-        Me.Button3.BackColor = System.Drawing.Color.Red
-        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(627, 38)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(135, 32)
-        Me.Button3.TabIndex = 18
-        Me.Button3.Text = "Dengar Musik 2"
-        Me.Button3.UseVisualStyleBackColor = False
-        '
-        'Button4
-        '
-        Me.Button4.BackColor = System.Drawing.Color.Red
-        Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.Location = New System.Drawing.Point(557, 3)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(48, 32)
-        Me.Button4.TabIndex = 19
-        Me.Button4.Text = "Stop"
-        Me.Button4.UseVisualStyleBackColor = False
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label1.Font = New System.Drawing.Font("Elephant", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(438, 32)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(147, 27)
+        Me.Label1.TabIndex = 3
+        Me.Label1.Text = "Data Pasien"
         '
         'Pasien
         '
@@ -698,10 +650,6 @@ Partial Class Pasien
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
         Me.ClientSize = New System.Drawing.Size(1362, 740)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.DengarMusik)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.PasienDataGridView)
@@ -718,7 +666,6 @@ Partial Class Pasien
         Me.TabPage2.PerformLayout()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
-        CType(Me.DengarMusik, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -754,7 +701,6 @@ Partial Class Pasien
     Friend WithEvents ButtonBatal As System.Windows.Forms.Button
     Friend WithEvents ButtonEdit As System.Windows.Forms.Button
     Friend WithEvents Button7 As System.Windows.Forms.Button
-    Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Tanggal As System.Windows.Forms.Label
     Friend WithEvents LblDetik As System.Windows.Forms.Label
     Friend WithEvents Label5 As System.Windows.Forms.Label
@@ -766,10 +712,7 @@ Partial Class Pasien
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
     Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents DengarMusik As AxWMPLib.AxWindowsMediaPlayer
-    Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents Label7 As System.Windows.Forms.Label
-    Friend WithEvents Button3 As System.Windows.Forms.Button
-    Friend WithEvents Button4 As System.Windows.Forms.Button
+    Friend WithEvents Label1 As System.Windows.Forms.Label
 End Class

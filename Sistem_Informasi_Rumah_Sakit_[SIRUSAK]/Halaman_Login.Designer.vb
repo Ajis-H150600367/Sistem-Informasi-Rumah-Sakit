@@ -42,7 +42,7 @@ Partial Class Halaman_Login
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Elephant", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(191, 23)
+        Me.Label1.Location = New System.Drawing.Point(295, 24)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(601, 21)
         Me.Label1.TabIndex = 0
@@ -50,7 +50,7 @@ Partial Class Halaman_Login
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(334, 260)
+        Me.Button1.Location = New System.Drawing.Point(414, 325)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(118, 23)
         Me.Button1.TabIndex = 1
@@ -59,7 +59,7 @@ Partial Class Halaman_Login
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(485, 260)
+        Me.Button2.Location = New System.Drawing.Point(677, 325)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(115, 23)
         Me.Button2.TabIndex = 2
@@ -69,9 +69,9 @@ Partial Class Halaman_Login
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(482, 164)
+        Me.PictureBox1.Location = New System.Drawing.Point(626, 164)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(118, 87)
+        Me.PictureBox1.Size = New System.Drawing.Size(202, 135)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 3
         Me.PictureBox1.TabStop = False
@@ -79,9 +79,9 @@ Partial Class Halaman_Login
         'PictureBox2
         '
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(331, 164)
+        Me.PictureBox2.Location = New System.Drawing.Point(365, 164)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(118, 87)
+        Me.PictureBox2.Size = New System.Drawing.Size(223, 135)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 4
         Me.PictureBox2.TabStop = False
@@ -91,7 +91,7 @@ Partial Class Halaman_Login
         Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
         Me.PictureBox3.Location = New System.Drawing.Point(12, 164)
         Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(298, 202)
+        Me.PictureBox3.Size = New System.Drawing.Size(337, 332)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox3.TabIndex = 5
         Me.PictureBox3.TabStop = False
@@ -99,9 +99,9 @@ Partial Class Halaman_Login
         'PictureBox4
         '
         Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
-        Me.PictureBox4.Location = New System.Drawing.Point(623, 164)
+        Me.PictureBox4.Location = New System.Drawing.Point(848, 164)
         Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(316, 202)
+        Me.PictureBox4.Size = New System.Drawing.Size(485, 332)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox4.TabIndex = 6
         Me.PictureBox4.TabStop = False
@@ -111,7 +111,7 @@ Partial Class Halaman_Login
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Elephant", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.Black
-        Me.Label2.Location = New System.Drawing.Point(206, 129)
+        Me.Label2.Location = New System.Drawing.Point(314, 129)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(525, 21)
         Me.Label2.TabIndex = 7
@@ -121,7 +121,7 @@ Partial Class Halaman_Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(960, 390)
+        Me.ClientSize = New System.Drawing.Size(1370, 743)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.PictureBox4)
         Me.Controls.Add(Me.PictureBox3)

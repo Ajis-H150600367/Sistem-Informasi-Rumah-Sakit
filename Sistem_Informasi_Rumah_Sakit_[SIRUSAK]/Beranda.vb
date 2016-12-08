@@ -2,7 +2,6 @@
 
     Private Sub PasienToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PasienToolStripMenuItem.Click
         Pasien.Show()
-        Me.Hide()
     End Sub
 
     Private Sub LobiToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LobiToolStripMenuItem.Click
@@ -15,10 +14,6 @@
 
     Private Sub DokterToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles DokterToolStripMenuItem.Click
         dokter.Show()
-    End Sub
-
-    Private Sub OBAT01ToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OBAT01ToolStripMenuItem.Click
-        OBAT01.Show()
     End Sub
 
     Private Sub KASIRToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles KASIRToolStripMenuItem.Click
