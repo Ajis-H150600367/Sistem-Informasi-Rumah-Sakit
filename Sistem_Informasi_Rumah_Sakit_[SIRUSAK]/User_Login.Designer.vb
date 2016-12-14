@@ -93,6 +93,7 @@ Partial Class User_Login
         '
         'OK
         '
+        Me.OK.Font = New System.Drawing.Font("Elephant", 8.999999!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.OK.Location = New System.Drawing.Point(473, 222)
         Me.OK.Name = "OK"
         Me.OK.Size = New System.Drawing.Size(153, 53)
@@ -102,6 +103,7 @@ Partial Class User_Login
         'Cancel
         '
         Me.Cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel
+        Me.Cancel.Font = New System.Drawing.Font("Elephant", 8.999999!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Cancel.Location = New System.Drawing.Point(689, 222)
         Me.Cancel.Name = "Cancel"
         Me.Cancel.Size = New System.Drawing.Size(153, 53)

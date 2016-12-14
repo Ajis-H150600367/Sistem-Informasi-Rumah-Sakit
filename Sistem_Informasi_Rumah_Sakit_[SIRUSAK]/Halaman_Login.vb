@@ -11,4 +11,8 @@
         User_Login.Show()
         Me.Hide()
     End Sub
+
+    Private Sub Halaman_Login_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        AxmediaPlayer.URL = Application.StartupPath & "/MUSIK/Selamat Datang Sistem informasi rumah sakit.mp3"
+    End Sub
 End Class

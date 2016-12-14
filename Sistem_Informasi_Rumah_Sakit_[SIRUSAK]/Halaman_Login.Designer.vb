@@ -31,10 +31,12 @@ Partial Class Halaman_Login
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.AxmediaPlayer = New AxWMPLib.AxWindowsMediaPlayer()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.AxmediaPlayer, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -50,28 +52,30 @@ Partial Class Halaman_Login
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(414, 325)
+        Me.Button1.Font = New System.Drawing.Font("Elephant", 8.999999!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(410, 443)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(118, 23)
         Me.Button1.TabIndex = 1
-        Me.Button1.Text = "Login Master"
+        Me.Button1.Text = "&Login Master"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(677, 325)
+        Me.Button2.Font = New System.Drawing.Font("Elephant", 8.999999!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.Location = New System.Drawing.Point(681, 443)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(115, 23)
         Me.Button2.TabIndex = 2
-        Me.Button2.Text = "Login User"
+        Me.Button2.Text = "&Login User"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(626, 164)
+        Me.PictureBox1.Location = New System.Drawing.Point(624, 164)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(202, 135)
+        Me.PictureBox1.Size = New System.Drawing.Size(215, 237)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 3
         Me.PictureBox1.TabStop = False
@@ -79,9 +83,9 @@ Partial Class Halaman_Login
         'PictureBox2
         '
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(365, 164)
+        Me.PictureBox2.Location = New System.Drawing.Point(358, 164)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(223, 135)
+        Me.PictureBox2.Size = New System.Drawing.Size(223, 237)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 4
         Me.PictureBox2.TabStop = False
@@ -117,11 +121,21 @@ Partial Class Halaman_Login
         Me.Label2.TabIndex = 7
         Me.Label2.Text = "Silahkan Pilih Menu Login di bawah sesuai Identitas Diri :"
         '
+        'AxmediaPlayer
+        '
+        Me.AxmediaPlayer.Enabled = True
+        Me.AxmediaPlayer.Location = New System.Drawing.Point(902, 35)
+        Me.AxmediaPlayer.Name = "AxmediaPlayer"
+        Me.AxmediaPlayer.OcxState = CType(resources.GetObject("AxmediaPlayer.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.AxmediaPlayer.Size = New System.Drawing.Size(16, 10)
+        Me.AxmediaPlayer.TabIndex = 8
+        '
         'Halaman_Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1370, 743)
+        Me.ClientSize = New System.Drawing.Size(1362, 740)
+        Me.Controls.Add(Me.AxmediaPlayer)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.PictureBox4)
         Me.Controls.Add(Me.PictureBox3)
@@ -136,6 +150,7 @@ Partial Class Halaman_Login
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.AxmediaPlayer, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -148,4 +163,5 @@ Partial Class Halaman_Login
     Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox4 As System.Windows.Forms.PictureBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents AxmediaPlayer As AxWMPLib.AxWindowsMediaPlayer
 End Class

@@ -30,16 +30,7 @@ Partial Class Pasien
         Dim ALAMATLabel As System.Windows.Forms.Label
         Dim KELUHANLabel As System.Windows.Forms.Label
         Dim UMURLabel As System.Windows.Forms.Label
-        Me.PasienBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.Sistem_informasi_rumahsakitDataSet = New Sistem_Informasi_Rumah_Sakit__SIRUSAK_.sistem_informasi_rumahsakitDataSet()
         Me.PasienDataGridView = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.Label7 = New System.Windows.Forms.Label()
@@ -61,8 +52,6 @@ Partial Class Pasien
         Me.ALAMATTextBox = New System.Windows.Forms.TextBox()
         Me.KELUHANTextBox = New System.Windows.Forms.TextBox()
         Me.UMURComboBox = New System.Windows.Forms.ComboBox()
-        Me.PasienTableAdapter = New Sistem_Informasi_Rumah_Sakit__SIRUSAK_.sistem_informasi_rumahsakitDataSetTableAdapters.pasienTableAdapter()
-        Me.TableAdapterManager = New Sistem_Informasi_Rumah_Sakit__SIRUSAK_.sistem_informasi_rumahsakitDataSetTableAdapters.TableAdapterManager()
         Me.Tanggal = New System.Windows.Forms.Label()
         Me.LblDetik = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
@@ -75,6 +64,18 @@ Partial Class Pasien
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.PasienBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Sistem_informasi_rumahsakitDataSet = New Sistem_Informasi_Rumah_Sakit__SIRUSAK_.sistem_informasi_rumahsakitDataSet()
+        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.PasienTableAdapter = New Sistem_Informasi_Rumah_Sakit__SIRUSAK_.sistem_informasi_rumahsakitDataSetTableAdapters.pasienTableAdapter()
+        Me.TableAdapterManager = New Sistem_Informasi_Rumah_Sakit__SIRUSAK_.sistem_informasi_rumahsakitDataSetTableAdapters.TableAdapterManager()
+        Me.Button2 = New System.Windows.Forms.Button()
         ID_PASIENLabel = New System.Windows.Forms.Label()
         NAMA_PASIENLabel = New System.Windows.Forms.Label()
         J_KLabel = New System.Windows.Forms.Label()
@@ -82,13 +83,13 @@ Partial Class Pasien
         ALAMATLabel = New System.Windows.Forms.Label()
         KELUHANLabel = New System.Windows.Forms.Label()
         UMURLabel = New System.Windows.Forms.Label()
-        CType(Me.PasienBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Sistem_informasi_rumahsakitDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PasienDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
+        CType(Me.PasienBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Sistem_informasi_rumahsakitDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ID_PASIENLabel
@@ -168,16 +169,6 @@ Partial Class Pasien
         UMURLabel.TabIndex = 29
         UMURLabel.Text = "UMUR:"
         '
-        'PasienBindingSource
-        '
-        Me.PasienBindingSource.DataMember = "pasien"
-        Me.PasienBindingSource.DataSource = Me.Sistem_informasi_rumahsakitDataSet
-        '
-        'Sistem_informasi_rumahsakitDataSet
-        '
-        Me.Sistem_informasi_rumahsakitDataSet.DataSetName = "sistem_informasi_rumahsakitDataSet"
-        Me.Sistem_informasi_rumahsakitDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
         'PasienDataGridView
         '
         Me.PasienDataGridView.AutoGenerateColumns = False
@@ -187,50 +178,8 @@ Partial Class Pasien
         Me.PasienDataGridView.DataSource = Me.PasienBindingSource
         Me.PasienDataGridView.Location = New System.Drawing.Point(0, 98)
         Me.PasienDataGridView.Name = "PasienDataGridView"
-        Me.PasienDataGridView.Size = New System.Drawing.Size(864, 322)
+        Me.PasienDataGridView.Size = New System.Drawing.Size(868, 466)
         Me.PasienDataGridView.TabIndex = 1
-        '
-        'DataGridViewTextBoxColumn1
-        '
-        Me.DataGridViewTextBoxColumn1.DataPropertyName = "ID_PASIEN"
-        Me.DataGridViewTextBoxColumn1.HeaderText = "ID_PASIEN"
-        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
-        '
-        'DataGridViewTextBoxColumn2
-        '
-        Me.DataGridViewTextBoxColumn2.DataPropertyName = "NAMA_PASIEN"
-        Me.DataGridViewTextBoxColumn2.HeaderText = "NAMA_PASIEN"
-        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
-        '
-        'DataGridViewTextBoxColumn3
-        '
-        Me.DataGridViewTextBoxColumn3.DataPropertyName = "J_K"
-        Me.DataGridViewTextBoxColumn3.HeaderText = "J_K"
-        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
-        '
-        'DataGridViewTextBoxColumn4
-        '
-        Me.DataGridViewTextBoxColumn4.DataPropertyName = "KOTA_PASIEN"
-        Me.DataGridViewTextBoxColumn4.HeaderText = "KOTA_PASIEN"
-        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
-        '
-        'DataGridViewTextBoxColumn5
-        '
-        Me.DataGridViewTextBoxColumn5.DataPropertyName = "ALAMAT"
-        Me.DataGridViewTextBoxColumn5.HeaderText = "ALAMAT"
-        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
-        '
-        'DataGridViewTextBoxColumn6
-        '
-        Me.DataGridViewTextBoxColumn6.DataPropertyName = "KELUHAN"
-        Me.DataGridViewTextBoxColumn6.HeaderText = "KELUHAN"
-        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
-        '
-        'DataGridViewTextBoxColumn7
-        '
-        Me.DataGridViewTextBoxColumn7.DataPropertyName = "UMUR"
-        Me.DataGridViewTextBoxColumn7.HeaderText = "UMUR"
-        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
         '
         'TabControl1
         '
@@ -239,7 +188,7 @@ Partial Class Pasien
         Me.TabControl1.Location = New System.Drawing.Point(870, 94)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(464, 326)
+        Me.TabControl1.Size = New System.Drawing.Size(464, 470)
         Me.TabControl1.TabIndex = 2
         '
         'TabPage1
@@ -253,7 +202,7 @@ Partial Class Pasien
         Me.TabPage1.Location = New System.Drawing.Point(4, 22)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(456, 300)
+        Me.TabPage1.Size = New System.Drawing.Size(456, 444)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Cari,Keluar"
         '
@@ -336,7 +285,7 @@ Partial Class Pasien
         Me.TabPage2.Location = New System.Drawing.Point(4, 22)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(456, 300)
+        Me.TabPage2.Size = New System.Drawing.Size(456, 444)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Tambah,Simpan,Edit,Batal,Hapus,Refresh"
         '
@@ -495,24 +444,6 @@ Partial Class Pasien
         Me.UMURComboBox.Size = New System.Drawing.Size(69, 24)
         Me.UMURComboBox.TabIndex = 30
         '
-        'PasienTableAdapter
-        '
-        Me.PasienTableAdapter.ClearBeforeFill = True
-        '
-        'TableAdapterManager
-        '
-        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
-        Me.TableAdapterManager.dokter_has_obatTableAdapter = Nothing
-        Me.TableAdapterManager.dokterTableAdapter = Nothing
-        Me.TableAdapterManager.kasirTableAdapter = Nothing
-        Me.TableAdapterManager.lobiTableAdapter = Nothing
-        Me.TableAdapterManager.obatTableAdapter = Nothing
-        Me.TableAdapterManager.pasien_has_obatTableAdapter = Nothing
-        Me.TableAdapterManager.pasienTableAdapter = Me.PasienTableAdapter
-        Me.TableAdapterManager.ruangan_has_dokterTableAdapter = Nothing
-        Me.TableAdapterManager.ruanganTableAdapter = Nothing
-        Me.TableAdapterManager.UpdateOrder = Sistem_Informasi_Rumah_Sakit__SIRUSAK_.sistem_informasi_rumahsakitDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
-        '
         'Tanggal
         '
         Me.Tanggal.AutoSize = True
@@ -573,7 +504,7 @@ Partial Class Pasien
         Me.LblJam.AutoSize = True
         Me.LblJam.BackColor = System.Drawing.Color.White
         Me.LblJam.Font = New System.Drawing.Font("Elephant", 8.999999!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LblJam.Location = New System.Drawing.Point(178, 51)
+        Me.LblJam.Location = New System.Drawing.Point(179, 51)
         Me.LblJam.Name = "LblJam"
         Me.LblJam.Size = New System.Drawing.Size(36, 16)
         Me.LblJam.TabIndex = 9
@@ -644,20 +575,100 @@ Partial Class Pasien
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "Data Pasien"
         '
+        'PasienBindingSource
+        '
+        Me.PasienBindingSource.DataMember = "pasien"
+        Me.PasienBindingSource.DataSource = Me.Sistem_informasi_rumahsakitDataSet
+        '
+        'Sistem_informasi_rumahsakitDataSet
+        '
+        Me.Sistem_informasi_rumahsakitDataSet.DataSetName = "sistem_informasi_rumahsakitDataSet"
+        Me.Sistem_informasi_rumahsakitDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'DataGridViewTextBoxColumn1
+        '
+        Me.DataGridViewTextBoxColumn1.DataPropertyName = "ID_PASIEN"
+        Me.DataGridViewTextBoxColumn1.HeaderText = "ID_PASIEN"
+        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
+        '
+        'DataGridViewTextBoxColumn2
+        '
+        Me.DataGridViewTextBoxColumn2.DataPropertyName = "NAMA_PASIEN"
+        Me.DataGridViewTextBoxColumn2.HeaderText = "NAMA_PASIEN"
+        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        '
+        'DataGridViewTextBoxColumn3
+        '
+        Me.DataGridViewTextBoxColumn3.DataPropertyName = "J_K"
+        Me.DataGridViewTextBoxColumn3.HeaderText = "J_K"
+        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        '
+        'DataGridViewTextBoxColumn4
+        '
+        Me.DataGridViewTextBoxColumn4.DataPropertyName = "KOTA_PASIEN"
+        Me.DataGridViewTextBoxColumn4.HeaderText = "KOTA_PASIEN"
+        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
+        '
+        'DataGridViewTextBoxColumn5
+        '
+        Me.DataGridViewTextBoxColumn5.DataPropertyName = "ALAMAT"
+        Me.DataGridViewTextBoxColumn5.HeaderText = "ALAMAT"
+        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
+        '
+        'DataGridViewTextBoxColumn6
+        '
+        Me.DataGridViewTextBoxColumn6.DataPropertyName = "KELUHAN"
+        Me.DataGridViewTextBoxColumn6.HeaderText = "KELUHAN"
+        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
+        '
+        'DataGridViewTextBoxColumn7
+        '
+        Me.DataGridViewTextBoxColumn7.DataPropertyName = "UMUR"
+        Me.DataGridViewTextBoxColumn7.HeaderText = "UMUR"
+        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
+        '
+        'PasienTableAdapter
+        '
+        Me.PasienTableAdapter.ClearBeforeFill = True
+        '
+        'TableAdapterManager
+        '
+        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.dokter_has_obatTableAdapter = Nothing
+        Me.TableAdapterManager.dokterTableAdapter = Nothing
+        Me.TableAdapterManager.kasirTableAdapter = Nothing
+        Me.TableAdapterManager.lobiTableAdapter = Nothing
+        Me.TableAdapterManager.obatTableAdapter = Nothing
+        Me.TableAdapterManager.pasien_has_obatTableAdapter = Nothing
+        Me.TableAdapterManager.pasienTableAdapter = Me.PasienTableAdapter
+        Me.TableAdapterManager.ruangan_has_dokterTableAdapter = Nothing
+        Me.TableAdapterManager.ruanganTableAdapter = Nothing
+        Me.TableAdapterManager.UpdateOrder = Sistem_Informasi_Rumah_Sakit__SIRUSAK_.sistem_informasi_rumahsakitDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.Color.Green
+        Me.Button2.Font = New System.Drawing.Font("Elephant", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.Location = New System.Drawing.Point(0, 3)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(118, 32)
+        Me.Button2.TabIndex = 17
+        Me.Button2.Text = "Beranda"
+        Me.Button2.UseVisualStyleBackColor = False
+        '
         'Pasien
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
-        Me.ClientSize = New System.Drawing.Size(1362, 740)
+        Me.ClientSize = New System.Drawing.Size(1370, 743)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.PasienDataGridView)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "Pasien"
         Me.Text = "Pasien"
-        CType(Me.PasienBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Sistem_informasi_rumahsakitDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PasienDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabControl1.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
@@ -666,6 +677,8 @@ Partial Class Pasien
         Me.TabPage2.PerformLayout()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        CType(Me.PasienBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Sistem_informasi_rumahsakitDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -715,4 +728,5 @@ Partial Class Pasien
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents Button2 As System.Windows.Forms.Button
 End Class
