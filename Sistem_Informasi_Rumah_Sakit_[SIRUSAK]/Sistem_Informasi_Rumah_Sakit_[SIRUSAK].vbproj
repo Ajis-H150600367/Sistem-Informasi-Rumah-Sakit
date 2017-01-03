@@ -92,6 +92,12 @@
     <Compile Include="dokter.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="DOKTER_SP.Designer.vb">
+      <DependentUpon>DOKTER_SP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DOKTER_SP.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Halaman_Login.Designer.vb">
       <DependentUpon>Halaman_Login.vb</DependentUpon>
     </Compile>
@@ -132,6 +138,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="OBAT.Designer.vb">
+      <DependentUpon>OBAT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OBAT.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Pasien.Designer.vb">
       <DependentUpon>Pasien.vb</DependentUpon>
     </Compile>
@@ -142,6 +154,12 @@
       <DependentUpon>PASIEN01.vb</DependentUpon>
     </Compile>
     <Compile Include="PASIEN01.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PASIEN_SP.Designer.vb">
+      <DependentUpon>PASIEN_SP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PASIEN_SP.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="sistem_informasi_rumahsakitDataSet.Designer.vb">
@@ -169,6 +187,9 @@
     <EmbeddedResource Include="dokter.resx">
       <DependentUpon>dokter.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DOKTER_SP.resx">
+      <DependentUpon>DOKTER_SP.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Halaman_Login.resx">
       <DependentUpon>Halaman_Login.vb</DependentUpon>
     </EmbeddedResource>
@@ -187,11 +208,17 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="OBAT.resx">
+      <DependentUpon>OBAT.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pasien.resx">
       <DependentUpon>Pasien.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PASIEN01.resx">
       <DependentUpon>PASIEN01.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PASIEN_SP.resx">
+      <DependentUpon>PASIEN_SP.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tentang_Aplikasi.resx">
       <DependentUpon>Tentang_Aplikasi.vb</DependentUpon>

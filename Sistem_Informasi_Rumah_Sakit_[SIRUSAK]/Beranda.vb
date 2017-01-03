@@ -46,4 +46,24 @@
     Private Sub Beranda_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
     End Sub
+
+    Private Sub OBATToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OBATToolStripMenuItem.Click
+        OBAT.ShowDialog()
+    End Sub
+
+    Private Sub DOKTERToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+
+    End Sub
+
+    Private Sub DOKTERSPToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles DOKTERSPToolStripMenuItem1.Click
+        DOKTER_SP.ShowDialog()
+    End Sub
+
+    Private Sub DOKTERSPToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles DOKTERSPToolStripMenuItem.Click
+        DOKTER_SP.ShowDialog()
+    End Sub
+
+    Private Sub PASIENToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PASIENToolStripMenuItem1.Click
+        PASIEN_SP.ShowDialog()
+    End Sub
 End Class
