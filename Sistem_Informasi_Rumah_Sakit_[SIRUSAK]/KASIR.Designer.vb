@@ -28,7 +28,7 @@ Partial Class KASIR
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(809, 329)
+        Me.ClientSize = New System.Drawing.Size(827, 344)
         Me.Name = "KASIR"
         Me.Text = "KASIR"
         Me.ResumeLayout(False)
