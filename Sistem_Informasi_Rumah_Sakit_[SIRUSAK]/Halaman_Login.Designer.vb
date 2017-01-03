@@ -127,7 +127,7 @@ Partial Class Halaman_Login
         Me.AxmediaPlayer.Location = New System.Drawing.Point(902, 35)
         Me.AxmediaPlayer.Name = "AxmediaPlayer"
         Me.AxmediaPlayer.OcxState = CType(resources.GetObject("AxmediaPlayer.OcxState"), System.Windows.Forms.AxHost.State)
-        Me.AxmediaPlayer.Size = New System.Drawing.Size(16, 10)
+        Me.AxmediaPlayer.Size = New System.Drawing.Size(11, 10)
         Me.AxmediaPlayer.TabIndex = 8
         '
         'Halaman_Login
