@@ -87,7 +87,7 @@ Partial Class PASIEN_SP
         'ID_PASIENLabel
         '
         ID_PASIENLabel.AutoSize = True
-        ID_PASIENLabel.Location = New System.Drawing.Point(21, 114)
+        ID_PASIENLabel.Location = New System.Drawing.Point(15, 42)
         ID_PASIENLabel.Name = "ID_PASIENLabel"
         ID_PASIENLabel.Size = New System.Drawing.Size(63, 13)
         ID_PASIENLabel.TabIndex = 2
@@ -96,7 +96,7 @@ Partial Class PASIEN_SP
         'NAMA_PASIENLabel
         '
         NAMA_PASIENLabel.AutoSize = True
-        NAMA_PASIENLabel.Location = New System.Drawing.Point(21, 140)
+        NAMA_PASIENLabel.Location = New System.Drawing.Point(15, 68)
         NAMA_PASIENLabel.Name = "NAMA_PASIENLabel"
         NAMA_PASIENLabel.Size = New System.Drawing.Size(83, 13)
         NAMA_PASIENLabel.TabIndex = 4
@@ -105,7 +105,7 @@ Partial Class PASIEN_SP
         'J_KLabel
         '
         J_KLabel.AutoSize = True
-        J_KLabel.Location = New System.Drawing.Point(21, 166)
+        J_KLabel.Location = New System.Drawing.Point(15, 94)
         J_KLabel.Name = "J_KLabel"
         J_KLabel.Size = New System.Drawing.Size(25, 13)
         J_KLabel.TabIndex = 6
@@ -114,7 +114,7 @@ Partial Class PASIEN_SP
         'KOTA_PASIENLabel
         '
         KOTA_PASIENLabel.AutoSize = True
-        KOTA_PASIENLabel.Location = New System.Drawing.Point(21, 193)
+        KOTA_PASIENLabel.Location = New System.Drawing.Point(15, 121)
         KOTA_PASIENLabel.Name = "KOTA_PASIENLabel"
         KOTA_PASIENLabel.Size = New System.Drawing.Size(81, 13)
         KOTA_PASIENLabel.TabIndex = 8
@@ -123,7 +123,7 @@ Partial Class PASIEN_SP
         'ALAMATLabel
         '
         ALAMATLabel.AutoSize = True
-        ALAMATLabel.Location = New System.Drawing.Point(21, 219)
+        ALAMATLabel.Location = New System.Drawing.Point(15, 147)
         ALAMATLabel.Name = "ALAMATLabel"
         ALAMATLabel.Size = New System.Drawing.Size(53, 13)
         ALAMATLabel.TabIndex = 10
@@ -132,7 +132,7 @@ Partial Class PASIEN_SP
         'KELUHANLabel
         '
         KELUHANLabel.AutoSize = True
-        KELUHANLabel.Location = New System.Drawing.Point(21, 245)
+        KELUHANLabel.Location = New System.Drawing.Point(15, 173)
         KELUHANLabel.Name = "KELUHANLabel"
         KELUHANLabel.Size = New System.Drawing.Size(61, 13)
         KELUHANLabel.TabIndex = 12
@@ -141,7 +141,7 @@ Partial Class PASIEN_SP
         'UMURLabel
         '
         UMURLabel.AutoSize = True
-        UMURLabel.Location = New System.Drawing.Point(21, 271)
+        UMURLabel.Location = New System.Drawing.Point(15, 199)
         UMURLabel.Name = "UMURLabel"
         UMURLabel.Size = New System.Drawing.Size(43, 13)
         UMURLabel.TabIndex = 14
@@ -189,7 +189,7 @@ Partial Class PASIEN_SP
         Me.PasienBindingNavigator.MovePreviousItem = Me.BindingNavigatorMovePreviousItem
         Me.PasienBindingNavigator.Name = "PasienBindingNavigator"
         Me.PasienBindingNavigator.PositionItem = Me.BindingNavigatorPositionItem
-        Me.PasienBindingNavigator.Size = New System.Drawing.Size(820, 25)
+        Me.PasienBindingNavigator.Size = New System.Drawing.Size(1354, 25)
         Me.PasienBindingNavigator.TabIndex = 0
         Me.PasienBindingNavigator.Text = "BindingNavigator1"
         '
@@ -205,7 +205,7 @@ Partial Class PASIEN_SP
         'BindingNavigatorCountItem
         '
         Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
-        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(35, 22)
+        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(47, 22)
         Me.BindingNavigatorCountItem.Text = "of {0}"
         Me.BindingNavigatorCountItem.ToolTipText = "Total number of items"
         '
@@ -292,9 +292,9 @@ Partial Class PASIEN_SP
         Me.PasienDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.PasienDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7})
         Me.PasienDataGridView.DataSource = Me.PasienBindingSource
-        Me.PasienDataGridView.Location = New System.Drawing.Point(12, 28)
+        Me.PasienDataGridView.Location = New System.Drawing.Point(252, 173)
         Me.PasienDataGridView.Name = "PasienDataGridView"
-        Me.PasienDataGridView.Size = New System.Drawing.Size(748, 69)
+        Me.PasienDataGridView.Size = New System.Drawing.Size(745, 203)
         Me.PasienDataGridView.TabIndex = 1
         '
         'DataGridViewTextBoxColumn1
@@ -342,7 +342,7 @@ Partial Class PASIEN_SP
         'ID_PASIENTextBox
         '
         Me.ID_PASIENTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PasienBindingSource, "ID_PASIEN", True))
-        Me.ID_PASIENTextBox.Location = New System.Drawing.Point(110, 111)
+        Me.ID_PASIENTextBox.Location = New System.Drawing.Point(104, 39)
         Me.ID_PASIENTextBox.Name = "ID_PASIENTextBox"
         Me.ID_PASIENTextBox.Size = New System.Drawing.Size(121, 20)
         Me.ID_PASIENTextBox.TabIndex = 3
@@ -350,7 +350,7 @@ Partial Class PASIEN_SP
         'NAMA_PASIENTextBox
         '
         Me.NAMA_PASIENTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PasienBindingSource, "NAMA_PASIEN", True))
-        Me.NAMA_PASIENTextBox.Location = New System.Drawing.Point(110, 137)
+        Me.NAMA_PASIENTextBox.Location = New System.Drawing.Point(104, 65)
         Me.NAMA_PASIENTextBox.Name = "NAMA_PASIENTextBox"
         Me.NAMA_PASIENTextBox.Size = New System.Drawing.Size(121, 20)
         Me.NAMA_PASIENTextBox.TabIndex = 5
@@ -359,7 +359,7 @@ Partial Class PASIEN_SP
         '
         Me.J_KComboBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PasienBindingSource, "J_K", True))
         Me.J_KComboBox.FormattingEnabled = True
-        Me.J_KComboBox.Location = New System.Drawing.Point(110, 163)
+        Me.J_KComboBox.Location = New System.Drawing.Point(104, 91)
         Me.J_KComboBox.Name = "J_KComboBox"
         Me.J_KComboBox.Size = New System.Drawing.Size(121, 21)
         Me.J_KComboBox.TabIndex = 7
@@ -367,7 +367,7 @@ Partial Class PASIEN_SP
         'KOTA_PASIENTextBox
         '
         Me.KOTA_PASIENTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PasienBindingSource, "KOTA_PASIEN", True))
-        Me.KOTA_PASIENTextBox.Location = New System.Drawing.Point(110, 190)
+        Me.KOTA_PASIENTextBox.Location = New System.Drawing.Point(104, 118)
         Me.KOTA_PASIENTextBox.Name = "KOTA_PASIENTextBox"
         Me.KOTA_PASIENTextBox.Size = New System.Drawing.Size(121, 20)
         Me.KOTA_PASIENTextBox.TabIndex = 9
@@ -375,7 +375,7 @@ Partial Class PASIEN_SP
         'ALAMATTextBox
         '
         Me.ALAMATTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PasienBindingSource, "ALAMAT", True))
-        Me.ALAMATTextBox.Location = New System.Drawing.Point(110, 216)
+        Me.ALAMATTextBox.Location = New System.Drawing.Point(104, 144)
         Me.ALAMATTextBox.Name = "ALAMATTextBox"
         Me.ALAMATTextBox.Size = New System.Drawing.Size(121, 20)
         Me.ALAMATTextBox.TabIndex = 11
@@ -383,7 +383,7 @@ Partial Class PASIEN_SP
         'KELUHANTextBox
         '
         Me.KELUHANTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PasienBindingSource, "KELUHAN", True))
-        Me.KELUHANTextBox.Location = New System.Drawing.Point(110, 242)
+        Me.KELUHANTextBox.Location = New System.Drawing.Point(104, 170)
         Me.KELUHANTextBox.Name = "KELUHANTextBox"
         Me.KELUHANTextBox.Size = New System.Drawing.Size(121, 20)
         Me.KELUHANTextBox.TabIndex = 13
@@ -392,14 +392,14 @@ Partial Class PASIEN_SP
         '
         Me.UMURComboBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PasienBindingSource, "UMUR", True))
         Me.UMURComboBox.FormattingEnabled = True
-        Me.UMURComboBox.Location = New System.Drawing.Point(110, 268)
+        Me.UMURComboBox.Location = New System.Drawing.Point(104, 196)
         Me.UMURComboBox.Name = "UMURComboBox"
         Me.UMURComboBox.Size = New System.Drawing.Size(121, 21)
         Me.UMURComboBox.TabIndex = 15
         '
         'TAMBAHButton1
         '
-        Me.TAMBAHButton1.Location = New System.Drawing.Point(344, 144)
+        Me.TAMBAHButton1.Location = New System.Drawing.Point(304, 35)
         Me.TAMBAHButton1.Name = "TAMBAHButton1"
         Me.TAMBAHButton1.Size = New System.Drawing.Size(75, 23)
         Me.TAMBAHButton1.TabIndex = 16
@@ -408,7 +408,7 @@ Partial Class PASIEN_SP
         '
         'SIMPANButton2
         '
-        Me.SIMPANButton2.Location = New System.Drawing.Point(472, 144)
+        Me.SIMPANButton2.Location = New System.Drawing.Point(432, 35)
         Me.SIMPANButton2.Name = "SIMPANButton2"
         Me.SIMPANButton2.Size = New System.Drawing.Size(75, 23)
         Me.SIMPANButton2.TabIndex = 17
@@ -417,7 +417,7 @@ Partial Class PASIEN_SP
         '
         'KELUARButton3
         '
-        Me.KELUARButton3.Location = New System.Drawing.Point(592, 144)
+        Me.KELUARButton3.Location = New System.Drawing.Point(552, 35)
         Me.KELUARButton3.Name = "KELUARButton3"
         Me.KELUARButton3.Size = New System.Drawing.Size(75, 23)
         Me.KELUARButton3.TabIndex = 18
@@ -426,7 +426,7 @@ Partial Class PASIEN_SP
         '
         'EDITButton4
         '
-        Me.EDITButton4.Location = New System.Drawing.Point(344, 209)
+        Me.EDITButton4.Location = New System.Drawing.Point(304, 74)
         Me.EDITButton4.Name = "EDITButton4"
         Me.EDITButton4.Size = New System.Drawing.Size(75, 23)
         Me.EDITButton4.TabIndex = 19
@@ -435,7 +435,7 @@ Partial Class PASIEN_SP
         '
         'HAPUSButton5
         '
-        Me.HAPUSButton5.Location = New System.Drawing.Point(472, 209)
+        Me.HAPUSButton5.Location = New System.Drawing.Point(432, 74)
         Me.HAPUSButton5.Name = "HAPUSButton5"
         Me.HAPUSButton5.Size = New System.Drawing.Size(75, 23)
         Me.HAPUSButton5.TabIndex = 20
@@ -444,7 +444,7 @@ Partial Class PASIEN_SP
         '
         'REFRESHButton6
         '
-        Me.REFRESHButton6.Location = New System.Drawing.Point(592, 209)
+        Me.REFRESHButton6.Location = New System.Drawing.Point(552, 74)
         Me.REFRESHButton6.Name = "REFRESHButton6"
         Me.REFRESHButton6.Size = New System.Drawing.Size(75, 23)
         Me.REFRESHButton6.TabIndex = 21
@@ -453,7 +453,7 @@ Partial Class PASIEN_SP
         '
         'BATALButton7
         '
-        Me.BATALButton7.Location = New System.Drawing.Point(472, 261)
+        Me.BATALButton7.Location = New System.Drawing.Point(432, 115)
         Me.BATALButton7.Name = "BATALButton7"
         Me.BATALButton7.Size = New System.Drawing.Size(75, 23)
         Me.BATALButton7.TabIndex = 22
@@ -464,7 +464,7 @@ Partial Class PASIEN_SP
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(820, 333)
+        Me.ClientSize = New System.Drawing.Size(1354, 732)
         Me.Controls.Add(Me.BATALButton7)
         Me.Controls.Add(Me.REFRESHButton6)
         Me.Controls.Add(Me.HAPUSButton5)

@@ -75,7 +75,7 @@ Partial Class OBAT
         'ID_OBATLabel
         '
         ID_OBATLabel.AutoSize = True
-        ID_OBATLabel.Location = New System.Drawing.Point(506, 39)
+        ID_OBATLabel.Location = New System.Drawing.Point(518, 42)
         ID_OBATLabel.Name = "ID_OBATLabel"
         ID_OBATLabel.Size = New System.Drawing.Size(53, 13)
         ID_OBATLabel.TabIndex = 2
@@ -84,7 +84,7 @@ Partial Class OBAT
         'NAMA_OBATLabel
         '
         NAMA_OBATLabel.AutoSize = True
-        NAMA_OBATLabel.Location = New System.Drawing.Point(506, 65)
+        NAMA_OBATLabel.Location = New System.Drawing.Point(518, 68)
         NAMA_OBATLabel.Name = "NAMA_OBATLabel"
         NAMA_OBATLabel.Size = New System.Drawing.Size(73, 13)
         NAMA_OBATLabel.TabIndex = 4
@@ -93,7 +93,7 @@ Partial Class OBAT
         'MASA_BERLAKULabel
         '
         MASA_BERLAKULabel.AutoSize = True
-        MASA_BERLAKULabel.Location = New System.Drawing.Point(506, 92)
+        MASA_BERLAKULabel.Location = New System.Drawing.Point(518, 95)
         MASA_BERLAKULabel.Name = "MASA_BERLAKULabel"
         MASA_BERLAKULabel.Size = New System.Drawing.Size(93, 13)
         MASA_BERLAKULabel.TabIndex = 6
@@ -102,7 +102,7 @@ Partial Class OBAT
         'HARGALabel
         '
         HARGALabel.AutoSize = True
-        HARGALabel.Location = New System.Drawing.Point(506, 117)
+        HARGALabel.Location = New System.Drawing.Point(518, 120)
         HARGALabel.Name = "HARGALabel"
         HARGALabel.Size = New System.Drawing.Size(48, 13)
         HARGALabel.TabIndex = 8
@@ -150,7 +150,7 @@ Partial Class OBAT
         Me.ObatBindingNavigator.MovePreviousItem = Me.BindingNavigatorMovePreviousItem
         Me.ObatBindingNavigator.Name = "ObatBindingNavigator"
         Me.ObatBindingNavigator.PositionItem = Me.BindingNavigatorPositionItem
-        Me.ObatBindingNavigator.Size = New System.Drawing.Size(859, 25)
+        Me.ObatBindingNavigator.Size = New System.Drawing.Size(1354, 25)
         Me.ObatBindingNavigator.TabIndex = 0
         Me.ObatBindingNavigator.Text = "BindingNavigator1"
         '
@@ -166,7 +166,7 @@ Partial Class OBAT
         'BindingNavigatorCountItem
         '
         Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
-        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(35, 22)
+        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(47, 22)
         Me.BindingNavigatorCountItem.Text = "of {0}"
         Me.BindingNavigatorCountItem.ToolTipText = "Total number of items"
         '
@@ -255,7 +255,7 @@ Partial Class OBAT
         Me.ObatDataGridView.DataSource = Me.ObatBindingSource
         Me.ObatDataGridView.Location = New System.Drawing.Point(12, 39)
         Me.ObatDataGridView.Name = "ObatDataGridView"
-        Me.ObatDataGridView.Size = New System.Drawing.Size(444, 107)
+        Me.ObatDataGridView.Size = New System.Drawing.Size(488, 259)
         Me.ObatDataGridView.TabIndex = 1
         '
         'DataGridViewTextBoxColumn1
@@ -285,7 +285,7 @@ Partial Class OBAT
         'ID_OBATTextBox
         '
         Me.ID_OBATTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ObatBindingSource, "ID_OBAT", True))
-        Me.ID_OBATTextBox.Location = New System.Drawing.Point(605, 36)
+        Me.ID_OBATTextBox.Location = New System.Drawing.Point(617, 39)
         Me.ID_OBATTextBox.Name = "ID_OBATTextBox"
         Me.ID_OBATTextBox.Size = New System.Drawing.Size(200, 20)
         Me.ID_OBATTextBox.TabIndex = 3
@@ -293,7 +293,7 @@ Partial Class OBAT
         'NAMA_OBATTextBox
         '
         Me.NAMA_OBATTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ObatBindingSource, "NAMA_OBAT", True))
-        Me.NAMA_OBATTextBox.Location = New System.Drawing.Point(605, 62)
+        Me.NAMA_OBATTextBox.Location = New System.Drawing.Point(617, 65)
         Me.NAMA_OBATTextBox.Name = "NAMA_OBATTextBox"
         Me.NAMA_OBATTextBox.Size = New System.Drawing.Size(200, 20)
         Me.NAMA_OBATTextBox.TabIndex = 5
@@ -301,7 +301,7 @@ Partial Class OBAT
         'MASA_BERLAKUDateTimePicker
         '
         Me.MASA_BERLAKUDateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Value", Me.ObatBindingSource, "MASA_BERLAKU", True))
-        Me.MASA_BERLAKUDateTimePicker.Location = New System.Drawing.Point(605, 88)
+        Me.MASA_BERLAKUDateTimePicker.Location = New System.Drawing.Point(617, 91)
         Me.MASA_BERLAKUDateTimePicker.Name = "MASA_BERLAKUDateTimePicker"
         Me.MASA_BERLAKUDateTimePicker.Size = New System.Drawing.Size(200, 20)
         Me.MASA_BERLAKUDateTimePicker.TabIndex = 7
@@ -309,14 +309,14 @@ Partial Class OBAT
         'HARGATextBox
         '
         Me.HARGATextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ObatBindingSource, "HARGA", True))
-        Me.HARGATextBox.Location = New System.Drawing.Point(605, 114)
+        Me.HARGATextBox.Location = New System.Drawing.Point(617, 117)
         Me.HARGATextBox.Name = "HARGATextBox"
         Me.HARGATextBox.Size = New System.Drawing.Size(200, 20)
         Me.HARGATextBox.TabIndex = 9
         '
         'TAMBAHButton1
         '
-        Me.TAMBAHButton1.Location = New System.Drawing.Point(12, 177)
+        Me.TAMBAHButton1.Location = New System.Drawing.Point(12, 317)
         Me.TAMBAHButton1.Name = "TAMBAHButton1"
         Me.TAMBAHButton1.Size = New System.Drawing.Size(95, 28)
         Me.TAMBAHButton1.TabIndex = 10
@@ -325,7 +325,7 @@ Partial Class OBAT
         '
         'SIMPANButton2
         '
-        Me.SIMPANButton2.Location = New System.Drawing.Point(123, 177)
+        Me.SIMPANButton2.Location = New System.Drawing.Point(123, 317)
         Me.SIMPANButton2.Name = "SIMPANButton2"
         Me.SIMPANButton2.Size = New System.Drawing.Size(95, 28)
         Me.SIMPANButton2.TabIndex = 11
@@ -334,7 +334,7 @@ Partial Class OBAT
         '
         'KELUARButton3
         '
-        Me.KELUARButton3.Location = New System.Drawing.Point(234, 177)
+        Me.KELUARButton3.Location = New System.Drawing.Point(379, 317)
         Me.KELUARButton3.Name = "KELUARButton3"
         Me.KELUARButton3.Size = New System.Drawing.Size(95, 28)
         Me.KELUARButton3.TabIndex = 12
@@ -343,7 +343,7 @@ Partial Class OBAT
         '
         'EDITButton4
         '
-        Me.EDITButton4.Location = New System.Drawing.Point(361, 177)
+        Me.EDITButton4.Location = New System.Drawing.Point(12, 364)
         Me.EDITButton4.Name = "EDITButton4"
         Me.EDITButton4.Size = New System.Drawing.Size(95, 28)
         Me.EDITButton4.TabIndex = 13
@@ -352,7 +352,7 @@ Partial Class OBAT
         '
         'REFRESHButton5
         '
-        Me.REFRESHButton5.Location = New System.Drawing.Point(484, 177)
+        Me.REFRESHButton5.Location = New System.Drawing.Point(255, 317)
         Me.REFRESHButton5.Name = "REFRESHButton5"
         Me.REFRESHButton5.Size = New System.Drawing.Size(95, 28)
         Me.REFRESHButton5.TabIndex = 14
@@ -361,7 +361,7 @@ Partial Class OBAT
         '
         'BATALButton6
         '
-        Me.BATALButton6.Location = New System.Drawing.Point(605, 177)
+        Me.BATALButton6.Location = New System.Drawing.Point(255, 364)
         Me.BATALButton6.Name = "BATALButton6"
         Me.BATALButton6.Size = New System.Drawing.Size(95, 28)
         Me.BATALButton6.TabIndex = 15
@@ -370,7 +370,7 @@ Partial Class OBAT
         '
         'HAPUSButton7
         '
-        Me.HAPUSButton7.Location = New System.Drawing.Point(722, 177)
+        Me.HAPUSButton7.Location = New System.Drawing.Point(123, 364)
         Me.HAPUSButton7.Name = "HAPUSButton7"
         Me.HAPUSButton7.Size = New System.Drawing.Size(95, 28)
         Me.HAPUSButton7.TabIndex = 16
@@ -381,7 +381,7 @@ Partial Class OBAT
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(859, 316)
+        Me.ClientSize = New System.Drawing.Size(1354, 732)
         Me.Controls.Add(Me.HAPUSButton7)
         Me.Controls.Add(Me.BATALButton6)
         Me.Controls.Add(Me.REFRESHButton5)

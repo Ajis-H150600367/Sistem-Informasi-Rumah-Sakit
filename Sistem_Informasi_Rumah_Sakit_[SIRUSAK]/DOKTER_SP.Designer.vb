@@ -176,7 +176,7 @@ Partial Class DOKTER_SP
         Me.DokterBindingNavigator.MovePreviousItem = Me.BindingNavigatorMovePreviousItem
         Me.DokterBindingNavigator.Name = "DokterBindingNavigator"
         Me.DokterBindingNavigator.PositionItem = Me.BindingNavigatorPositionItem
-        Me.DokterBindingNavigator.Size = New System.Drawing.Size(724, 25)
+        Me.DokterBindingNavigator.Size = New System.Drawing.Size(732, 25)
         Me.DokterBindingNavigator.TabIndex = 0
         Me.DokterBindingNavigator.Text = "BindingNavigator1"
         '
@@ -192,7 +192,7 @@ Partial Class DOKTER_SP
         'BindingNavigatorCountItem
         '
         Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
-        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(35, 22)
+        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(47, 22)
         Me.BindingNavigatorCountItem.Text = "of {0}"
         Me.BindingNavigatorCountItem.ToolTipText = "Total number of items"
         '
@@ -435,7 +435,7 @@ Partial Class DOKTER_SP
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(724, 293)
+        Me.ClientSize = New System.Drawing.Size(732, 296)
         Me.Controls.Add(Me.EDITButton7)
         Me.Controls.Add(Me.HAPUSButton6)
         Me.Controls.Add(Me.BATALButton5)
